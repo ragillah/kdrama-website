@@ -1,3 +1,5 @@
+@import url(../fonts/minecrafter/Minecrafter.Alt.ttf);
+
 body {
    background: #343d50;
    font-family: "Noto Sans", sans-serif;
@@ -101,6 +103,7 @@ body {
 
 .title-genre {
    text-transform: uppercase;
+   font-size: 1.25rem !important;
 }
 
 #btn-eye {
