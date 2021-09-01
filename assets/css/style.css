@@ -1,4 +1,4 @@
-@import url(../fonts/minecrafter/Minecrafter.Alt.ttf);
+@import url("http://fonts.cdnfonts.com/css/minecraft-4");
 
 body {
    background: #343d50;
@@ -21,7 +21,7 @@ body {
 } */
 
 .text-mc {
-   font-family: "Minecrafter", sans-serif;
+   font-family: "Minecraft", sans-serif;
 }
 .date {
    font-weight: 400;
