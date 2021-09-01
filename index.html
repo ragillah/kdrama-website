@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- meta -->
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- css -->
+      <link rel="stylesheet" href="assets/css/bootstrap.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+
+      <!-- title -->
+      <title>Document</title>
+   </head>
+   <body>
+      <section id="navbar">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-3">
+            <div class="container-fluid border-bottom-nav" id="nav">
+               <a class="navbar-brand text-mc text-danger" href="#">KDRAMA<span class="text-light">SI</span></a>
+               <button id="navbar-toggler" class="navbar-toggler ms-2 my-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse showNav" id="navbarNav">
+                  <ul class="navbar-nav">
+                     <!-- <li class="nav-item ps-2">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li> -->
+                     <li class="nav-item dropdown ps-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Drama </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Melodrama</a></li>
+                           <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item dropdown ps-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Movie </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Melodrama</a></li>
+                           <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <form action="" class="d-flex ms-auto mt-1 mb-2">
+                     <input type="search" class="form-control me-2 bg-light border-danger text-muted" placeholder="Search..." />
+                     <button class="btn btn-danger"><i class="fa fa-search"></i></button>
+                  </form>
+               </div>
+            </div>
+         </nav>
+      </section>
+
+      <section id="slider">
+         <div id="carouselExampleLight" class="carousel carousel-light slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active" data-bs-interval="9999999">
+                  <img src="assets/img/poster/landscape/slider/hospital-playlist.jpg" class="slider d-block w-100" />
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-lg-6" id="slider-item">
+                           <small id="slider-title" class="d-block slider-title">HOSPITAL PLAYLIST</small>
+                           <small id="slider-genre" class="badge bg-danger fw-light">Medical - Comedy</small>
+                           <small id="slider-eps" class="ps-1 slider-eps">2020 | 24 Episode</small>
+                           <p id="desc">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laboriosam est dolore laudantium iusto officiis dignissimos accusantium, vel eos assumenda? Minima ullam tenetur, accusantium eaque inventore dolor
+                              nisi voluptas error?
+                           </p>
+                           <a id="btnPlay" href="" class="btn btn-danger rounded-circle"><i class="fa fa-play"></i></a>
+                        </div>
+                        <div class="col-sm-2">
+                           <!-- <img src="assets/img/poster/potret/hospital-playlist.jpeg" class="img-fluid"> -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item" data-bs-interval="4000">
+                  <img src="assets/img/poster/landscape/slider/while-you-were-sleeping.jpg" class="slider d-block w-100" alt="..." />
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-lg-6" id="slider-item">
+                           <small id="slider-title" class="d-block slider-title">WHILE YOU WERE SLEEPING</small>
+                           <small id="slider-genre" class="badge bg-danger fw-light">Melodrama - Romance - Fantasy</small>
+                           <small id="slider-eps" class="ps-1 slider-eps">2018 | 16 Episode</small>
+                           <p id="desc">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laboriosam est dolore laudantium iusto officiis dignissimos accusantium, vel eos assumenda? Minima ullam tenetur, accusantium eaque inventore dolor
+                              nisi voluptas error?
+                           </p>
+                           <a id="btnPlay" href="" class="btn btn-danger rounded-circle"><i class="fa fa-play"></i></a>
+                        </div>
+                        <div class="col-sm-2">
+                           <!-- <img src="assets/img/poster/potret/hospital-playlist.jpeg" class="img-fluid"> -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item" data-bs-interval="4000">
+                  <img src="assets/img/poster/landscape/slider/vagabond.jpg" class="slider d-block w-100" alt="..." />
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-lg-6" id="slider-item">
+                           <small id="slider-title" class="d-block slider-title">VAGABOND</small>
+                           <small id="slider-genre" class="badge bg-danger fw-light">Action - Thriller</small>
+                           <small id="slider-eps" class="ps-1">2019 | 16 Episode</small>
+                           <p id="desc">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laboriosam est dolore laudantium iusto officiis dignissimos accusantium, vel eos assumenda? Minima ullam tenetur, accusantium eaque inventore dolor
+                              nisi voluptas error?
+                           </p>
+                           <a id="btnPlay" href="" class="btn btn-danger rounded-circle"><i class="fa fa-play"></i></a>
+                        </div>
+                        <div class="col-sm-2">
+                           <!-- <img src="assets/img/poster/potret/hospital-playlist.jpeg" class="img-fluid"> -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleLight" data-bs-slide="prev">
+               <span class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleLight" data-bs-slide="next">
+               <span class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+            </button>
+         </div>
+      </section>
+
+      <section id="act">
+         <div class="container-fluid px-3 mt-4">
+            <small class="text-light fs-5 title-genre"
+               >Actor - Actress <a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-eye"></i></a
+            ></small>
+            <div class="row row-cols-3 g-3 mt-3">
+               <div class="col-md-2">
+                  <center>
+                     <div class="card bg-transparent border-0">
+                        <a href=""><img src="assets/img/aktor/jung-hae-in.png" class="card-img-top thumbnail rounded-circle" /></a>
+                        <div class="card-body" id="card-actor">
+                           <a href="" class="text-decoration-none" id="title"><h6 class="card-title" id="h6">Jung Hae In</h6></a>
+                        </div>
+                     </div>
+                  </center>
+               </div>
+               <div class="col-md-2">
+                  <center>
+                     <div class="card bg-transparent border-0 card-actor">
+                        <a href=""><img src="assets/img/aktor/song-joong-ki.png" class="card-img-top thumbnail" /></a>
+                        <div class="card-body">
+                           <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Song Joong Ki</h6></a>
+                        </div>
+                     </div>
+                  </center>
+               </div>
+               <div class="col-md-2">
+                  <center>
+                     <div class="card bg-transparent border-0 card-actor">
+                        <a href=""><img src="assets/img/aktor/park-seo-joon.png" class="card-img-top thumbnail" /></a>
+                        <div class="card-body">
+                           <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Park Seo Joon</h6></a>
+                        </div>
+                     </div>
+                  </center>
+               </div>
+               <div class="col-md-2">
+                  <center>
+                     <div class="card bg-transparent border-0 card-actor">
+                        <a href=""><img src="assets/img/aktor/bae-suzy.png" class="card-img-top thumbnail" /></a>
+                        <div class="card-body">
+                           <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Bae Suzy</h6></a>
+                        </div>
+                     </div>
+                  </center>
+               </div>
+               <div class="col-md-2">
+                  <center>
+                     <div class="card bg-transparent border-0 card-actor">
+                        <a href=""><img src="assets/img/aktor/yoona.png" class="card-img-top thumbnail" /></a>
+                        <div class="card-body">
+                           <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Lim Yoona</h6></a>
+                        </div>
+                     </div>
+                  </center>
+               </div>
+               <div class="col-md-2">
+                  <center>
+                     <div class="card bg-transparent border-0 card-actor">
+                        <a href=""><img src="assets/img/aktor/krystal.png" class="card-img-top thumbnail" /></a>
+                        <div class="card-body">
+                           <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Krystal Jung</h6></a>
+                        </div>
+                     </div>
+                  </center>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="dramaAction">
+         <div class="container-fluid px-3 mt-4">
+            <!-- Action -->
+            <small class="text-light title-genre" id="title-genre"
+               >Action - Thriller <a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-eye"></i></a
+            ></small>
+            <div class="row row-cols-2 mt-3 g-3">
+               <!-- section K2 -->
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href="" data-bs-toggle="modal" data-bs-target="#K2Modal"><img src="assets/img/poster/potret/k2.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#K2Modal"><h6 class="card-title" id="h6">The K2</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="K2Modal" tabindex="-1" aria-labelledby="K2ModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                     <div class="modal-content bg-grey">
+                        <div class="modal-header">
+                           <h5 class="modal-title text-light" id="K2ModalLabel">The K2</h5>
+                           <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body pb-1">
+                           <div class="row">
+                              <img src="assets/img/poster/landscape/k2.jpg" class="img-fluid rounded" />
+                           </div>
+                           <div class="row pt-3">
+                              <div class="col-md-6 ps-0">
+                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">The K2</span></li>
+                                    <li class="list-group-item text-light fw-normal">Judul Alternatif : <span class="fw-normal text-muted">더 케이투</span></li>
+                                    <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Political</span></li>
+                                    <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Kwak Jung-hwan</span></li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-6 ps-0">
+                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Jang Hyuk-rin</span></li>
+                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">16</span></li>
+                                    <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2016</span></li>
+                                    <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">tvN</span></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <h6 class="text-light pt-3">Sinopsis</h6>
+                              <p class="text-muted" id="synopsis">
+                                 Kim Je-ha adalah mantan tentara bayaran untuk PMC Blackstone. Sementara di Irak, dia dibingkai atas pembunuhan kekasihnya Rania, seorang warga sipil. Akibatnya, ia melarikan diri dan menjadi buron. Dia
+                                 kembali ke Korea Selatan dan secara kebetulan, mendapat tawaran untuk bekerja sebagai pengawal oleh Choi Yoo-jin, pemilik Perusahaan Keamanan JSS dan istri calon presiden, Jang Se-joon. Dia menerima
+                                 pekerjaan tersebut dengan imbalan sumber daya yang dia butuhkan untuk membalas dendam pada calon presiden lainnya, Park Kwan-soo, yang sebelumnya memerintahkan pembunuhan kekasihnya tersebut.
+                              </p>
+                              <p class="text-muted" id="synopsis">
+                                 Sementara itu, Je-ha ditugaskan untuk menjaga Go An-na, putri tersembunyi Jang Se-joon, yang hidupnya selalu terancam karena Yoo-jin, ibu tirinya. An-na, yang telah terbiasa dan sepi sepanjang hidupnya,
+                                 mulai mengandalkan Je-ha, yang menunjukkan kepedulian padanya dan melindunginya dengan segala cara. Mereka perlahan jatuh cinta satu sama lain, yang membuat Je-ha terpecah antara harus bekerja dengan
+                                 sekutunya, Yoo-jin, untuk mendapatkan balas dendamnya dan melindungi cintanya yang baru ditemukan, An-na, melawan sekutunya sendiri.
+                              </p>
+                           </div>
+                           <div class="row">
+                              <h6 class="text-light">Trailer</h6>
+                              <video controls>
+                                 <source src="assets/src/k2-trailer.mp4" type="video/mp4" />
+                              </video>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- endsection K2 -->
+
+               <!-- section Voice -->
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href="" data-bs-toggle="modal" data-bs-target="#VoiceModal"><img src="assets/img/poster/potret/voice.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#VoiceModal"><h6 class="card-title" id="h6">Voice</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="VoiceModal" tabindex="-1" aria-labelledby="VoiceModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                     <div class="modal-content bg-grey">
+                        <div class="modal-header">
+                           <h5 class="modal-title text-light" id="VoiceModalLabel">Voice</h5>
+                           <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body pb-1">
+                           <div class="row">
+                              <img src="assets/img/poster/landscape/voice.png" class="img-fluid rounded" />
+                           </div>
+                           <div class="row pt-3">
+                              <div class="col-md-6 ps-0">
+                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">Voice</span></li>
+                                    <li class="list-group-item text-light fw-normal">Judul Alternatif : <span class="fw-normal text-muted">보이스</span></li>
+                                    <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Crime</span></li>
+                                    <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Kim Hong-sun</span></li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-6 ps-0">
+                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Ma Jin-won</span></li>
+                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">16</span></li>
+                                    <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2017</span></li>
+                                    <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">OCN</span></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <h6 class="text-light pt-3">Sinopsis</h6>
+                              <p class="text-muted" id="synopsis">
+                                 Moo Jin-hyuk (Jang Hyuk) adalah seorang detektif populer yang memecahkan kasus-kasus besar, tetapi setelah istrinya dibunuh oleh seorang pembunuh berantai, hidupnya berputar ke bawah. Dia diliputi rasa
+                                 bersalah karena tidak bisa melindungi istrinya dan diam-diam mencari pembunuhnya.
+                              </p>
+                              <p class="text-muted" id="synopsis">
+                                 Sementara itu, Kang Kwon-joo (Lee Ha-na) lulus dari akademi kepolisian dengan nilai tertinggi. Dia mulai bekerja di pusat panggilan darurat 112. Saat bekerja di sana, kasus pembunuhan brutal terjadi dan
+                                 ayahnya yang merupakan sersan polisi menuju ke TKP. Ayahnya terbunuh di sana dan Kwon-joo mendengar apa yang terjadi melalui telepon. Setelah itu, dia pergi ke AS untuk belajar dan kembali ke Korea sebagai
+                                 profiler suara profesional.
+                              </p>
+                              <p class="text-muted" id="synopsis">Detektif Jin-hyuk dan Kang Kwon-joo menyelesaikan kasus bersama untuk mengejar pembunuh berantai yang bertanggung jawab atas kematian anggota keluarga mereka.</p>
+                           </div>
+                           <div class="row">
+                              <h6 class="text-light">Trailer</h6>
+                              <video controls>
+                                 <source src="assets/src/voice-trailer.mp4" type="video/mp4" />
+                              </video>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- endsection Voice -->
+
+               <!-- section MadDog -->
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href="" data-bs-toggle="modal" data-bs-target="#MadDogModal"><img src="assets/img/poster/potret/mad-dog.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#MadDogModal" class="text-decoration-none"><h6 class="card-title" id="h6">Mad Dog</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="MadDogModal" tabindex="-1" aria-labelledby="MadDogModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                     <div class="modal-content bg-grey">
+                        <div class="modal-header">
+                           <h5 class="modal-title text-light" id="MadDogModalLabel">Mad Dog</h5>
+                           <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body pb-1">
+                           <div class="row">
+                              <img src="assets/img/poster/landscape/mad-dog.jpg" class="img-fluid rounded" />
+                           </div>
+                           <div class="row pt-3">
+                              <div class="col-md-6 ps-0">
+                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">Mad Dog</span></li>
+                                    <li class="list-group-item text-light fw-normal">Judul Alternatif : <span class="fw-normal text-muted">보이스</span></li>
+                                    <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Crime</span></li>
+                                    <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Hwang Ui-kyung</span></li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-6 ps-0">
+                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Kim Soo-jin</span></li>
+                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">16</span></li>
+                                    <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2017</span></li>
+                                    <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">KBS</span></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <h6 class="text-light pt-3">Sinopsis</h6>
+                              <p class="text-muted" id="synopsis">
+                                 Choi Kang-woo, mantan polisi dan pemimpin tim penyelidik Taeyang Insurance, memutuskan untuk membuat tim investigasi sendiri, setelah kecelakaan pesawat terbang yang membawa kehidupan istri dan anaknya. Dia
+                                 kemudian bertemu Kim Min-joon, mantan penipu jenius yang saudara laki-lakinya juga menjadi korban kecelakaan, sehingga memulai persaingan dan kerja sama mereka.
+                              </p>
+                           </div>
+                           <div class="row">
+                              <h6 class="text-light">Trailer</h6>
+                              <video controls>
+                                 <source src="assets/src/mad-dog-trailer.mp4" type="video/mp4" />
+                              </video>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- endsection MadDog -->
+
+               <!-- section Player -->
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href="" data-bs-toggle="modal" data-bs-target="#PlayerModal"><img src="assets/img/poster/potret/player.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#PlayerModal" class="text-decoration-none"><h6 class="card-title" id="h6">The Player</h6></a>
+                        <small class="text-muted" id="card-eps">14 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="PlayerModal" tabindex="-1" aria-labelledby="PlayerModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                     <div class="modal-content bg-grey">
+                        <div class="modal-header">
+                           <h5 class="modal-title text-light" id="PlayerModalLabel">The Player</h5>
+                           <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body pb-1">
+                           <div class="row">
+                              <img src="assets/img/poster/landscape/player.jpeg" class="img-fluid rounded" />
+                           </div>
+                           <div class="row pt-3">
+                              <div class="col-md-6 ps-0">
+                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">The Player</span></li>
+                                    <li class="list-group-item text-light fw-normal">Judul Alternatif : <span class="fw-normal text-muted">플레이어</span></li>
+                                    <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Crime</span></li>
+                                    <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Go Jae-hyun</span></li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-6 ps-0">
+                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Shin Jae-hyung</span></li>
+                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">14</span></li>
+                                    <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2018</span></li>
+                                    <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">OCN</span></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <h6 class="text-light pt-3">Sinopsis</h6>
+                              <p class="text-muted" id="synopsis">
+                                 Kisah tentang empat individu berbakat di bidangnya masing-masing yang membentuk tim elit untuk menyelesaikan kejahatan dan bekerja sama dengan jaksa yang adil. Bersama-sama, mereka menyita uang gelap dan
+                                 memastikan bahwa mereka yang menghasilkan uang melalui kejahatan akan ditangkap.
+                              </p>
+                           </div>
+                           <div class="row">
+                              <h6 class="text-light">Trailer</h6>
+                              <video controls>
+                                 <source src="assets/src/player-trailer.mp4" type="video/mp4" />
+                              </video>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- endsection Player -->
+
+               <!-- section Vagabond -->
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href="" data-bs-toggle="modal" data-bs-target="#VagabondModal"><img src="assets/img/poster/potret/vagabond.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#VagabondModal" class="text-decoration-none"><h6 class="card-title" id="h6">Vagabond</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="VagabondModal" tabindex="-1" aria-labelledby="VagabondModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                     <div class="modal-content bg-grey">
+                        <div class="modal-header">
+                           <h5 class="modal-title text-light" id="VagabondModalLabel">Vagabond</h5>
+                           <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body pb-1">
+                           <div class="row">
+                              <img src="assets/img/poster/landscape/vagabond.jpg" class="img-fluid rounded" />
+                           </div>
+                           <div class="row pt-3">
+                              <div class="col-md-6 ps-0">
+                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">Vagabond</span></li>
+                                    <li class="list-group-item text-light fw-normal">Judul Alternatif : <span class="fw-normal text-muted">배가본드</span></li>
+                                    <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Political</span></li>
+                                    <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Yoo In-sik</span></li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-6 ps-0">
+                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Jang Young-chul, Jung Kyung-soon</span></li>
+                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">16</span></li>
+                                    <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2019</span></li>
+                                    <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">SBS</span></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <h6 class="text-light pt-3">Sinopsis</h6>
+                              <p class="text-muted" id="synopsis">
+                                 Sebuah kecelakaan pesawat misterius menewaskan lebih dari 200 warga sipil termasuk keponakan Cha Dal-gun (Lee Seung-gi). Bertekad untuk mencari tahu kebenaran di balik kecelakaan itu, Cha Dal-gun melakukan
+                                 penyelidikan yang membawanya ke jaringan korupsi yang rumit. Hidupnya pun terhubung dengan Go Hae-ri (Bae Suzy) yang merupakan seorang agen rahasia untuk Badan Intelijen Nasional (NIS).
+                              </p>
+                           </div>
+                           <div class="row">
+                              <h6 class="text-light">Trailer</h6>
+                              <video controls>
+                                 <source src="assets/src/vagabond-trailer.mp4" type="video/mp4" />
+                              </video>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- endsection Vagabond -->
+
+               <!-- section Vincenzo -->
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href="" data-bs-toggle="modal" data-bs-target="#VincenzoModal"><img src="assets/img/poster/potret/vincenzo.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#VincenzoModal" class="text-decoration-none"><h6 class="card-title" id="h6">Vincenzo</h6></a>
+                        <small class="text-muted" id="card-eps">20 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="VincenzoModal" tabindex="-1" aria-labelledby="VincenzoModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                     <div class="modal-content bg-grey">
+                        <div class="modal-header">
+                           <h5 class="modal-title text-light" id="VincenzoModalLabel">Vincenzo</h5>
+                           <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body pb-1">
+                           <div class="row">
+                              <img src="assets/img/poster/landscape/vincenzo.png" class="img-fluid rounded" />
+                           </div>
+                           <div class="row pt-3">
+                              <div class="col-md-6 ps-0">
+                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">Vincenzo</span></li>
+                                    <li class="list-group-item text-light fw-normal">Judul Alternatif : <span class="fw-normal text-muted">빈센조</span></li>
+                                    <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Dark Comedy</span></li>
+                                    <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Kim Hee-won</span></li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-6 ps-0">
+                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Park Jae-bum</span></li>
+                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">20</span></li>
+                                    <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2019</span></li>
+                                    <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">tvN</span></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <h6 class="text-light pt-3">Sinopsis</h6>
+                              <p class="text-muted" id="synopsis">
+                                 Pada usia delapan tahun, Park Joo-hyung (Song Joong-ki) pergi ke Italia setelah diadopsi oleh Don Fabio, kepala keluarga mafia Cassano. Berganti nama menjadi Vincenzo Cassano, dia menjadi pengacara Italia,
+                                 seorang consigliere untuk mafia, dan salah satu orang terbaik Fabio sampai kematiannya. Setelah Fabio meninggal, Paolo (putra kandung dan pemimpin baru Fabio) mencoba membunuhnya; dia melarikan diri ke Seoul
+                                 untuk mendapatkan emas tersembunyi di dalam Kompleks Apartemen Geumga-dong.
+                              </p>
+                              <p class="text-muted" id="synopsis">
+                                 Vincenzo membantu seorang hartawan asal Tiongkok menyembunyikan emasnya di lemari besi yang diamankan mafia di dalam kompleks tersebut, tetapi orang tersebut meninggal. Tanpa ada yang tahu tentang lemari
+                                 besi itu, dia berencana untuk mengambil emas itu dan menggunakannya sebagai dana pensiunnya setelah meninggalkan Italia dan mafia. Namun, sebuah perusahaan real estate di bawah Babel Group telah secara
+                                 ilegal mengambil alih kepemilikan gedung tersebut dan Vincenzo harus menggunakan keahliannya untuk merebut kembali gedung tersebut dan memulihkan kekayaannya. Vincenzo terlibat dengan pengacara Hong
+                                 Cha-young (Jeon Yeo-been), tipe pengacara yang akan melakukan apa saja untuk memenangkan kasus. Vincenzo Cassano jatuh cinta padanya. Dia juga mencapai keadilan sosial dengan caranya sendiri.
+                              </p>
+                           </div>
+                           <div class="row">
+                              <h6 class="text-light">Trailer</h6>
+                              <video controls>
+                                 <source src="assets/src/vagabond-trailer.mp4" type="video/mp4" />
+                              </video>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- endsection Vincenzo -->
+            </div>
+         </div>
+      </section>
+
+      <section id="dramaSliceOfLife">
+         <div class="container-fluid px-3 mt-4">
+            <!-- Slice of Life -->
+            <small class="text-light title-genre" id="title-genre"
+               >Slice of Life<a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-eye"></i></a
+            ></small>
+            <div class="row row-cols-2 mt-3 g-3">
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/fight-for-my-way.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Fight For My Way</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/prison-playbook.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Prison Playbook</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/hospital-playlist.jpeg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Hospital Playlist</h6></a>
+                        <small class="text-muted" id="card-eps">24 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/record-of-youth.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Record of Youth</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/start-up.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Start Up</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/hush.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Hush</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="dramaRomance">
+         <div class="container-fluid px-3 mt-4">
+            <!-- Melodrama -->
+            <small class="text-light title-genre" id="title-genre"
+               >Romance - Melodrama<a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-eye"></i></a
+            ></small>
+            <div class="row row-cols-2 mt-3 g-3">
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/while-you-were-sleeping.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6" id="small">While You Were Sleeping</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/tempted.png" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Tempted</h6></a>
+                        <small class="text-muted" id="card-eps">32 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/one-spring-night.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">One Spring Night</h6></a>
+                        <small class="text-muted" id="card-eps">32 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/a-piece-of-your-mind.jpeg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">A Piece of Your Mind</h6></a>
+                        <small class="text-muted" id="card-eps">12 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/its-okay-to-not-be-okay.jpeg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6" id="small">It's Okay to Not Be Okay</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/do-you-like-brahms.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Do You Like Brahms?</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="dramaSchool">
+         <div class="container-fluid px-3 mt-4">
+            <!-- School -->
+            <small class="text-light title-genre" id="title-genre"
+               >School<a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-eye"></i></a
+            ></small>
+            <div class="row row-cols-2 mt-3 g-3">
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/heirs.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6" id="small">The Heirs</h6></a>
+                        <small class="text-muted" id="card-eps">20 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/school-2015.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">School 2015</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/school-2017.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">School 2017</h6></a>
+                        <small class="text-muted" id="card-eps">12 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/love-alarm.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6" id="small">Love Alarm</h6></a>
+                        <small class="text-muted" id="card-eps">14 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/extraordinary-you.jpeg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Extraordinary You</h6></a>
+                        <small class="text-muted" id="card-eps">32 Episode</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="card bg-transparent border-0">
+                     <a href=""><img src="assets/img/poster/potret/true-beauty.jpg" class="card-img-top thumbnail" /></a>
+                     <div class="card-body">
+                        <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">True Beauty</h6></a>
+                        <small class="text-muted" id="card-eps">16 Episode</small>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer class="bg-dark mt-4">
+         <div class="container-fluid pt-4 pb-3 px-3">
+            <div class="row">
+               <small class="text-light">
+                  &copy;Copyright 2021 R.S.P
+                  <span class="float-end" id="footer-icon">
+                     <a href="" class="text-danger footer-icon"><i class="fab fa-facebook"></i></a>
+                     <a href="" class="text-danger footer-icon"><i class="far fa-envelope"></i></a>
+                     <a href="" class="text-danger footer-icon"><i class="fab fa-instagram"></i></a>
+                     <a href="" class="text-danger footer-icon"><i class="fab fa-whatsapp"></i></a>
+                  </span>
+               </small>
+            </div>
+         </div>
+      </footer>
+
+      <!-- jquery -->
+      <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+      <!-- bootstrap -->
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+      <!-- scroll animation -->
+      <script src="assets/js/scrollreveal.min.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
