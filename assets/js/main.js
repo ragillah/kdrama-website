@@ -6,6 +6,6 @@ const sr = ScrollReveal({
    reset: true,
 });
 
-sr.reveal("#title-genre", {});
+// sr.reveal("#title-genre", {});
 sr.reveal("#card", { delay: 400 });
-sr.reveal(".card-img-top", { interval: 200 });
+sr.reveal(".kdrama", { interval: 200 });

@@ -13,13 +13,14 @@
       <!-- minecraft font -->
       <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraft" type="text/css" />
 
-      <link
+      <!-- <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
          crossorigin="anonymous"
          referrerpolicy="no-referrer"
-      />
+      /> -->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
       <!-- title -->
       <title>KDRAMA-SI</title>
@@ -85,9 +86,6 @@
                            </p>
                            <a id="btnPlay" href="" class="btn btn-danger rounded-circle"><i class="fa fa-play"></i></a>
                         </div>
-                        <div class="col-sm-2">
-                           <!-- <img src="assets/img/poster/potret/hospital-playlist.jpeg" class="img-fluid"> -->
-                        </div>
                      </div>
                   </div>
                </div>
@@ -100,13 +98,10 @@
                            <small id="slider-genre" class="badge bg-danger fw-light">Melodrama - Romance - Fantasy</small>
                            <small id="slider-eps" class="ps-1 slider-eps">2018 | 16 Episode</small>
                            <p id="desc">
-                              Kisah tentang seorang wanita bernama Nam Hong-joo yang dapat melihat peristiwa malang yang akan menimpa orang lain di dalam mimpinya, dan seorang jaksa bernama Jung Jae-chan yang
-                              melakukan semua yang ia bisa untuk mencegah mimpi wanita tersebut menjadi kenyataan.
+                              Kisah tentang seorang wanita bernama Nam Hong-joo yang dapat melihat peristiwa malang yang akan menimpa orang lain di dalam mimpinya, dan seorang jaksa bernama Jung Jae-chan yang melakukan semua yang ia bisa
+                              untuk mencegah mimpi wanita tersebut menjadi kenyataan.
                            </p>
                            <a id="btnPlay" href="" class="btn btn-danger rounded-circle"><i class="fa fa-play"></i></a>
-                        </div>
-                        <div class="col-sm-2">
-                           <!-- <img src="assets/img/poster/potret/hospital-playlist.jpeg" class="img-fluid"> -->
                         </div>
                      </div>
                   </div>
@@ -120,12 +115,10 @@
                            <small id="slider-genre" class="badge bg-danger fw-light">Action - Thriller</small>
                            <small id="slider-eps" class="ps-1">2019 | 16 Episode</small>
                            <p id="desc">
-                              Sebuah kecelakaan pesawat misterius menewaskan lebih dari 200 warga sipil termasuk keponakan Cha Dal-gun. Bertekad untuk mencari tahu kebenaran di balik kecelakaan itu, ia melakukan penyelidikan yang membawanya ke jaringan korupsi yang rumit. Hidupnya pun terhubung dengan Go Hae-ri yang merupakan seorang agen rahasia untuk Badan Intelijen Nasional.
+                              Sebuah kecelakaan pesawat misterius menewaskan lebih dari 200 warga sipil termasuk keponakan Cha Dal-gun. Bertekad untuk mencari tahu kebenaran di balik kecelakaan itu, ia melakukan penyelidikan yang membawanya
+                              ke jaringan korupsi yang rumit. Hidupnya pun terhubung dengan Go Hae-ri yang merupakan seorang agen rahasia untuk Badan Intelijen Nasional.
                            </p>
                            <a id="btnPlay" href="" class="btn btn-danger rounded-circle"><i class="fa fa-play"></i></a>
-                        </div>
-                        <div class="col-sm-2">
-                           <!-- <img src="assets/img/poster/potret/hospital-playlist.jpeg" class="img-fluid"> -->
                         </div>
                      </div>
                   </div>
@@ -145,9 +138,234 @@
       <section id="act">
          <div class="container-fluid px-3 mt-4">
             <small class="text-light title-genre" id="title-genre"
-               >Actor - Actress <a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-eye"></i></a
+               >Actor - Actress <a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-user-friends"></i></a
             ></small>
-            <div class="row row-cols-3 g-3 mt-3">
+            <div id="carouselAct" class="carousel carousel-light slide" data-bs-ride="carousel">
+               <!-- <div class="carousel-indicators visually-hidden">
+                  <button type="button" data-bs-target="#carouselAct" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselAct" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselAct" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               </div> -->
+               <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                     <img src="assets/img/poster/landscape/slider/hospital-playlist.jpg" class="slider-act d-block w-100" />
+                     <div class="carousel-caption carousel-caption-act">
+                        <div class="row row-cols-3 g-3 mt-3">
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0">
+                                    <a href=""><img src="assets/img/aktor/jung-hae-in.png" class="card-img-top thumbnail rounded-circle" /></a>
+                                    <div class="card-body" id="card-actor">
+                                       <a href="" class="text-decoration-none" id="title"><h6 class="card-name-acttle" id="name-act">Jung Hae In</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/song-joong-ki.png" class="card-img-top thumbnail" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Song Joong Ki</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/park-seo-joon.png" class="card-img-top thumbnail" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Park Seo Joon</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/bae-suzy.png" class="card-img-top thumbnail" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Bae Suzy</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/yoona.png" class="card-img-top thumbnail" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Lim Yoona</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/krystal.png" class="card-img-top thumbnail" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Krystal Jung</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                     <img src="assets/img/poster/landscape/slider/while-you-were-sleeping.jpg" class="slider-act d-block w-100" alt="..." />
+                     <div class="carousel-caption carousel-caption-act">
+                        <div class="row row-cols-3 g-3 mt-3">
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/lee-jong-suk.png" class="card-img-top thumbnail" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Lee Jong Suk</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/lee-min-ho.png" class="card-img-top thumbnail" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Lee Min Ho</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/ji-chang-wook.png" class="card-img-top thumbnail" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Ji Chang Wook</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/park-min-young.png" class="card-img-top thumbnail" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Park Min Young</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/kim-ji-won.png" class="card-img-top thumbnail" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Kim Ji Won</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/kim-so-hyun.png" class="card-img-top thumbnail" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Kim So Hyun</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- <div class="carousel-item act-none d-none" data-bs-interval="3000">
+                     <img src="assets/img/poster/landscape/slider/vagabond.jpg" class="slider-act d-block w-100" alt="..." />
+                     <div class="carousel-caption carousel-caption-act">
+                        <div class="row row-cols-3 g-3 mt-3">
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0">
+                                    <a href=""><img src="assets/img/aktor/jung-hae-in.png" class="card-img-top thumbnail rounded-circle" /></a>
+                                    <div class="card-body" id="card-actor">
+                                       <a href="" class="text-decoration-none" id="title"><h6 class="card-title" id="name-act">Jung Hae In</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/song-joong-ki.png" class="card-img-top thumbnail kdrama" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Song Joong Ki</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/park-seo-joon.png" class="card-img-top thumbnail kdrama" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Park Seo Joon</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item act-none d-none" data-bs-interval="3000">
+                     <img src="assets/img/poster/landscape/slider/vagabond.jpg" class="slider-act d-block w-100" alt="..." />
+                     <div class="carousel-caption carousel-caption-act">
+                        <div class="row row-cols-3 g-3 mt-3">
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/bae-suzy.png" class="card-img-top thumbnail kdrama" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Bae Suzy</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/yoona.png" class="card-img-top thumbnail kdrama" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Lim Yoona</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                           <div class="col-md-2">
+                              <center>
+                                 <div class="card bg-transparent border-0 card-actor">
+                                    <a href=""><img src="assets/img/aktor/krystal.png" class="card-img-top thumbnail kdrama" /></a>
+                                    <div class="card-body">
+                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Krystal Jung</h6></a>
+                                    </div>
+                                 </div>
+                              </center>
+                           </div>
+                        </div>
+                     </div>
+                  </div> -->
+               </div>
+               <button id="carousel-control-prev-act" class="carousel-control-prev" type="button" data-bs-target="#carouselAct" data-bs-slide="prev">
+                  <span class="fa fa-chevron-left fa-3x" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+               </button>
+               <button id="carousel-control-next-act" class="carousel-control-next" type="button" data-bs-target="#carouselAct" data-bs-slide="next">
+                  <span class="fa fa-chevron-right fa-3x" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+               </button>
+            </div>
+            <!-- <div class="row row-cols-3 g-3 mt-3">
                <div class="col-md-2">
                   <center>
                      <div class="card bg-transparent border-0">
@@ -161,7 +379,7 @@
                <div class="col-md-2">
                   <center>
                      <div class="card bg-transparent border-0 card-actor">
-                        <a href=""><img src="assets/img/aktor/song-joong-ki.png" class="card-img-top thumbnail" /></a>
+                        <a href=""><img src="assets/img/aktor/song-joong-ki.png" class="card-img-top thumbnail kdrama" /></a>
                         <div class="card-body">
                            <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Song Joong Ki</h6></a>
                         </div>
@@ -171,7 +389,7 @@
                <div class="col-md-2">
                   <center>
                      <div class="card bg-transparent border-0 card-actor">
-                        <a href=""><img src="assets/img/aktor/park-seo-joon.png" class="card-img-top thumbnail" /></a>
+                        <a href=""><img src="assets/img/aktor/park-seo-joon.png" class="card-img-top thumbnail kdrama" /></a>
                         <div class="card-body">
                            <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Park Seo Joon</h6></a>
                         </div>
@@ -181,7 +399,7 @@
                <div class="col-md-2">
                   <center>
                      <div class="card bg-transparent border-0 card-actor">
-                        <a href=""><img src="assets/img/aktor/bae-suzy.png" class="card-img-top thumbnail" /></a>
+                        <a href=""><img src="assets/img/aktor/bae-suzy.png" class="card-img-top thumbnail kdrama" /></a>
                         <div class="card-body">
                            <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Bae Suzy</h6></a>
                         </div>
@@ -191,7 +409,7 @@
                <div class="col-md-2">
                   <center>
                      <div class="card bg-transparent border-0 card-actor">
-                        <a href=""><img src="assets/img/aktor/yoona.png" class="card-img-top thumbnail" /></a>
+                        <a href=""><img src="assets/img/aktor/yoona.png" class="card-img-top thumbnail kdrama" /></a>
                         <div class="card-body">
                            <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Lim Yoona</h6></a>
                         </div>
@@ -201,14 +419,14 @@
                <div class="col-md-2">
                   <center>
                      <div class="card bg-transparent border-0 card-actor">
-                        <a href=""><img src="assets/img/aktor/krystal.png" class="card-img-top thumbnail" /></a>
+                        <a href=""><img src="assets/img/aktor/krystal.png" class="card-img-top thumbnail kdrama" /></a>
                         <div class="card-body">
                            <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Krystal Jung</h6></a>
                         </div>
                      </div>
                   </center>
                </div>
-            </div>
+            </div> -->
          </div>
       </section>
 
@@ -216,13 +434,13 @@
          <div class="container-fluid px-3 mt-4">
             <!-- Action -->
             <small class="text-light title-genre" id="title-genre"
-               >Action - Thriller <a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-eye"></i></a
+               >Action - Thriller <a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-sword"></i></a
             ></small>
             <div class="row row-cols-2 mt-3 g-3">
                <!-- section K2 -->
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href="" data-bs-toggle="modal" data-bs-target="#K2Modal"><img src="assets/img/poster/potret/k2.jpg" class="card-img-top thumbnail" /></a>
+                     <a href="" data-bs-toggle="modal" data-bs-target="#K2Modal"><img src="assets/img/poster/potret/k2.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#K2Modal"><h6 class="card-title" id="h6">The K2</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
@@ -289,7 +507,7 @@
                <!-- section Voice -->
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href="" data-bs-toggle="modal" data-bs-target="#VoiceModal"><img src="assets/img/poster/potret/voice.jpg" class="card-img-top thumbnail" /></a>
+                     <a href="" data-bs-toggle="modal" data-bs-target="#VoiceModal"><img src="assets/img/poster/potret/voice.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#VoiceModal"><h6 class="card-title" id="h6">Voice</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
@@ -356,7 +574,7 @@
                <!-- section MadDog -->
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href="" data-bs-toggle="modal" data-bs-target="#MadDogModal"><img src="assets/img/poster/potret/mad-dog.jpg" class="card-img-top thumbnail" /></a>
+                     <a href="" data-bs-toggle="modal" data-bs-target="#MadDogModal"><img src="assets/img/poster/potret/mad-dog.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" data-bs-toggle="modal" data-bs-target="#MadDogModal" class="text-decoration-none"><h6 class="card-title" id="h6">Mad Dog</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
@@ -417,7 +635,7 @@
                <!-- section Player -->
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href="" data-bs-toggle="modal" data-bs-target="#PlayerModal"><img src="assets/img/poster/potret/player.jpg" class="card-img-top thumbnail" /></a>
+                     <a href="" data-bs-toggle="modal" data-bs-target="#PlayerModal"><img src="assets/img/poster/potret/player.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" data-bs-toggle="modal" data-bs-target="#PlayerModal" class="text-decoration-none"><h6 class="card-title" id="h6">The Player</h6></a>
                         <small class="text-muted" id="card-eps">14 Episode</small>
@@ -478,7 +696,7 @@
                <!-- section Vagabond -->
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href="" data-bs-toggle="modal" data-bs-target="#VagabondModal"><img src="assets/img/poster/potret/vagabond.jpg" class="card-img-top thumbnail" /></a>
+                     <a href="" data-bs-toggle="modal" data-bs-target="#VagabondModal"><img src="assets/img/poster/potret/vagabond.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" data-bs-toggle="modal" data-bs-target="#VagabondModal" class="text-decoration-none"><h6 class="card-title" id="h6">Vagabond</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
@@ -539,7 +757,7 @@
                <!-- section Vincenzo -->
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href="" data-bs-toggle="modal" data-bs-target="#VincenzoModal"><img src="assets/img/poster/potret/vincenzo.jpg" class="card-img-top thumbnail" /></a>
+                     <a href="" data-bs-toggle="modal" data-bs-target="#VincenzoModal"><img src="assets/img/poster/potret/vincenzo.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" data-bs-toggle="modal" data-bs-target="#VincenzoModal" class="text-decoration-none"><h6 class="card-title" id="h6">Vincenzo</h6></a>
                         <small class="text-muted" id="card-eps">20 Episode</small>
@@ -611,12 +829,12 @@
          <div class="container-fluid px-3 mt-4">
             <!-- Slice of Life -->
             <small class="text-light title-genre" id="title-genre"
-               >Slice of Life<a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-eye"></i></a
+               >Slice of Life<a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-leaf"></i></a
             ></small>
             <div class="row row-cols-2 mt-3 g-3">
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/fight-for-my-way.jpg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/fight-for-my-way.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Fight For My Way</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
@@ -625,7 +843,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/prison-playbook.jpg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/prison-playbook.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Prison Playbook</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
@@ -634,7 +852,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/hospital-playlist.jpeg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/hospital-playlist.jpeg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Hospital Playlist</h6></a>
                         <small class="text-muted" id="card-eps">24 Episode</small>
@@ -643,7 +861,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/record-of-youth.jpg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/record-of-youth.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Record of Youth</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
@@ -652,7 +870,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/start-up.jpg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/start-up.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Start Up</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
@@ -661,7 +879,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/hush.jpg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/hush.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Hush</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
@@ -676,12 +894,12 @@
          <div class="container-fluid px-3 mt-4">
             <!-- Melodrama -->
             <small class="text-light title-genre" id="title-genre"
-               >Romance - Melodrama<a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-eye"></i></a
+               >Romance - Melodrama<a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-heart"></i></a
             ></small>
             <div class="row row-cols-2 mt-3 g-3">
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/while-you-were-sleeping.jpg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/while-you-were-sleeping.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6" id="small">While You Were Sleeping</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
@@ -690,7 +908,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/tempted.png" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/tempted.png" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Tempted</h6></a>
                         <small class="text-muted" id="card-eps">32 Episode</small>
@@ -699,7 +917,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/one-spring-night.jpg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/one-spring-night.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">One Spring Night</h6></a>
                         <small class="text-muted" id="card-eps">32 Episode</small>
@@ -708,7 +926,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/a-piece-of-your-mind.jpeg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/a-piece-of-your-mind.jpeg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">A Piece of Your Mind</h6></a>
                         <small class="text-muted" id="card-eps">12 Episode</small>
@@ -717,7 +935,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/its-okay-to-not-be-okay.jpeg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/its-okay-to-not-be-okay.jpeg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6" id="small">It's Okay to Not Be Okay</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
@@ -726,7 +944,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/do-you-like-brahms.jpg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/do-you-like-brahms.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Do You Like Brahms?</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
@@ -741,12 +959,12 @@
          <div class="container-fluid px-3 mt-4">
             <!-- School -->
             <small class="text-light title-genre" id="title-genre"
-               >School<a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-eye"></i></a
+               >School<a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-graduation-cap"></i></a
             ></small>
             <div class="row row-cols-2 mt-3 g-3">
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/heirs.jpg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/heirs.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6" id="small">The Heirs</h6></a>
                         <small class="text-muted" id="card-eps">20 Episode</small>
@@ -755,7 +973,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/school-2015.jpg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/school-2015.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">School 2015</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
@@ -764,7 +982,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/school-2017.jpg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/school-2017.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">School 2017</h6></a>
                         <small class="text-muted" id="card-eps">12 Episode</small>
@@ -773,7 +991,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/love-alarm.jpg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/love-alarm.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6" id="small">Love Alarm</h6></a>
                         <small class="text-muted" id="card-eps">14 Episode</small>
@@ -782,7 +1000,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/extraordinary-you.jpeg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/extraordinary-you.jpeg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Extraordinary You</h6></a>
                         <small class="text-muted" id="card-eps">32 Episode</small>
@@ -791,7 +1009,7 @@
                </div>
                <div class="col-md-2">
                   <div class="card bg-transparent border-0">
-                     <a href=""><img src="assets/img/poster/potret/true-beauty.jpg" class="card-img-top thumbnail" /></a>
+                     <a href=""><img src="assets/img/poster/potret/true-beauty.jpg" class="card-img-top thumbnail kdrama" /></a>
                      <div class="card-body">
                         <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">True Beauty</h6></a>
                         <small class="text-muted" id="card-eps">16 Episode</small>
