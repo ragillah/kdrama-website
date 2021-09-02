@@ -3,107 +3,30 @@ body {
    font-family: "Noto Sans", sans-serif;
 }
 
+/* Style's background color */
+.bg-grey {
+   background: #343d50;
+}
+
+/* Style's section navbar */
 .navbar {
    opacity: 90%;
 }
-
 .nav-link {
    font-weight: 500;
 }
 .nav-link:hover {
    color: #f2f2f2;
 }
-
-/* .border-bottom-nav{
-    border-bottom: 3px solid lightgrey;
-} */
-
 .text-mc {
    font-family: "MinecrafterAltRegular";
 }
-.date {
-   font-weight: 400;
-   font-size: 13px;
-}
 
-.wrapper_content_box {
-   position: relative;
-   width: 100%;
-   background-color: #fff;
-   margin-bottom: 30px;
-}
-
-.wrapper_content_box {
-   box-shadow: 0 2px 2px rgb(0 0 0 / 24%), 0 0 2px rgb(0 0 0 / 12%);
-}
-
-.wrapper_content_box.style2 {
-   overflow: visible;
-   margin-bottom: 50px;
-   border: 1px solid #ddd;
-   border-radius: 10px;
-}
-
-.wrapper_content_box_heading_title {
-   width: 100%;
-   background-color: #fff;
-   padding: 15px 10px 10px 10px;
-   border-bottom: 1px solid #eee;
-}
-
-.wrapper_content_box_heading_title {
-   border-bottom: none;
-}
-
-.wrapper_content_box.style2 .wrapper_content_box_heading_title {
-   text-align: center;
-   background: #cb202d;
-   color: #fff;
-   position: relative;
-   display: inline-block;
-   left: 50%;
-   min-width: 300px;
-   width: auto;
-   transform: translateX(-50%) translateY(-50%);
-   border-radius: 7px;
-}
-
-.wrapper_content_box.style2 .wrapper_content_box_heading_title h3 {
-   color: #fff;
-   font-size: 18px;
-}
-
-.fa-star:hover {
-   cursor: pointer;
-}
-
+/* Style's section slider/carousel */
 .slider {
    height: 625px;
    opacity: 50%;
 }
-
-.thumbnail:hover {
-   opacity: 80%;
-}
-
-#h6:hover {
-   color: #e34446;
-   font-weight: bold;
-}
-
-#name-act:hover {
-   color: #e34446;
-   font-weight: bold;
-}
-
-#name-act {
-   color: #f2f2f2;
-}
-
-#h6 {
-   color: #f2f2f2;
-}
-
 .slider-title {
    font-size: 28px;
 }
@@ -112,33 +35,18 @@ body {
    font-size: 15px;
 }
 
-#title-genre {
-   text-transform: uppercase;
-   font-size: 1.25rem !important;
+/* Style's section actor/actress */
+#slider-act {
+   height: 280px;
+   opacity: 0%;
 }
-
-#btn-eye {
-   margin-top: -3px;
+#name-act:hover {
+   color: #e34446;
+   font-weight: bold;
 }
-
-footer {
-   font-size: 18px;
+#name-act {
+   color: #f2f2f2;
 }
-
-.footer-icon {
-   font-size: 20px;
-   padding: 0px 1px;
-}
-
-.list-group-item {
-   font-size: 14px;
-   font-weight: 600;
-}
-
-.bg-grey {
-   background: #343d50;
-}
-
 .carousel-caption-act {
    position: absolute;
    right: 5%;
@@ -168,25 +76,40 @@ footer {
    transition: 0.15s ease;
 }
 
-#slider-act {
-   height: 280px;
-   opacity: 0%;
+/* Style's section drama */
+#h6 {
+   color: #f2f2f2;
+}
+#h6:hover {
+   color: #e34446;
+   font-weight: bold;
+}
+.thumbnail:hover {
+   opacity: 80%;
+}
+#title-genre {
+   font-size: 1.25rem;
+   text-transform: uppercase;
+}
+.list-group-item {
+   font-size: 14px;
+   font-weight: 600;
+}
+#btn-eye {
+   margin-top: -3px;
+}
+
+/* Style's section footer */
+footer {
+   font-size: 18px;
+}
+.footer-icon {
+   font-size: 20px;
+   padding: 0px 1px;
 }
 
 @media screen and (max-width: 540px) {
-   #name-act {
-      font-size: 15px;
-   }
-   #slider-act {
-      height: 25rem !important;
-      opacity: 0;
-   }
-   #carousel-control-prev-act,
-   #carousel-control-next-act {
-      width: 14px;
-      top: 25px;
-      bottom: 0;
-   }
+   /* Style's section navbar */
    .navbar {
       opacity: 85%;
    }
@@ -196,15 +119,13 @@ footer {
    #nav {
       padding: 0;
    }
+
+   /* Style's section slider/carousel */
    .slider {
       height: 300px;
    }
    .carousel-caption {
       bottom: 12.25rem;
-   }
-   .carousel-caption-act {
-      bottom: -10px;
-      padding: 0 15px;
    }
    #slider-item {
       padding-left: 1.8rem;
@@ -275,6 +196,30 @@ footer {
       opacity: 0.5;
       transition: opacity 0.6s ease;
    }
+
+   /* Style's section actor/actress*/
+   .g-3-none {
+      --bs-gutter-y: 0;
+   }
+   #name-act {
+      font-size: 15px;
+   }
+   #slider-act {
+      height: 24rem !important;
+      opacity: 0;
+   }
+   .carousel-caption-act {
+      bottom: -10px;
+      padding: 0 15px;
+   }
+   #carousel-control-prev-act,
+   #carousel-control-next-act {
+      width: 14px;
+      top: 25px;
+      bottom: 0;
+   }
+
+   /* Style's section drama */
    #title-genre {
       font-size: 18px;
    }
@@ -287,6 +232,8 @@ footer {
    #synopsis {
       font-size: 15px;
    }
+
+   /* Style's section footer */
    footer {
       font-size: 18px;
    }
@@ -296,17 +243,7 @@ footer {
 }
 
 @media screen and (max-width: 360px) {
-   /* .showNav {
-      background: #343d50;
-      font-size: 13px;
-   } */
-   #name-act {
-      font-size: 9px;
-   }
-   #slider-act {
-      height: 18rem !important;
-      opacity: 0;
-   }
+   /* Style's section navbar */
    .navbar {
       opacity: 85%;
    }
@@ -316,15 +253,13 @@ footer {
    #nav {
       padding: 0;
    }
+
+   /* Style's section slider/carousel */
    .slider {
       height: 285px;
    }
    .carousel-caption {
       bottom: 10.25rem;
-   }
-   .carousel-caption-act {
-      bottom: -10px;
-      padding: 0 15px;
    }
    #slider-item {
       padding-left: 1.8rem;
@@ -363,11 +298,6 @@ footer {
    .carousel-control-next {
       margin-right: 5px;
    }
-   #carousel-control-prev-act,
-   #carousel-control-next-act {
-      width: 3px;
-      bottom: 0;
-   }
    .carousel-indicators {
       position: absolute;
       right: 0;
@@ -400,6 +330,28 @@ footer {
       transition: opacity 0.6s ease;
    }
 
+   /* Style's section actor/actress*/
+   .g-3-none {
+      --bs-gutter-y: 0;
+   }
+   #name-act {
+      font-size: 9px;
+   }
+   #slider-act {
+      height: 17rem !important;
+      opacity: 0;
+   }
+   .carousel-caption-act {
+      bottom: -10px;
+      padding: 0 15px;
+   }
+   #carousel-control-prev-act,
+   #carousel-control-next-act {
+      width: 3px;
+      bottom: 0;
+   }
+
+   /* Style's section drama */
    #title-genre {
       font-size: 18px;
    }
@@ -410,8 +362,10 @@ footer {
       font-size: 12px;
    }
    #synopsis {
-      font-size: 14px;
+      font-size: 13px;
    }
+
+   /* Style's section footer */
    footer {
       font-size: 15px;
    }
@@ -421,10 +375,7 @@ footer {
 }
 
 @media screen and (max-width: 320px) {
-   /* .showNav {
-      background: #343d50;
-      font-size: 13px;
-   } */
+   /* Style's section navbar */
    .navbar {
       opacity: 85%;
    }
@@ -434,6 +385,8 @@ footer {
    #nav {
       padding: 0;
    }
+
+   /* Style's section slider/carousel */
    .slider {
       height: 285px;
    }
@@ -473,7 +426,87 @@ footer {
    .carousel-control-next {
       margin-right: 5px;
    }
+
+   /* Style's section actor/actress*/
+   .g-3-none {
+      --bs-gutter-y: 0;
+   }
+   #name-act {
+      font-size: 8px;
+   }
+   #slider-act {
+      height: 15rem !important;
+      opacity: 0;
+   }
+   .carousel-caption-act {
+      bottom: -15px;
+      padding: 0 15px;
+   }
+   #carousel-control-prev-act,
+   #carousel-control-next-act {
+      width: 3px;
+      bottom: 0;
+   }
+
+   /* Style's section drama */
    #title-genre {
       font-size: 14px;
    }
+   #h6 {
+      font-size: 13px;
+   }
+   #card-eps {
+      font-size: 12px;
+   }
+   #synopsis {
+      font-size: 12px;
+   }
 }
+
+/* .date {
+   font-weight: 400;
+   font-size: 13px;
+}
+.wrapper_content_box {
+   position: relative;
+   width: 100%;
+   background-color: #fff;
+   margin-bottom: 30px;
+}
+.wrapper_content_box {
+   box-shadow: 0 2px 2px rgb(0 0 0 / 24%), 0 0 2px rgb(0 0 0 / 12%);
+}
+.wrapper_content_box.style2 {
+   overflow: visible;
+   margin-bottom: 50px;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+}
+.wrapper_content_box_heading_title {
+   width: 100%;
+   background-color: #fff;
+   padding: 15px 10px 10px 10px;
+   border-bottom: 1px solid #eee;
+}
+.wrapper_content_box_heading_title {
+   border-bottom: none;
+}
+.wrapper_content_box.style2 .wrapper_content_box_heading_title {
+   text-align: center;
+   background: #cb202d;
+   color: #fff;
+   position: relative;
+   display: inline-block;
+   left: 50%;
+   min-width: 300px;
+   width: auto;
+   transform: translateX(-50%) translateY(-50%);
+   border-radius: 7px;
+}
+.wrapper_content_box.style2 .wrapper_content_box_heading_title h3 {
+   color: #fff;
+   font-size: 18px;
+}
+.fa-star:hover {
+   cursor: pointer;
+} */
