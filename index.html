@@ -137,7 +137,7 @@
 
       <section id="act">
          <div class="container-fluid px-3 mt-4">
-            <small class="text-light title-genre" id="title-genre"
+            <small class="text-light" id="title-genre"
                >Actor - Actress <a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-user-friends"></i></a
             ></small>
             <div id="carouselAct" class="carousel carousel-light slide" data-bs-ride="carousel">
@@ -148,7 +148,7 @@
                </div> -->
                <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="3000">
-                     <img src="assets/img/poster/landscape/slider/hospital-playlist.jpg" class="slider-act d-block w-100" />
+                     <img src="assets/img/poster/landscape/slider/hospital-playlist.jpg" id="slider-act" class="d-block w-100" />
                      <div class="carousel-caption carousel-caption-act">
                         <div class="row row-cols-3 g-3 mt-3">
                            <div class="col-md-2">
@@ -215,7 +215,7 @@
                      </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="3000">
-                     <img src="assets/img/poster/landscape/slider/while-you-were-sleeping.jpg" class="slider-act d-block w-100" alt="..." />
+                     <img src="assets/img/poster/landscape/slider/hospital-playlist.jpg" id="slider-act" class="d-block w-100" alt="..." />
                      <div class="carousel-caption carousel-caption-act">
                         <div class="row row-cols-3 g-3 mt-3">
                            <div class="col-md-2">
@@ -281,80 +281,6 @@
                         </div>
                      </div>
                   </div>
-                  <!-- <div class="carousel-item act-none d-none" data-bs-interval="3000">
-                     <img src="assets/img/poster/landscape/slider/vagabond.jpg" class="slider-act d-block w-100" alt="..." />
-                     <div class="carousel-caption carousel-caption-act">
-                        <div class="row row-cols-3 g-3 mt-3">
-                           <div class="col-md-2">
-                              <center>
-                                 <div class="card bg-transparent border-0">
-                                    <a href=""><img src="assets/img/aktor/jung-hae-in.png" class="card-img-top thumbnail rounded-circle" /></a>
-                                    <div class="card-body" id="card-actor">
-                                       <a href="" class="text-decoration-none" id="title"><h6 class="card-title" id="name-act">Jung Hae In</h6></a>
-                                    </div>
-                                 </div>
-                              </center>
-                           </div>
-                           <div class="col-md-2">
-                              <center>
-                                 <div class="card bg-transparent border-0 card-actor">
-                                    <a href=""><img src="assets/img/aktor/song-joong-ki.png" class="card-img-top thumbnail kdrama" /></a>
-                                    <div class="card-body">
-                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Song Joong Ki</h6></a>
-                                    </div>
-                                 </div>
-                              </center>
-                           </div>
-                           <div class="col-md-2">
-                              <center>
-                                 <div class="card bg-transparent border-0 card-actor">
-                                    <a href=""><img src="assets/img/aktor/park-seo-joon.png" class="card-img-top thumbnail kdrama" /></a>
-                                    <div class="card-body">
-                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Park Seo Joon</h6></a>
-                                    </div>
-                                 </div>
-                              </center>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item act-none d-none" data-bs-interval="3000">
-                     <img src="assets/img/poster/landscape/slider/vagabond.jpg" class="slider-act d-block w-100" alt="..." />
-                     <div class="carousel-caption carousel-caption-act">
-                        <div class="row row-cols-3 g-3 mt-3">
-                           <div class="col-md-2">
-                              <center>
-                                 <div class="card bg-transparent border-0 card-actor">
-                                    <a href=""><img src="assets/img/aktor/bae-suzy.png" class="card-img-top thumbnail kdrama" /></a>
-                                    <div class="card-body">
-                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Bae Suzy</h6></a>
-                                    </div>
-                                 </div>
-                              </center>
-                           </div>
-                           <div class="col-md-2">
-                              <center>
-                                 <div class="card bg-transparent border-0 card-actor">
-                                    <a href=""><img src="assets/img/aktor/yoona.png" class="card-img-top thumbnail kdrama" /></a>
-                                    <div class="card-body">
-                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Lim Yoona</h6></a>
-                                    </div>
-                                 </div>
-                              </center>
-                           </div>
-                           <div class="col-md-2">
-                              <center>
-                                 <div class="card bg-transparent border-0 card-actor">
-                                    <a href=""><img src="assets/img/aktor/krystal.png" class="card-img-top thumbnail kdrama" /></a>
-                                    <div class="card-body">
-                                       <a href="" class="text-decoration-none"><h6 class="card-title" id="name-act">Krystal Jung</h6></a>
-                                    </div>
-                                 </div>
-                              </center>
-                           </div>
-                        </div>
-                     </div>
-                  </div> -->
                </div>
                <button id="carousel-control-prev-act" class="carousel-control-prev" type="button" data-bs-target="#carouselAct" data-bs-slide="prev">
                   <span class="fa fa-chevron-left fa-3x" aria-hidden="true"></span>
@@ -365,75 +291,13 @@
                   <span class="visually-hidden">Next</span>
                </button>
             </div>
-            <!-- <div class="row row-cols-3 g-3 mt-3">
-               <div class="col-md-2">
-                  <center>
-                     <div class="card bg-transparent border-0">
-                        <a href=""><img src="assets/img/aktor/jung-hae-in.png" class="card-img-top thumbnail rounded-circle" /></a>
-                        <div class="card-body" id="card-actor">
-                           <a href="" class="text-decoration-none" id="title"><h6 class="card-title" id="h6">Jung Hae In</h6></a>
-                        </div>
-                     </div>
-                  </center>
-               </div>
-               <div class="col-md-2">
-                  <center>
-                     <div class="card bg-transparent border-0 card-actor">
-                        <a href=""><img src="assets/img/aktor/song-joong-ki.png" class="card-img-top thumbnail kdrama" /></a>
-                        <div class="card-body">
-                           <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Song Joong Ki</h6></a>
-                        </div>
-                     </div>
-                  </center>
-               </div>
-               <div class="col-md-2">
-                  <center>
-                     <div class="card bg-transparent border-0 card-actor">
-                        <a href=""><img src="assets/img/aktor/park-seo-joon.png" class="card-img-top thumbnail kdrama" /></a>
-                        <div class="card-body">
-                           <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Park Seo Joon</h6></a>
-                        </div>
-                     </div>
-                  </center>
-               </div>
-               <div class="col-md-2">
-                  <center>
-                     <div class="card bg-transparent border-0 card-actor">
-                        <a href=""><img src="assets/img/aktor/bae-suzy.png" class="card-img-top thumbnail kdrama" /></a>
-                        <div class="card-body">
-                           <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Bae Suzy</h6></a>
-                        </div>
-                     </div>
-                  </center>
-               </div>
-               <div class="col-md-2">
-                  <center>
-                     <div class="card bg-transparent border-0 card-actor">
-                        <a href=""><img src="assets/img/aktor/yoona.png" class="card-img-top thumbnail kdrama" /></a>
-                        <div class="card-body">
-                           <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Lim Yoona</h6></a>
-                        </div>
-                     </div>
-                  </center>
-               </div>
-               <div class="col-md-2">
-                  <center>
-                     <div class="card bg-transparent border-0 card-actor">
-                        <a href=""><img src="assets/img/aktor/krystal.png" class="card-img-top thumbnail kdrama" /></a>
-                        <div class="card-body">
-                           <a href="" class="text-decoration-none"><h6 class="card-title" id="h6">Krystal Jung</h6></a>
-                        </div>
-                     </div>
-                  </center>
-               </div>
-            </div> -->
          </div>
       </section>
 
       <section id="dramaAction">
          <div class="container-fluid px-3 mt-4">
             <!-- Action -->
-            <small class="text-light title-genre" id="title-genre"
+            <small class="text-light" id="title-genre"
                >Action - Thriller <a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-sword"></i></a
             ></small>
             <div class="row row-cols-2 mt-3 g-3">
@@ -828,7 +692,7 @@
       <section id="dramaSliceOfLife">
          <div class="container-fluid px-3 mt-4">
             <!-- Slice of Life -->
-            <small class="text-light title-genre" id="title-genre"
+            <small class="text-light" id="title-genre"
                >Slice of Life<a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-leaf"></i></a
             ></small>
             <div class="row row-cols-2 mt-3 g-3">
@@ -893,7 +757,7 @@
       <section id="dramaRomance">
          <div class="container-fluid px-3 mt-4">
             <!-- Melodrama -->
-            <small class="text-light title-genre" id="title-genre"
+            <small class="text-light" id="title-genre"
                >Romance - Melodrama<a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-heart"></i></a
             ></small>
             <div class="row row-cols-2 mt-3 g-3">
@@ -958,7 +822,7 @@
       <section id="dramaSchool">
          <div class="container-fluid px-3 mt-4">
             <!-- School -->
-            <small class="text-light title-genre" id="title-genre"
+            <small class="text-light" id="title-genre"
                >School<a id="btn-eye" href="" class="btn btn-outline-danger rounded-circle float-end"><i class="fa fa-graduation-cap"></i></a
             ></small>
             <div class="row row-cols-2 mt-3 g-3">
