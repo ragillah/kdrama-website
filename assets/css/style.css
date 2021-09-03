@@ -73,7 +73,7 @@ body {
    background: none;
    border: 0;
    opacity: 0.5;
-   transition: 0.15s ease;
+   transition: opacity 0.15s ease;
 }
 
 /* Style's section drama */
@@ -111,7 +111,7 @@ footer {
 @media screen and (max-width: 540px) {
    /* Style's section navbar */
    .navbar {
-      opacity: 85%;
+      opacity: 80%;
    }
    #navbar-toggler {
       margin: 0;
@@ -122,7 +122,7 @@ footer {
 
    /* Style's section slider/carousel */
    .slider {
-      height: 300px;
+      height: 18.75rem;
    }
    .carousel-caption {
       bottom: 12.25rem;
@@ -130,46 +130,46 @@ footer {
    #slider-item {
       padding-left: 1.8rem;
       position: absolute;
-      top: 10px;
+      top: 0.625rem;
    }
    #slider-title {
-      padding-bottom: 3px;
-      font-size: 20px;
+      padding-bottom: 0.188rem;
+      font-size: 1.25rem;
       display: block;
    }
    #slider-genre {
-      font-size: 13px;
+      font-size: 0.813rem;
       display: block;
       width: max-content;
    }
    .slider-eps {
-      font-size: 13px;
+      font-size: 0.813rem;
    }
    #btnPlay {
-      margin-top: 5px;
+      margin-top: 0.313rem;
       display: block;
       width: max-content;
-      font-size: 12px;
+      font-size: 0.75rem;
    }
    #desc {
       display: none;
    }
    .carousel-control-prev,
    .carousel-control-next {
-      font-size: 11px;
-      top: 40px;
+      font-size: 0.688rem;
+      top: 2.5rem;
    }
    .carousel-control-prev {
-      margin-left: 5px;
+      margin-left: 0.625rem;
    }
    .carousel-control-next {
-      margin-right: 5px;
+      margin-right: 0.625rem;
    }
    .carousel-indicators {
       position: absolute;
       right: 0;
-      bottom: 0;
-      left: 0;
+      bottom: 0.625rem;
+      left: 0.75rem;
       z-index: 2;
       display: flex;
       justify-content: center;
@@ -181,11 +181,11 @@ footer {
    .carousel-indicators [data-bs-target] {
       box-sizing: content-box;
       flex: 0 1 auto;
-      width: 20px;
-      height: 2.5px;
+      width: 1.563rem;
+      height: 0.188rem;
       padding: 0;
-      margin-right: 3px;
-      margin-left: 3px;
+      margin-right: 0.188rem;
+      margin-left: 0.188rem;
       text-indent: -999px;
       cursor: pointer;
       background-color: #fff;
@@ -202,50 +202,50 @@ footer {
       --bs-gutter-y: 0;
    }
    #name-act {
-      font-size: 15px;
+      font-size: 0.938rem;
    }
    #slider-act {
       height: 24rem !important;
       opacity: 0;
    }
    .carousel-caption-act {
-      bottom: -10px;
-      padding: 0 15px;
+      bottom: -0.625rem;
+      padding: 0 0.938rem;
    }
    #carousel-control-prev-act,
    #carousel-control-next-act {
-      width: 14px;
-      top: 25px;
+      width: 0.875rem;
+      top: 1.563rem;
       bottom: 0;
    }
 
    /* Style's section drama */
    #title-genre {
-      font-size: 18px;
+      font-size: 1.125rem;
    }
    #h6 {
-      font-size: 17px;
+      font-size: 1.063rem;
    }
    #card-eps {
-      font-size: 15px;
+      font-size: 0.938rem;
    }
    #synopsis {
-      font-size: 15px;
+      font-size: 0.938rem;
    }
 
    /* Style's section footer */
    footer {
-      font-size: 18px;
+      font-size: 1.125rem;
    }
    #footer-icon {
-      margin-top: -3px;
+      margin-top: -0.188rem;
    }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
    /* Style's section navbar */
    .navbar {
-      opacity: 85%;
+      opacity: 80%;
    }
    #navbar-toggler {
       margin: 0;
@@ -256,19 +256,19 @@ footer {
 
    /* Style's section slider/carousel */
    .slider {
-      height: 285px;
+      height: 17.813rem;
    }
    .carousel-caption {
-      bottom: 10.25rem;
+      bottom: 11.25rem;
    }
    #slider-item {
       padding-left: 1.8rem;
       position: absolute;
-      top: 10px;
+      top: 0.625rem;
    }
    #slider-title {
-      padding-bottom: 3px;
-      font-size: 17px;
+      padding-bottom: 0.188rem;
+      font-size: 1.063rem;
       display: block;
    }
    #slider-genre {
@@ -276,27 +276,159 @@ footer {
       width: max-content;
    }
    .slider-eps {
-      font-size: 11px;
+      font-size: 0.688rem;
    }
    #btnPlay {
-      margin-top: 5px;
+      margin-top: 0.313rem;
       display: block;
       width: max-content;
-      font-size: 10px;
+      font-size: 0.625rem;
    }
    #desc {
       display: none;
    }
    .carousel-control-prev,
    .carousel-control-next {
-      font-size: 11px;
-      top: 60px;
+      font-size: 0.688rem;
+      top: 3.75rem;
    }
    .carousel-control-prev {
-      margin-left: 5px;
+      margin-left: 0.625rem;
    }
    .carousel-control-next {
-      margin-right: 5px;
+      margin-right: 0.625rem;
+   }
+   .carousel-indicators {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0.938;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-bottom: 1rem;
+      margin-left: 65%;
+      list-style: none;
+   }
+   .carousel-indicators [data-bs-target] {
+      box-sizing: content-box;
+      flex: 0 1 auto;
+      width: 1.25rem;
+      height: 0.156rem;
+      padding: 0;
+      margin-right: 0.188rem;
+      margin-left: 0.188rem;
+      text-indent: -999px;
+      cursor: pointer;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      opacity: 0.5;
+      transition: opacity 0.6s ease;
+   }
+
+   /* Style's section actor/actress*/
+   .g-3-none {
+      --bs-gutter-y: 0;
+   }
+   #name-act {
+      font-size: 0.813rem;
+   }
+   #slider-act {
+      height: 21rem !important;
+      opacity: 0;
+   }
+   .carousel-caption-act {
+      bottom: -0.625rem;
+      padding: 0 0.938rem;
+   }
+   #carousel-control-prev-act,
+   #carousel-control-next-act {
+      width: 0.813rem;
+      bottom: 0.625rem;
+   }
+
+   /* Style's section drama */
+   #title-genre {
+      font-size: 1.125rem;
+   }
+   #h6 {
+      font-size: 0.969rem;
+   }
+   #card-eps {
+      font-size: 0.875rem;
+   }
+   #synopsis {
+      font-size: 0.938rem;
+   }
+
+   /* Style's section footer */
+   footer {
+      font-size: 1.063rem;
+   }
+   #footer-icon {
+      margin-top: -0.188rem;
+   }
+}
+
+@media screen and (max-width: 360px) {
+   /* Style's section navbar */
+   .navbar {
+      opacity: 80%;
+   }
+   #navbar-toggler {
+      margin: 0;
+   }
+   #nav {
+      padding: 0;
+   }
+
+   /* Style's section slider/carousel */
+   .slider {
+      height: 17.813rem;
+   }
+   .carousel-caption {
+      bottom: 11.25rem;
+   }
+   #slider-item {
+      padding-left: 1.8rem;
+      position: absolute;
+      top: 0.625rem;
+   }
+   #slider-title {
+      padding-bottom: 0.188rem;
+      font-size: 1.063rem;
+      display: block;
+   }
+   #slider-genre {
+      display: block;
+      width: max-content;
+   }
+   .slider-eps {
+      font-size: 0.688rem;
+   }
+   #btnPlay {
+      margin-top: 0.313rem;
+      display: block;
+      width: max-content;
+      font-size: 0.625rem;
+   }
+   #desc {
+      display: none;
+   }
+   .carousel-control-prev,
+   .carousel-control-next {
+      font-size: 0.688rem;
+      top: 3.75rem;
+   }
+   .carousel-control-prev {
+      margin-left: 0.625rem;
+   }
+   .carousel-control-next {
+      margin-right: 0.625rem;
    }
    .carousel-indicators {
       position: absolute;
@@ -314,11 +446,11 @@ footer {
    .carousel-indicators [data-bs-target] {
       box-sizing: content-box;
       flex: 0 1 auto;
-      width: 20px;
-      height: 2.5px;
+      width: 1.25rem;
+      height: 0.156rem;
       padding: 0;
-      margin-right: 3px;
-      margin-left: 3px;
+      margin-right: 0.188rem;
+      margin-left: 0.188rem;
       text-indent: -999px;
       cursor: pointer;
       background-color: #fff;
@@ -335,49 +467,49 @@ footer {
       --bs-gutter-y: 0;
    }
    #name-act {
-      font-size: 9px;
+      font-size: 0.563rem;
    }
    #slider-act {
-      height: 17rem !important;
+      height: 16rem !important;
       opacity: 0;
    }
    .carousel-caption-act {
-      bottom: -10px;
-      padding: 0 15px;
+      bottom: -0.625rem;
+      padding: 0 0.938rem;
    }
    #carousel-control-prev-act,
    #carousel-control-next-act {
-      width: 3px;
-      bottom: 0;
+      width: 0.313rem;
+      bottom: 0.438rem;
    }
 
    /* Style's section drama */
    #title-genre {
-      font-size: 18px;
+      font-size: 1.125rem;
    }
    #h6 {
-      font-size: 13px;
+      font-size: 0.813rem;
    }
    #card-eps {
-      font-size: 12px;
+      font-size: 0.75rem;
    }
    #synopsis {
-      font-size: 13px;
+      font-size: 0.813rem;
    }
 
    /* Style's section footer */
    footer {
-      font-size: 15px;
+      font-size: 0.938;
    }
    #footer-icon {
-      margin-top: -3px;
+      margin-top: -0.188rem;
    }
 }
 
 @media screen and (max-width: 320px) {
    /* Style's section navbar */
    .navbar {
-      opacity: 85%;
+      opacity: 80%;
    }
    #navbar-toggler {
       margin: 0;
@@ -388,43 +520,44 @@ footer {
 
    /* Style's section slider/carousel */
    .slider {
-      height: 285px;
+      height: 17.813rem;
    }
    #slider-item {
       padding-left: 1.8rem;
       position: absolute;
-      top: 10px;
+      top: 0.625rem;
    }
    #slider-title {
-      padding-bottom: 3px;
-      font-size: 17px;
+      padding-bottom: 0.188rem;
+      font-size: 0.875rem;
       display: block;
    }
    #slider-genre {
+      font-size: 0.625;
       display: block;
       width: max-content;
    }
-   .slider-eps {
-      font-size: 11px;
+   #slider-eps {
+      font-size: 0.688rem;
    }
    #btnPlay {
-      margin-top: 5px;
+      margin-top: 0.313rem;
       display: block;
       width: max-content;
-      font-size: 10px;
+      font-size: 0.438rem;
    }
    #desc {
       display: none;
    }
    .carousel-control-prev,
    .carousel-control-next {
-      font-size: 11px;
+      font-size: 0.688rem;
    }
    .carousel-control-prev {
-      margin-left: 5px;
+      margin-left: 0.625rem;
    }
    .carousel-control-next {
-      margin-right: 5px;
+      margin-right: 0.625rem;
    }
 
    /* Style's section actor/actress*/
@@ -432,34 +565,34 @@ footer {
       --bs-gutter-y: 0;
    }
    #name-act {
-      font-size: 8px;
+      font-size: 0.5rem;
    }
    #slider-act {
-      height: 15rem !important;
+      height: 14rem !important;
       opacity: 0;
    }
    .carousel-caption-act {
-      bottom: -15px;
-      padding: 0 15px;
+      bottom: -0.938rem;
+      padding: 0 0.938rem;
    }
    #carousel-control-prev-act,
    #carousel-control-next-act {
-      width: 3px;
+      width: 0.188rem;
       bottom: 0;
    }
 
    /* Style's section drama */
    #title-genre {
-      font-size: 14px;
+      font-size: 0.875rem;
    }
    #h6 {
-      font-size: 13px;
+      font-size: 0.813rem;
    }
    #card-eps {
-      font-size: 12px;
+      font-size: 0.75rem;
    }
    #synopsis {
-      font-size: 12px;
+      font-size: 0.75rem;
    }
 }
 
