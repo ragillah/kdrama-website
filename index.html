@@ -33,10 +33,13 @@
                     <button id="navbar-toggler" class="navbar-toggler ms-2 my-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse showNav" id="navbarNav">
-                        <ul class="navbar-nav">
+                    <div class="collapse navbar-collapse ms-auto showNav" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-danger" id="active" href="#">Home</a>
+                            </li>
                             <li class="nav-item dropdown ps-2">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Drama </a>
+                                <a class="nav-link navs dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Drama </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Melodrama</a></li>
@@ -44,7 +47,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown ps-2">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Movie </a>
+                                <a class="nav-link navs dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Movie </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Melodrama</a></li>
@@ -52,9 +55,9 @@
                                 </ul>
                             </li>
                         </ul>
-                        <form action="" class="d-flex ms-auto mt-1 mb-2">
-                            <input type="search" class="form-control me-2 bg-light border-danger text-muted" placeholder="Search..." />
-                            <button class="btn btn-danger"><i class="fa fa-search"></i></button>
+                        <form action="" class="d-flex mt-1 mb-2">
+                            <input type="search" class="form-control bg-transparent border-danger border-end-0 text-danger" placeholder="search..." />
+                            <button class="btn btn-outline-danger btn-search"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
                 </div>
@@ -107,24 +110,111 @@
                                             <div class="col-md-6 ps-0">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Lee Woo-jung</span></li>
-                                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">24</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">12</span></li>
                                                     <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2020</span></li>
                                                     <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">tvN</span></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <h6 class="text-light pt-3">Sinopsis</h6>
+                                            <h6 class="text-light subtitle-modal">Sinopsis</h6>
                                             <p class="text-muted" id="synopsis">Hospital Playlist mengisahkan lima orang dokter yang bersahabat sejak kuliah. Mereka pada akhirnya bekerja di sebuah rumah sakit yang sama.</p>
                                             <p class="text-muted" id="synopsis">
                                                 Lima sahabat yakni Lee Ik Joon, Ahn Jung Won, Kim Joon Wan, Yang Seok Hyung, dan Chae Song Hwa, memiliki kehidupan yang sama-sama menarik. Mereka juga ahli di bidang kedokteran yang berbeda.
                                             </p>
                                         </div>
                                         <div class="row">
-                                            <h6 class="text-light">Trailer</h6>
-                                            <video controls>
-                                                <source src="assets/src/hospital-playlist-trailer.mp4" type="video/mp4" />
-                                            </video>
+                                            <h6 class="text-light subtitle-modal">Trailer</h6>
+                                            <iframe width="560" src="https://www.youtube.com/embed/bc8TCfhwAy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light subtitle-modal">Download</h6>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 1 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 2 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 3 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 4 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 5 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 6 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 7 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 8 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 9 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 10 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 11 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 12
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -188,9 +278,124 @@
                                         </div>
                                         <div class="row">
                                             <h6 class="text-light">Trailer</h6>
-                                            <video controls>
-                                                <source src="assets/src/while-you-were-sleeping-trailer.mp4" type="video/mp4" />
-                                            </video>
+                                            <iframe width="560" height="368" src="https://www.youtube.com/embed/8--Jj-iA0TY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light subtitle-modal">Download</h6>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 1 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 2 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 3 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 4 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 5 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 6 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 7 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 8 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 9 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 10 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 11 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 12
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 13
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 14
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 15
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 16
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -267,23 +472,25 @@
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Hangul : <span class="fw-normal text-muted">정해인</span></li>
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Tanggal Lahir : <span class="fw-normal text-muted">1 April 1988</span></li>
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Tinggi Badan : <span class="fw-normal text-muted">178 cm</span></li>
-                                                                    <li class="list-group-item item-act text-light text-start fw-normal ps-0">Instagram : <a target="_blank" class="fw-normal text-instagram text-decoration-none" href="https://www.instagram.com/holyhaein">@holyhaein</a></li>
+                                                                    <li class="list-group-item item-act text-light text-start fw-normal ps-0">
+                                                                        Instagram : <a target="_blank" class="fw-normal text-instagram text-decoration-none" href="https://www.instagram.com/holyhaein">@holyhaein</a>
+                                                                    </li>
                                                                 </ul>
                                                             </div>
                                                         </div>
-                                                        <h6 class="text-light text-subtitle-act text-start">Drama & Movie</h6>
+                                                        <h6 class="text-light subtitle-modal text-start">Drama & Movie</h6>
                                                         <div class="row row-cols-4 g-2">
                                                             <div class="col-md-3">
                                                                 <div class="card bg-transparent border-0">
                                                                     <img src="assets/img/poster/potret/while-you-were-sleeping.jpg" class="card-img-top thumbnail kdrama" />
+                                                                    <!-- <div class="card-body text-year-modal">
+                                                                        <h6>2017</h6>
+                                                                    </div> -->
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-3">
                                                                 <div class="card bg-transparent border-0">
                                                                     <img src="assets/img/poster/potret/prison-playbook.jpg" class="card-img-top thumbnail kdrama" />
-                                                                    <!-- <div class="card-body">
-                                                      <h6 class="subname-act">2017 (Yoo Jung Woo)</h6>
-                                                   </div> -->
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-3">
@@ -354,11 +561,13 @@
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Hangul : <span class="fw-normal text-muted">송중기</span></li>
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Tanggal Lahir : <span class="fw-normal text-muted">19 September 1985</span></li>
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Tinggi Badan : <span class="fw-normal text-muted">178 cm</span></li>
-                                                                    <li class="list-group-item item-act text-light text-start fw-normal ps-0">Instagram : <a target="_blank" class="fw-normal text-instagram text-decoration-none" href="https://www.instagram.com/hi_songjoongki">@hi_songjoongki</a></li>
+                                                                    <li class="list-group-item item-act text-light text-start fw-normal ps-0">
+                                                                        Instagram : <a target="_blank" class="fw-normal text-instagram text-decoration-none" href="https://www.instagram.com/hi_songjoongki">@hi_songjoongki</a>
+                                                                    </li>
                                                                 </ul>
                                                             </div>
                                                         </div>
-                                                        <h6 class="text-light text-subtitle-act text-start">Drama & Movie</h6>
+                                                        <h6 class="text-light subtitle-modal text-start">Drama & Movie</h6>
                                                         <div class="row row-cols-4 g-2">
                                                             <div class="col-md-3">
                                                                 <div class="card bg-transparent border-0">
@@ -453,11 +662,13 @@
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Hangul : <span class="fw-normal text-muted">이종석</span></li>
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Tanggal Lahir : <span class="fw-normal text-muted">14 September 1989</span></li>
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Tinggi Badan : <span class="fw-normal text-muted">186 cm</span></li>
-                                                                    <li class="list-group-item item-act text-light text-start fw-normal ps-0">Instagram : <a target="_blank" class="fw-normal text-instagram text-decoration-none" href="https://www.instagram.com/jongsuk0206">@jongsuk0206</a></li>
+                                                                    <li class="list-group-item item-act text-light text-start fw-normal ps-0">
+                                                                        Instagram : <a target="_blank" class="fw-normal text-instagram text-decoration-none" href="https://www.instagram.com/jongsuk0206">@jongsuk0206</a>
+                                                                    </li>
                                                                 </ul>
                                                             </div>
                                                         </div>
-                                                        <h6 class="text-light text-subtitle-act text-start">Drama & Movie</h6>
+                                                        <h6 class="text-light subtitle-modal text-start">Drama & Movie</h6>
                                                         <div class="row row-cols-4 g-2">
                                                             <div class="col-md-3">
                                                                 <div class="card bg-transparent border-0">
@@ -552,11 +763,13 @@
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Hangul : <span class="fw-normal text-muted">배수지</span></li>
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Tanggal Lahir : <span class="fw-normal text-muted">10 Oktober 1994</span></li>
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Tinggi Badan : <span class="fw-normal text-muted">167 cm</span></li>
-                                                                    <li class="list-group-item item-act text-light text-start fw-normal ps-0">Instagram : <a target="_blank" class="fw-normal text-instagram text-decoration-none" href="https://www.instagram.com/skuukzky">@skuukzky</a></li>
+                                                                    <li class="list-group-item item-act text-light text-start fw-normal ps-0">
+                                                                        Instagram : <a target="_blank" class="fw-normal text-instagram text-decoration-none" href="https://www.instagram.com/skuukzky">@skuukzky</a>
+                                                                    </li>
                                                                 </ul>
                                                             </div>
                                                         </div>
-                                                        <h6 class="text-light text-subtitle-act text-start">Drama & Movie</h6>
+                                                        <h6 class="text-light subtitle-modal text-start">Drama & Movie</h6>
                                                         <div class="row row-cols-4 g-2">
                                                             <div class="col-md-3">
                                                                 <div class="card bg-transparent border-0">
@@ -636,11 +849,13 @@
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Hangul : <span class="fw-normal text-muted">임윤아</span></li>
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Tanggal Lahir : <span class="fw-normal text-muted">30 Mei 1990</span></li>
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Tinggi Badan : <span class="fw-normal text-muted">168 cm</span></li>
-                                                                    <li class="list-group-item item-act text-light text-start fw-normal ps-0">Instagram : <a target="_blank" class="fw-normal text-instagram text-decoration-none" href="https://www.instagram.com/yoona__lim">@yoona__lim</a></li>
+                                                                    <li class="list-group-item item-act text-light text-start fw-normal ps-0">
+                                                                        Instagram : <a target="_blank" class="fw-normal text-instagram text-decoration-none" href="https://www.instagram.com/yoona__lim">@yoona__lim</a>
+                                                                    </li>
                                                                 </ul>
                                                             </div>
                                                         </div>
-                                                        <h6 class="text-light text-subtitle-act text-start">Drama & Movie</h6>
+                                                        <h6 class="text-light subtitle-modal text-start">Drama & Movie</h6>
                                                         <div class="row row-cols-4 g-2">
                                                             <div class="col-md-3">
                                                                 <div class="card bg-transparent border-0">
@@ -720,11 +935,13 @@
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Hangul : <span class="fw-normal text-muted">정수정</span></li>
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Tanggal Lahir : <span class="fw-normal text-muted">24 Oktober 1994</span></li>
                                                                     <li class="list-group-item item-act text-light text-start fw-normal ps-0">Tinggi Badan : <span class="fw-normal text-muted">165 cm</span></li>
-                                                                    <li class="list-group-item item-act text-light text-start fw-normal ps-0">Instagram : <a target="_blank" class="fw-normal text-instagram text-decoration-none" href="https://www.instagram.com/vousmevoyez">@vousmevoyez</a></li>
+                                                                    <li class="list-group-item item-act text-light text-start fw-normal ps-0">
+                                                                        Instagram : <a target="_blank" class="fw-normal text-instagram text-decoration-none" href="https://www.instagram.com/vousmevoyez">@vousmevoyez</a>
+                                                                    </li>
                                                                 </ul>
                                                             </div>
                                                         </div>
-                                                        <h6 class="text-light text-subtitle-act text-start">Drama & Movie</h6>
+                                                        <h6 class="text-light subtitle-modal text-start">Drama & Movie</h6>
                                                         <div class="row row-cols-4 g-2">
                                                             <div class="col-md-3">
                                                                 <div class="card bg-transparent border-0">
@@ -877,59 +1094,174 @@
                                 <small class="text-muted" id="card-eps">16 Episode</small>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal fade" id="K2Modal" tabindex="-1" aria-labelledby="K2ModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                            <div class="modal-content bg-grey">
-                                <div class="modal-header">
-                                    <h5 class="modal-title text-light" id="K2ModalLabel">The K2</h5>
-                                    <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body pb-1">
-                                    <div class="row">
-                                        <img src="assets/img/poster/landscape/k2.jpg" class="img-fluid rounded" />
+                        <div class="modal fade" id="K2Modal" tabindex="-1" aria-labelledby="K2ModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                <div class="modal-content bg-grey">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-light" id="K2ModalLabel">The K2</h5>
+                                        <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="row pt-3">
-                                        <div class="col-md-6 ps-0">
+                                    <div class="modal-body pb-1">
+                                        <div class="row">
+                                            <img src="assets/img/poster/landscape/k2.jpg" class="img-fluid rounded" />
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-md-6 ps-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">The K2</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Hangul : <span class="fw-normal text-muted">더 케이투</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Political</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Kwak Jung-hwan</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 ps-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Jang Hyuk-rin</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">16</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2016</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">tvN</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light pt-3">Sinopsis</h6>
+                                            <p class="text-muted" id="synopsis">
+                                                Kim Je-ha adalah mantan tentara bayaran untuk PMC Blackstone. Sementara di Irak, dia dibingkai atas pembunuhan kekasihnya Rania, seorang warga sipil. Akibatnya, ia melarikan diri dan menjadi
+                                                buron. Dia kembali ke Korea Selatan dan secara kebetulan, mendapat tawaran untuk bekerja sebagai pengawal oleh Choi Yoo-jin, pemilik Perusahaan Keamanan JSS dan istri calon presiden, Jang Se-joon.
+                                                Dia menerima pekerjaan tersebut dengan imbalan sumber daya yang dia butuhkan untuk membalas dendam pada calon presiden lainnya, Park Kwan-soo, yang sebelumnya memerintahkan pembunuhan kekasihnya
+                                                tersebut.
+                                            </p>
+                                            <p class="text-muted" id="synopsis">
+                                                Sementara itu, Je-ha ditugaskan untuk menjaga Go An-na, putri tersembunyi Jang Se-joon, yang hidupnya selalu terancam karena Yoo-jin, ibu tirinya. An-na, yang telah terbiasa dan sepi sepanjang
+                                                hidupnya, mulai mengandalkan Je-ha, yang menunjukkan kepedulian padanya dan melindunginya dengan segala cara. Mereka perlahan jatuh cinta satu sama lain, yang membuat Je-ha terpecah antara harus
+                                                bekerja dengan sekutunya, Yoo-jin, untuk mendapatkan balas dendamnya dan melindungi cintanya yang baru ditemukan, An-na, melawan sekutunya sendiri.
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light">Trailer</h6>
+                                            <iframe width="560" height="368" src="https://www.youtube.com/embed/s9wk-4PsiHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light subtitle-modal">Download</h6>
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">The K2</span></li>
-                                                <li class="list-group-item text-light fw-normal">Hangul : <span class="fw-normal text-muted">더 케이투</span></li>
-                                                <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Political</span></li>
-                                                <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Kwak Jung-hwan</span></li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 1 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 2 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 3 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 4 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 5 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 6 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 7 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 8 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 9 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 10 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 11 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 12
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 13
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 14
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 15
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 16
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
                                             </ul>
                                         </div>
-                                        <div class="col-md-6 ps-0">
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Jang Hyuk-rin</span></li>
-                                                <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">16</span></li>
-                                                <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2016</span></li>
-                                                <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">tvN</span></li>
-                                            </ul>
-                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <h6 class="text-light pt-3">Sinopsis</h6>
-                                        <p class="text-muted" id="synopsis">
-                                            Kim Je-ha adalah mantan tentara bayaran untuk PMC Blackstone. Sementara di Irak, dia dibingkai atas pembunuhan kekasihnya Rania, seorang warga sipil. Akibatnya, ia melarikan diri dan menjadi
-                                            buron. Dia kembali ke Korea Selatan dan secara kebetulan, mendapat tawaran untuk bekerja sebagai pengawal oleh Choi Yoo-jin, pemilik Perusahaan Keamanan JSS dan istri calon presiden, Jang Se-joon.
-                                            Dia menerima pekerjaan tersebut dengan imbalan sumber daya yang dia butuhkan untuk membalas dendam pada calon presiden lainnya, Park Kwan-soo, yang sebelumnya memerintahkan pembunuhan kekasihnya
-                                            tersebut.
-                                        </p>
-                                        <p class="text-muted" id="synopsis">
-                                            Sementara itu, Je-ha ditugaskan untuk menjaga Go An-na, putri tersembunyi Jang Se-joon, yang hidupnya selalu terancam karena Yoo-jin, ibu tirinya. An-na, yang telah terbiasa dan sepi sepanjang
-                                            hidupnya, mulai mengandalkan Je-ha, yang menunjukkan kepedulian padanya dan melindunginya dengan segala cara. Mereka perlahan jatuh cinta satu sama lain, yang membuat Je-ha terpecah antara harus
-                                            bekerja dengan sekutunya, Yoo-jin, untuk mendapatkan balas dendamnya dan melindungi cintanya yang baru ditemukan, An-na, melawan sekutunya sendiri.
-                                        </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                     </div>
-                                    <div class="row">
-                                        <h6 class="text-light">Trailer</h6>
-                                        <video controls>
-                                            <source src="assets/src/k2-trailer.mp4" type="video/mp4" />
-                                        </video>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -945,58 +1277,181 @@
                                 <small class="text-muted" id="card-eps">16 Episode</small>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal fade" id="VoiceModal" tabindex="-1" aria-labelledby="VoiceModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                            <div class="modal-content bg-grey">
-                                <div class="modal-header">
-                                    <h5 class="modal-title text-light" id="VoiceModalLabel">Voice</h5>
-                                    <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body pb-1">
-                                    <div class="row">
-                                        <img src="assets/img/poster/landscape/voice.png" class="img-fluid rounded" />
+                        <div class="modal fade" id="VoiceModal" tabindex="-1" aria-labelledby="VoiceModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                <div class="modal-content bg-grey">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-light" id="VoiceModalLabel">Voice</h5>
+                                        <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="row pt-3">
-                                        <div class="col-md-6 ps-0">
+                                    <div class="modal-body pb-1">
+                                        <div class="row">
+                                            <img src="assets/img/poster/landscape/voice.png" class="img-fluid rounded" />
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-md-6 ps-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">Voice</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Hangul : <span class="fw-normal text-muted">보이스</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Crime</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Kim Hong-sun</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 ps-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Ma Jin-won</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">16</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2017</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">OCN</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light pt-3">Sinopsis</h6>
+                                            <p class="text-muted" id="synopsis">
+                                                Moo Jin-hyuk (Jang Hyuk) adalah seorang detektif populer yang memecahkan kasus-kasus besar, tetapi setelah istrinya dibunuh oleh seorang pembunuh berantai, hidupnya berputar ke bawah. Dia diliputi
+                                                rasa bersalah karena tidak bisa melindungi istrinya dan diam-diam mencari pembunuhnya.
+                                            </p>
+                                            <p class="text-muted" id="synopsis">
+                                                Sementara itu, Kang Kwon-joo (Lee Ha-na) lulus dari akademi kepolisian dengan nilai tertinggi. Dia mulai bekerja di pusat panggilan darurat 112. Saat bekerja di sana, kasus pembunuhan brutal
+                                                terjadi dan ayahnya yang merupakan sersan polisi menuju ke TKP. Ayahnya terbunuh di sana dan Kwon-joo mendengar apa yang terjadi melalui telepon. Setelah itu, dia pergi ke AS untuk belajar dan
+                                                kembali ke Korea sebagai profiler suara profesional.
+                                            </p>
+                                            <p class="text-muted" id="synopsis">Detektif Jin-hyuk dan Kang Kwon-joo menyelesaikan kasus bersama untuk mengejar pembunuh berantai yang bertanggung jawab atas kematian anggota keluarga mereka.</p>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light">Trailer</h6>
+                                            <iframe
+                                                width="560"
+                                                height="368"
+                                                src="https://www.youtube.com/embed/Vf7Co5R5xlQ"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen
+                                            ></iframe>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light subtitle-modal">Download</h6>
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">Voice</span></li>
-                                                <li class="list-group-item text-light fw-normal">Hangul : <span class="fw-normal text-muted">보이스</span></li>
-                                                <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Crime</span></li>
-                                                <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Kim Hong-sun</span></li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 1 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 2 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 3 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 4 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 5 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 6 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 7 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 8 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 9 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 10 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 11 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 12
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 13
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 14
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 15
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 16
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
                                             </ul>
                                         </div>
-                                        <div class="col-md-6 ps-0">
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Ma Jin-won</span></li>
-                                                <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">16</span></li>
-                                                <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2017</span></li>
-                                                <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">OCN</span></li>
-                                            </ul>
-                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <h6 class="text-light pt-3">Sinopsis</h6>
-                                        <p class="text-muted" id="synopsis">
-                                            Moo Jin-hyuk (Jang Hyuk) adalah seorang detektif populer yang memecahkan kasus-kasus besar, tetapi setelah istrinya dibunuh oleh seorang pembunuh berantai, hidupnya berputar ke bawah. Dia diliputi
-                                            rasa bersalah karena tidak bisa melindungi istrinya dan diam-diam mencari pembunuhnya.
-                                        </p>
-                                        <p class="text-muted" id="synopsis">
-                                            Sementara itu, Kang Kwon-joo (Lee Ha-na) lulus dari akademi kepolisian dengan nilai tertinggi. Dia mulai bekerja di pusat panggilan darurat 112. Saat bekerja di sana, kasus pembunuhan brutal
-                                            terjadi dan ayahnya yang merupakan sersan polisi menuju ke TKP. Ayahnya terbunuh di sana dan Kwon-joo mendengar apa yang terjadi melalui telepon. Setelah itu, dia pergi ke AS untuk belajar dan
-                                            kembali ke Korea sebagai profiler suara profesional.
-                                        </p>
-                                        <p class="text-muted" id="synopsis">Detektif Jin-hyuk dan Kang Kwon-joo menyelesaikan kasus bersama untuk mengejar pembunuh berantai yang bertanggung jawab atas kematian anggota keluarga mereka.</p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                     </div>
-                                    <div class="row">
-                                        <h6 class="text-light">Trailer</h6>
-                                        <video controls>
-                                            <source src="assets/src/voice-trailer.mp4" type="video/mp4" />
-                                        </video>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -1012,52 +1467,167 @@
                                 <small class="text-muted" id="card-eps">16 Episode</small>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal fade" id="MadDogModal" tabindex="-1" aria-labelledby="MadDogModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                            <div class="modal-content bg-grey">
-                                <div class="modal-header">
-                                    <h5 class="modal-title text-light" id="MadDogModalLabel">Mad Dog</h5>
-                                    <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body pb-1">
-                                    <div class="row">
-                                        <img src="assets/img/poster/landscape/mad-dog.jpg" class="img-fluid rounded" />
+                        <div class="modal fade" id="MadDogModal" tabindex="-1" aria-labelledby="MadDogModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                <div class="modal-content bg-grey">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-light" id="MadDogModalLabel">Mad Dog</h5>
+                                        <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="row pt-3">
-                                        <div class="col-md-6 ps-0">
+                                    <div class="modal-body pb-1">
+                                        <div class="row">
+                                            <img src="assets/img/poster/landscape/mad-dog.jpg" class="img-fluid rounded" />
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-md-6 ps-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">Mad Dog</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Hangul : <span class="fw-normal text-muted">보이스</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Crime</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Hwang Ui-kyung</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 ps-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Kim Soo-jin</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">16</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2017</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">KBS</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light pt-3">Sinopsis</h6>
+                                            <p class="text-muted" id="synopsis">
+                                                Choi Kang-woo, mantan polisi dan pemimpin tim penyelidik Taeyang Insurance, memutuskan untuk membuat tim investigasi sendiri, setelah kecelakaan pesawat terbang yang membawa kehidupan istri dan
+                                                anaknya. Dia kemudian bertemu Kim Min-joon, mantan penipu jenius yang saudara laki-lakinya juga menjadi korban kecelakaan, sehingga memulai persaingan dan kerja sama mereka.
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light">Trailer</h6>
+                                            <iframe width="560" height="368" src="https://www.youtube.com/embed/yVcfmWbVuoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light subtitle-modal">Download</h6>
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">Mad Dog</span></li>
-                                                <li class="list-group-item text-light fw-normal">Hangul : <span class="fw-normal text-muted">보이스</span></li>
-                                                <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Crime</span></li>
-                                                <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Hwang Ui-kyung</span></li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 1 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 2 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 3 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 4 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 5 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 6 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 7 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 8 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 9 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 10 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 11 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 12
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 13
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 14
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 15
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 16
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
                                             </ul>
                                         </div>
-                                        <div class="col-md-6 ps-0">
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Kim Soo-jin</span></li>
-                                                <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">16</span></li>
-                                                <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2017</span></li>
-                                                <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">KBS</span></li>
-                                            </ul>
-                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <h6 class="text-light pt-3">Sinopsis</h6>
-                                        <p class="text-muted" id="synopsis">
-                                            Choi Kang-woo, mantan polisi dan pemimpin tim penyelidik Taeyang Insurance, memutuskan untuk membuat tim investigasi sendiri, setelah kecelakaan pesawat terbang yang membawa kehidupan istri dan
-                                            anaknya. Dia kemudian bertemu Kim Min-joon, mantan penipu jenius yang saudara laki-lakinya juga menjadi korban kecelakaan, sehingga memulai persaingan dan kerja sama mereka.
-                                        </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                     </div>
-                                    <div class="row">
-                                        <h6 class="text-light">Trailer</h6>
-                                        <video controls>
-                                            <source src="assets/src/mad-dog-trailer.mp4" type="video/mp4" />
-                                        </video>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -1073,52 +1643,153 @@
                                 <small class="text-muted" id="card-eps">14 Episode</small>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal fade" id="PlayerModal" tabindex="-1" aria-labelledby="PlayerModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                            <div class="modal-content bg-grey">
-                                <div class="modal-header">
-                                    <h5 class="modal-title text-light" id="PlayerModalLabel">The Player</h5>
-                                    <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body pb-1">
-                                    <div class="row">
-                                        <img src="assets/img/poster/landscape/player.jpeg" class="img-fluid rounded" />
+                        <div class="modal fade" id="PlayerModal" tabindex="-1" aria-labelledby="PlayerModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                <div class="modal-content bg-grey">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-light" id="PlayerModalLabel">The Player</h5>
+                                        <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="row pt-3">
-                                        <div class="col-md-6 ps-0">
+                                    <div class="modal-body pb-1">
+                                        <div class="row">
+                                            <img src="assets/img/poster/landscape/player.jpeg" class="img-fluid rounded" />
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-md-6 ps-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">The Player</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Hangul : <span class="fw-normal text-muted">플레이어</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Crime</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Go Jae-hyun</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 ps-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Shin Jae-hyung</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">14</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2018</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">OCN</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light pt-3">Sinopsis</h6>
+                                            <p class="text-muted" id="synopsis">
+                                                Kisah tentang empat individu berbakat di bidangnya masing-masing yang membentuk tim elit untuk menyelesaikan kejahatan dan bekerja sama dengan jaksa yang adil. Bersama-sama, mereka menyita uang
+                                                gelap dan memastikan bahwa mereka yang menghasilkan uang melalui kejahatan akan ditangkap.
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light">Trailer</h6>
+                                            <iframe width="560" height="368" src="https://www.youtube.com/embed/qc-G46Xfx4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light subtitle-modal">Download</h6>
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">The Player</span></li>
-                                                <li class="list-group-item text-light fw-normal">Hangul : <span class="fw-normal text-muted">플레이어</span></li>
-                                                <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Crime</span></li>
-                                                <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Go Jae-hyun</span></li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 1 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 2 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 3 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 4 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 5 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 6 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 7 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 8 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 9 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 10 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 11 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 12
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 13
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 14
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
                                             </ul>
                                         </div>
-                                        <div class="col-md-6 ps-0">
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Shin Jae-hyung</span></li>
-                                                <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">14</span></li>
-                                                <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2018</span></li>
-                                                <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">OCN</span></li>
-                                            </ul>
-                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <h6 class="text-light pt-3">Sinopsis</h6>
-                                        <p class="text-muted" id="synopsis">
-                                            Kisah tentang empat individu berbakat di bidangnya masing-masing yang membentuk tim elit untuk menyelesaikan kejahatan dan bekerja sama dengan jaksa yang adil. Bersama-sama, mereka menyita uang
-                                            gelap dan memastikan bahwa mereka yang menghasilkan uang melalui kejahatan akan ditangkap.
-                                        </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                     </div>
-                                    <div class="row">
-                                        <h6 class="text-light">Trailer</h6>
-                                        <video controls>
-                                            <source src="assets/src/player-trailer.mp4" type="video/mp4" />
-                                        </video>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -1134,52 +1805,167 @@
                                 <small class="text-muted" id="card-eps">16 Episode</small>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal fade" id="VagabondModal" tabindex="-1" aria-labelledby="VagabondModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                            <div class="modal-content bg-grey">
-                                <div class="modal-header">
-                                    <h5 class="modal-title text-light" id="VagabondModalLabel">Vagabond</h5>
-                                    <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body pb-1">
-                                    <div class="row">
-                                        <img src="assets/img/poster/landscape/vagabond.jpg" class="img-fluid rounded" />
+                        <div class="modal fade" id="VagabondModal" tabindex="-1" aria-labelledby="VagabondModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                <div class="modal-content bg-grey">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-light" id="VagabondModalLabel">Vagabond</h5>
+                                        <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="row pt-3">
-                                        <div class="col-md-6 ps-0">
+                                    <div class="modal-body pb-1">
+                                        <div class="row">
+                                            <img src="assets/img/poster/landscape/vagabond.jpg" class="img-fluid rounded" />
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-md-6 ps-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">Vagabond</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Hangul : <span class="fw-normal text-muted">배가본드</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Political</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Yoo In-sik</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 ps-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Jang Young-chul, Jung Kyung-soon</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">16</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2019</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">SBS</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light pt-3">Sinopsis</h6>
+                                            <p class="text-muted" id="synopsis">
+                                                Sebuah kecelakaan pesawat misterius menewaskan lebih dari 200 warga sipil termasuk keponakan Cha Dal-gun (Lee Seung-gi). Bertekad untuk mencari tahu kebenaran di balik kecelakaan itu, Cha Dal-gun
+                                                melakukan penyelidikan yang membawanya ke jaringan korupsi yang rumit. Hidupnya pun terhubung dengan Go Hae-ri (Bae Suzy) yang merupakan seorang agen rahasia untuk Badan Intelijen Nasional (NIS).
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light">Trailer</h6>
+                                            <iframe width="560" height="368" src="https://www.youtube.com/embed/tyhnEHCUtv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light subtitle-modal">Download</h6>
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">Vagabond</span></li>
-                                                <li class="list-group-item text-light fw-normal">Hangul : <span class="fw-normal text-muted">배가본드</span></li>
-                                                <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Thriller, Political</span></li>
-                                                <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Yoo In-sik</span></li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 1 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 2 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 3 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 4 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 5 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 6 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 7 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 8 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 9 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 10 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 11 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 12
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 13
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 14
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 15
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 16
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
                                             </ul>
                                         </div>
-                                        <div class="col-md-6 ps-0">
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Jang Young-chul, Jung Kyung-soon</span></li>
-                                                <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">16</span></li>
-                                                <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2019</span></li>
-                                                <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">SBS</span></li>
-                                            </ul>
-                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <h6 class="text-light pt-3">Sinopsis</h6>
-                                        <p class="text-muted" id="synopsis">
-                                            Sebuah kecelakaan pesawat misterius menewaskan lebih dari 200 warga sipil termasuk keponakan Cha Dal-gun (Lee Seung-gi). Bertekad untuk mencari tahu kebenaran di balik kecelakaan itu, Cha Dal-gun
-                                            melakukan penyelidikan yang membawanya ke jaringan korupsi yang rumit. Hidupnya pun terhubung dengan Go Hae-ri (Bae Suzy) yang merupakan seorang agen rahasia untuk Badan Intelijen Nasional (NIS).
-                                        </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                     </div>
-                                    <div class="row">
-                                        <h6 class="text-light">Trailer</h6>
-                                        <video controls>
-                                            <source src="assets/src/vagabond-trailer.mp4" type="video/mp4" />
-                                        </video>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -1195,60 +1981,203 @@
                                 <small class="text-muted" id="card-eps">20 Episode</small>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal fade" id="VincenzoModal" tabindex="-1" aria-labelledby="VincenzoModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                            <div class="modal-content bg-grey">
-                                <div class="modal-header">
-                                    <h5 class="modal-title text-light" id="VincenzoModalLabel">Vincenzo</h5>
-                                    <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body pb-1">
-                                    <div class="row">
-                                        <img src="assets/img/poster/landscape/vincenzo.png" class="img-fluid rounded" />
+                        <div class="modal fade" id="VincenzoModal" tabindex="-1" aria-labelledby="VincenzoModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                <div class="modal-content bg-grey">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-light" id="VincenzoModalLabel">Vincenzo</h5>
+                                        <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="row pt-3">
-                                        <div class="col-md-6 ps-0">
+                                    <div class="modal-body pb-1">
+                                        <div class="row">
+                                            <img src="assets/img/poster/landscape/vincenzo.png" class="img-fluid rounded" />
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-md-6 ps-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">Vincenzo</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Hangul : <span class="fw-normal text-muted">빈센조</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Dark Comedy</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Kim Hee-won</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 ps-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Park Jae-bum</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">20</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2019</span></li>
+                                                    <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">tvN</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light pt-3">Sinopsis</h6>
+                                            <p class="text-muted" id="synopsis">
+                                                Pada usia delapan tahun, Park Joo-hyung (Song Joong-ki) pergi ke Italia setelah diadopsi oleh Don Fabio, kepala keluarga mafia Cassano. Berganti nama menjadi Vincenzo Cassano, dia menjadi
+                                                pengacara Italia, seorang consigliere untuk mafia, dan salah satu orang terbaik Fabio sampai kematiannya. Setelah Fabio meninggal, Paolo (putra kandung dan pemimpin baru Fabio) mencoba
+                                                membunuhnya; dia melarikan diri ke Seoul untuk mendapatkan emas tersembunyi di dalam Kompleks Apartemen Geumga-dong.
+                                            </p>
+                                            <p class="text-muted" id="synopsis">
+                                                Vincenzo membantu seorang hartawan asal Tiongkok menyembunyikan emasnya di lemari besi yang diamankan mafia di dalam kompleks tersebut, tetapi orang tersebut meninggal. Tanpa ada yang tahu tentang
+                                                lemari besi itu, dia berencana untuk mengambil emas itu dan menggunakannya sebagai dana pensiunnya setelah meninggalkan Italia dan mafia. Namun, sebuah perusahaan real estate di bawah Babel Group
+                                                telah secara ilegal mengambil alih kepemilikan gedung tersebut dan Vincenzo harus menggunakan keahliannya untuk merebut kembali gedung tersebut dan memulihkan kekayaannya. Vincenzo terlibat dengan
+                                                pengacara Hong Cha-young (Jeon Yeo-been), tipe pengacara yang akan melakukan apa saja untuk memenangkan kasus. Vincenzo Cassano jatuh cinta padanya. Dia juga mencapai keadilan sosial dengan
+                                                caranya sendiri.
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light">Trailer</h6>
+                                            <iframe width="560" height="368" src="https://www.youtube.com/embed/1b1-nK0HM9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="row">
+                                            <h6 class="text-light subtitle-modal">Download</h6>
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-light fw-normal">Judul : <span class="fw-normal text-muted">Vincenzo</span></li>
-                                                <li class="list-group-item text-light fw-normal">Hangul : <span class="fw-normal text-muted">빈센조</span></li>
-                                                <li class="list-group-item text-light fw-normal">Genre : <span class="fw-normal text-muted">Action, Dark Comedy</span></li>
-                                                <li class="list-group-item text-light fw-normal">Sutradara : <span class="fw-normal text-muted">Kim Hee-won</span></li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 1 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 2 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 3 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 4 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 5 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 6 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 7 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 8 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 9 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 10 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 11 
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 12
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 13
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 14
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 15
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 16
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 17
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 18
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 19
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
+                                                <li class="list-group-item text-light fw-normal">
+                                                    Episode 20
+                                                    <a target="" class="btn btn-dark btn-download ms-1" href="#">720p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">540p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">480p</a>
+                                                    <a target="" class="btn btn-dark btn-download" href="#">360p</a>
+                                                </li>
                                             </ul>
                                         </div>
-                                        <div class="col-md-6 ps-0">
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-light fw-normal">Pengarang : <span class="fw-normal text-muted">Park Jae-bum</span></li>
-                                                <li class="list-group-item text-light fw-normal">Jumlah Episode : <span class="fw-normal text-muted">20</span></li>
-                                                <li class="list-group-item text-light fw-normal">Tahun Rilis : <span class="fw-normal text-muted">2019</span></li>
-                                                <li class="list-group-item text-light fw-normal">Saluran : <span class="fw-normal text-muted">tvN</span></li>
-                                            </ul>
-                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <h6 class="text-light pt-3">Sinopsis</h6>
-                                        <p class="text-muted" id="synopsis">
-                                            Pada usia delapan tahun, Park Joo-hyung (Song Joong-ki) pergi ke Italia setelah diadopsi oleh Don Fabio, kepala keluarga mafia Cassano. Berganti nama menjadi Vincenzo Cassano, dia menjadi
-                                            pengacara Italia, seorang consigliere untuk mafia, dan salah satu orang terbaik Fabio sampai kematiannya. Setelah Fabio meninggal, Paolo (putra kandung dan pemimpin baru Fabio) mencoba
-                                            membunuhnya; dia melarikan diri ke Seoul untuk mendapatkan emas tersembunyi di dalam Kompleks Apartemen Geumga-dong.
-                                        </p>
-                                        <p class="text-muted" id="synopsis">
-                                            Vincenzo membantu seorang hartawan asal Tiongkok menyembunyikan emasnya di lemari besi yang diamankan mafia di dalam kompleks tersebut, tetapi orang tersebut meninggal. Tanpa ada yang tahu tentang
-                                            lemari besi itu, dia berencana untuk mengambil emas itu dan menggunakannya sebagai dana pensiunnya setelah meninggalkan Italia dan mafia. Namun, sebuah perusahaan real estate di bawah Babel Group
-                                            telah secara ilegal mengambil alih kepemilikan gedung tersebut dan Vincenzo harus menggunakan keahliannya untuk merebut kembali gedung tersebut dan memulihkan kekayaannya. Vincenzo terlibat dengan
-                                            pengacara Hong Cha-young (Jeon Yeo-been), tipe pengacara yang akan melakukan apa saja untuk memenangkan kasus. Vincenzo Cassano jatuh cinta padanya. Dia juga mencapai keadilan sosial dengan
-                                            caranya sendiri.
-                                        </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                     </div>
-                                    <div class="row">
-                                        <h6 class="text-light">Trailer</h6>
-                                        <video controls>
-                                            <source src="assets/src/vagabond-trailer.mp4" type="video/mp4" />
-                                        </video>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
