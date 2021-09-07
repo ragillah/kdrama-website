@@ -1,3 +1,19 @@
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    background-color: #cccccc;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #e34446;
+}
+
 body {
     background: #343d50;
     font-family: "Noto Sans", sans-serif;
@@ -130,14 +146,14 @@ input[type="search"] {
 .subtitle-modal {
     padding-top: 1.5rem;
 }
-.text-year-modal{
+.text-year-modal {
     padding-top: 7px;
 }
 .list-group-item {
     font-size: 14px;
     font-weight: 600;
 }
-iframe{
+iframe {
     height: 368px;
 }
 
@@ -170,7 +186,7 @@ footer {
         background: transparent;
         border: none;
     }
-    #active:visited{
+    #active:visited {
         border: 0;
     }
 
@@ -301,10 +317,10 @@ footer {
     #synopsis {
         font-size: 0.938rem;
     }
-    iframe{
+    iframe {
         height: 275px;
     }
-    .btn-download{
+    .btn-download {
         font-size: 14px;
     }
 
@@ -337,7 +353,7 @@ footer {
         background: transparent;
         border: none;
     }
-    #active:visited{
+    #active:visited {
         border: 0;
     }
 
@@ -467,10 +483,10 @@ footer {
     #synopsis {
         font-size: 0.938rem;
     }
-    iframe{
+    iframe {
         height: auto;
     }
-    .btn-download{
+    .btn-download {
         font-size: 12px;
     }
 
@@ -503,7 +519,7 @@ footer {
         background: transparent;
         border: none;
     }
-    #active:visited{
+    #active:visited {
         border: 0;
     }
 
@@ -633,10 +649,10 @@ footer {
     #synopsis {
         font-size: 0.813rem;
     }
-    iframe{
+    iframe {
         height: auto;
     }
-    .btn-download{
+    .btn-download {
         font-size: 10px;
     }
 
@@ -669,7 +685,7 @@ footer {
         background: transparent;
         border: none;
     }
-    #active:visited{
+    #active:visited {
         border: 0;
         background: transparent;
     }
@@ -767,10 +783,10 @@ footer {
     #synopsis {
         font-size: 0.75rem;
     }
-    iframe{
+    iframe {
         height: auto;
     }
-    .btn-download{
+    .btn-download {
         font-size: 8px;
     }
 }
