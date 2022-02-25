@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="../../assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="../../assets/css/style.css" />
+        <link rel="stylesheet" href="../../assets/css/media-query.css" />
+
+        <!-- custom fonts -->
+        <link rel="stylesheet" href="../../assets/css/fonts/goldman/style.css" />
+        <link rel="stylesheet" href="../../assets/css/fonts/oswald/style.css" />
+        <link rel="stylesheet" href="../../assets/css/fonts/mulish/style.css" />
+
+        <!-- scroll animation -->
+        <link rel="stylesheet" href="../../assets/css/aos/aos.min.css" />
+
+        <!-- trix editor -->
+        <link rel="stylesheet" href="../../assets/css/trix-editor/trix.css" />
+
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <!-- title -->
+        <title>Anapdrama</title>
+    </head>
+    <body>
+        <section id="navbar">
+            <header class="navbar navbar-expand-md navbar-light bd-navbar p-0">
+                <nav class="container-xxl flex-wrap flex-md-nowrap px-lg-5 py-lg-1 py-md-1 py-3 bg-dark" id="nav">
+                    <a class="navbar-brand text-danger m-0 p-0" href="../../index.html" id="brand"> ANAP<span class="text-white">DRAMA</span> </a>
+                    <button type="button" class="navbar-toggler border-0 ms-auto" id="togglerOpen" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                        <i class="fas fa-align-justify text-white py-1"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="bdNavbar">
+                        <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav py-md-3 py-sm-3 ms-auto">
+                            <li class="nav-item col-6 col-md-auto">
+                                <a class="nav-link p-2 px-lg-3 mx-lg-3 pe-md-3 nav-active" href="../../index.html" aria-current="true">Home</a>
+                            </li>
+                            <li class="nav-item col-6 col-md-auto">
+                                <a class="nav-link p-2 pe-lg-4 pe-md-3" href="soundtrack.html">Drama</a>
+                            </li>
+                            <li class="nav-item col-6 col-md-auto">
+                                <a class="nav-link p-2 pe-lg-4 pe-md-3" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item col-6 col-md-auto">
+                                <a class="nav-link p-2 pe-md-3" href="about.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="offcanvas sidebar offcanvas-start bg-dark text-white w-100" data-bs-scroll="false" data-bs-backdrop="false" tabindex="-1" id="sidebar">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand text-danger m-0 p-0" href="../../index.html" id="brand"> ANAP<span class="text-white">DRAMA</span> </a>
+                            <button type="button" class="bg-transparent border-0" id="togglerClose" data-bs-dismiss="offcanvas">
+                                <i class="fa fa-times fa-2x text-white"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div class="d-block" id="bdNavbar">
+                                    <ul class="navbar-nav d-block">
+                                        <li class="nav-item text-center mb-3">
+                                            <a class="nav-link text-decoration-none nav-active" href="/">Home</a>
+                                        </li>
+                                        <li class="nav-item text-center my-4">
+                                            <a class="nav-link text-decoration-none" href="/drama">Drama</a>
+                                        </li>
+                                        <li class="nav-item text-center my-4">
+                                            <a class="nav-link text-decoration-none" href="/movie">Movie</a>
+                                        </li>
+                                        <li class="nav-item text-center my-4">
+                                            <a class="nav-link text-decoration-none" href="/blog">Blog</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </section>
+
+        <div class="container-fluid px-md-5 pt-4">
+            <section>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item breadcrumb-home">
+                            <i class="fa fa-home breadcrumb-icon"></i>
+                            <a class="text-decoration-none" href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item breadcrumb-active">Detail</li>
+                        <li class="breadcrumb-item breadcrumb-active" aria-current="page">The King's Affection</li>
+                    </ol>
+                </nav>
+            </section>
+            <section data-aos="zoom-in" data-aos-duration="1000">
+                <div class="row mt-4">
+                    <div class="col-md-3">
+                        <img src="../../assets/img/poster/potret/the-kings-affection.jpg" alt="The King's Affection" class="img-fluid rounded" />
+                    </div>
+                    <div class="col-md-9">
+                        <h3 class="details-title mt-md-0 mt-4">The King's Affection</h3>
+                        <span class="details-subtitle">연모 / Yeonmo / Affection</span>
+                        <div class="details-description pt-3 pb-2">
+                            <p class="mb-2">
+                                The story is set during the Joseon Dynasty, at a time when twins were considered an ominous sign. As a result, when the Crown Princess Consort gives birth to twins, an order is sent to kill the daughter. To
+                                save her, she is secretly sent out of the palace.
+                            </p>
+                            <p class="mb-2">
+                                A few years later, the twin daughter Da Mi returns to the palace to work as a maid. When the male twin, Lee Hwi, loses his life through a case of mistaken identity, their mother, having recognised her
+                                daughter as court maid Da Mi, persuades her to take Lee Hwi's place. Although she distances herself from everybody, Lee Hwi starts developing feelings for Jung Ji Woon, her original first love and later
+                                teacher who comes from a noble family.
+                            </p>
+                        </div>
+                        <div class="row details-list">
+                            <div class="col-md-6 col-12">
+                                <table>
+                                    <tr>
+                                        <td>Network</td>
+                                        <td class="details-list-divider divider-left">:</td>
+                                        <td class="text-white">Netflix, KBS2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Episodes</td>
+                                        <td class="details-list-divider divider-left">:</td>
+                                        <td class="text-white">20</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <table>
+                                    <tr>
+                                        <td>Date Aired</td>
+                                        <td class="details-list-divider divider-right">:</td>
+                                        <td class="text-white">Oct 11, 2021 - Dec 14, 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Genre</td>
+                                        <td class="details-list-divider divider-right">:</td>
+                                        <td class="text-white">Historical, Romance</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row flex-row-reverse mt-4">
+                    <div class="col-lg-9 mb-4">
+                        <div class="card border-0 mb-4">
+                            <div class="card-header bg-dark">
+                                <h5 class="details-card-title text-white mb-0">Main Casts</h5>
+                            </div>
+                            <div class="card-body bg-secondary">
+                                <div class="row justify-content-center gx-2 px-3">
+                                    <div class="col-lg-2 col-md-3 col-6 details-cast-col d-md-block d-flex flex-column justify-content-center">
+                                        <div class="details-cast-img-wrapper">
+                                            <img src="https://asianwiki.com/images/6/6e/The_Kings_Affection-Park_Eun-Bin.jpg" alt="Park Eun Bin" class="details-cast-img mx-auto rounded-circle" />
+                                        </div>
+                                        <div class="details-cast text-center mb-md-0 mb-4 pt-2">
+                                            <span class="details-cast-name">Park Eun-Bin</span>
+                                            <span class="details-cast-char">(Lee Hwi)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-6 details-cast-col d-md-block d-flex flex-column justify-content-center">
+                                        <div class="details-cast-img-wrapper">
+                                            <img src="https://asianwiki.com/images/6/60/The_Kings_Affection-Ro_Woon.jpg" alt="Rowoon" class="details-cast-img mx-auto rounded-circle" />
+                                        </div>
+                                        <div class="details-cast text-center mb-md-0 mb-4 pt-2">
+                                            <span class="details-cast-name">Rowoon</span>
+                                            <span class="details-cast-char">(Jung Ji-Woon)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-6 details-cast-col d-md-block d-flex flex-column justify-content-center">
+                                        <div class="details-cast-img-wrapper">
+                                            <img src="https://asianwiki.com/images/f/f9/The_Kings_Affection-Nam_Yoon-Soo.jpg" alt="Nam Yoon Soo" class="details-cast-img mx-auto rounded-circle" />
+                                        </div>
+                                        <div class="details-cast text-center mb-md-0 mb-4 pt-2">
+                                            <span class="details-cast-name">Nam Yoon-Soo</span>
+                                            <span class="details-cast-char">(Lee Hyun)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-6 details-cast-col d-md-block d-flex flex-column justify-content-center">
+                                        <div class="details-cast-img-wrapper">
+                                            <img src="https://asianwiki.com/images/7/79/The_Kings_Affection-Choi_Byung-Chan.jpg" alt="Choi Byung Chan" class="details-cast-img mx-auto rounded-circle" />
+                                        </div>
+                                        <div class="details-cast text-center mb-md-0 mb-4 pt-2">
+                                            <span class="details-cast-name">Choi Byung-Chan</span>
+                                            <span class="details-cast-char">(Kim Ga-On)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-6 details-cast-col d-md-block d-flex flex-column justify-content-center">
+                                        <div class="details-cast-img-wrapper">
+                                            <img src="https://asianwiki.com/images/f/fd/The_Kings_Affection-Bae_Yoon-Kyoung.jpg" alt="Bae Yoon Kyoung" class="details-cast-img mx-auto rounded-circle" />
+                                        </div>
+                                        <div class="details-cast text-center mb-md-0 mb-0 pt-2">
+                                            <span class="details-cast-name">Bae Yoon-Kyoung</span>
+                                            <span class="details-cast-char">(Shin So-Eun)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-6 details-cast-col d-md-block d-flex flex-column justify-content-center">
+                                        <div class="details-cast-img-wrapper">
+                                            <img src="https://asianwiki.com/images/c/c3/The_Kings_Affection-Jung_Chae-Yeon.jpg" alt="Jung Chae Yeon" class="details-cast-img mx-auto rounded-circle" />
+                                        </div>
+                                        <div class="details-cast text-center mb-md-0 mb-0 pt-2">
+                                            <span class="details-cast-name">Jung Chae-Yeon</span>
+                                            <span class="details-cast-char">(Noh Ha-Kyung)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <div class="card-header bg-dark">
+                                <h5 class="details-card-title text-white mb-0">Trailer</h5>
+                            </div>
+                            <div class="card-body bg-secondary p-0">
+                                <div class="row justify-content-center details-card-video">
+                                    <video controls poster="../../assets/img/poster/landscape/the-kings-affection.jpg" class="p-0">
+                                        <source src="//static1.asianwiki.com/trailers/spiegler70130/2021/N1/The_Kings_Affection-teaser1.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card border-0 mb-4">
+                            <div class="card-header bg-dark">
+                                <h5 class="details-card-title text-white mb-0">Ratings</h5>
+                            </div>
+                            <div class="card-body d-flex justify-content-center bg-secondary">
+                                <div class="details-list">
+                                    <table>
+                                        <tr>
+                                            <td class="text-dark">Nationwide</td>
+                                            <td class="details-list-divider text-dark">:</td>
+                                            <td class="text-dark fw-bold">7.9 / 10</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-dark">MyDramaList</td>
+                                            <td class="details-list-divider text-dark">:</td>
+                                            <td class="text-dark fw-bold">8.3 / 10</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-dark">Asianwiki</td>
+                                            <td class="details-list-divider text-dark">:</td>
+                                            <td class="text-dark fw-bold">9.0 / 10</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-content">
+                            <h5 class="sections-title mb-3">You Might Like...</h5>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 col-md-6">
+                                    <a href="snowdrop.html">
+                                        <div class="card bg-dark border-0 text-white mb-3">
+                                            <img src="../../assets/img/poster/landscape/slider/snowdrop.jpg" class="sidebar-content-img" alt="Snowdrop" />
+                                            <div class="card-img-overlay sidebar-content-overlay">
+                                                <span class="badge bg-danger">2022</span>
+                                                <h6 class="sidebar-content-title">Snowdrop</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-12 col-md-6">
+                                    <a href="hush.html">
+                                        <div class="card bg-dark border-0 text-white mb-3">
+                                            <img src="../../assets/img/poster/landscape/hush.jpg" class="sidebar-content-img" alt="Hush" />
+                                            <div class="card-img-overlay sidebar-content-overlay">
+                                                <span class="badge bg-danger">2021</span>
+                                                <h6 class="sidebar-content-title">H.U.S.H</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-12 col-md-6">
+                                    <a href="do-you-like-brahms.html">
+                                        <div class="card bg-dark border-0 text-white mb-3">
+                                            <img src="../../assets/img/poster/landscape/slider/do-you-like-brahms.jpg" class="sidebar-content-img" alt="Do You Like Brahms?" />
+                                            <div class="card-img-overlay sidebar-content-overlay">
+                                                <span class="badge bg-danger">2020</span>
+                                                <h6 class="sidebar-content-title">Do You Like Brahms?</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <span class="sections-title mb-3">COMMENTS</span>
+                        <form class="comment-input-wrapper">
+                            <div class="form-group mb-3">
+                                <input type="text" name="username" id="username" class="form-control comment-input-text" placeholder="Enter username..." />
+                            </div>
+                            <div class="form-group mb-3">
+                                <input id="text" type="hidden" name="text" />
+                                <trix-editor input="text" class="form-control comment-input-text" placeholder="Enter text..."></trix-editor>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-danger">Submit</button>
+                            </div>
+                        </form>
+                        <div class="comment-wrapper mb-3">
+                            <div class="comment-user-icon">
+                                <img src="../../assets/img/aktor/130px/yoona.png" alt="" />
+                            </div>
+                            <div class="comment-text-wrapper">
+                                <h6 class="comment-user-name">Yoona</h6>
+                                <small class="comment-date">02/22/2022, 11:09 am</small>
+                                <div class="comment-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium rerum enim at veritatis. Sint, nobis animi quos consequatur eius hic earum. Ipsum, commodi corrupti iure similique ut eius aperiam
+                                    illo necessitatibus quam corporis aut qui. Ratione, provident! Doloribus, sunt?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-wrapper mb-3">
+                            <div class="comment-user-icon">
+                                <img src="../../assets/img/aktor/130px/krystal.png" alt="" />
+                            </div>
+                            <div class="comment-text-wrapper">
+                                <h6 class="comment-user-name">Krystal</h6>
+                                <small class="comment-date">02/22/2022, 10:30 am</small>
+                                <div class="comment-text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit sunt blanditiis rerum consequuntur possimus ut consectetur quasi quaerat labore. Alias libero velit, numquam ipsum maxime ratione? Maiores
+                                    nulla eaque exercitationem? Sunt repellat rem placeat? Voluptatibus!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="footer" class="mt-5">
+            <div class="footer position-relative bg-dark pt-5">
+                <div class="footer-btnUp">
+                    <a href="#">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+                <div class="container-fluid px-lg-5" data-aos="zoom-in" data-aos-duration="700">
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-lg-6 col-md-5 mx-auto mb-4">
+                            <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0" id="navbar-brand">ANAPDRAMA</h6>
+                            <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
+                            <p class="text-muted">
+                                Anapdrama is a website template that provides information about Korean dramas. This template was designed and built by Anaptech team. The information contained on this website, we collect is based on
+                                <strong>Wikipedia</strong>, <strong>Asianwiki</strong>, and <strong>MyDramaList</strong>.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 mx-auto mb-md-0 mb-3">
+                            <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0">Social Media</h6>
+                            <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
+                            <p>
+                                <i class="far fa-envelope text-danger mr-3"></i>
+                                <a href="mailto:anaptech.team@gmail.com" class="footer-link">anaptech.team@gmail.com</a>
+                            </p>
+                            <p>
+                                <i class="fab fa-instagram text-danger mr-3"></i>
+                                <a href="https://www.instagram.com/anaptech.team" target="_blank" class="footer-link">anaptech.team</a>
+                            </p>
+                            <p>
+                                <i class="fab fa-github text-danger mr-3"></i>
+                                <a class="footer-link">anaptech</a>
+                            </p>
+                            <p>
+                                <i class="fal fa-globe text-danger mr-3"></i>
+                                <a class="footer-link">anaptech.site</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-3 mx-auto mb-3">
+                            <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0">Useful Links</h6>
+                            <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
+                            <p>
+                                <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
+                                <a class="footer-link">Home</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
+                                <a class="footer-link">Drama</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
+                                <a class="footer-link">Blog</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
+                                <a class="footer-link">Contact</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row pb-5">
+                        <p class="text-center text-muted mb-0">Copyright &copy;2022 Anaptech. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- jquery -->
+        <script src="../../assets/js/jquery/jquery-3.6.0.min.js"></script>
+
+        <!-- bootstrap -->
+        <script src="../../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+        <!-- scroll animation -->
+        <script src="../../assets/js/aos/aos.min.js"></script>
+        <script src="../../assets/js/aos/config.js"></script>
+
+        <!-- trix editor -->
+        <script src="../../assets/js/trix-editor/trix.min.js"></script>
+        <script>
+            $("#trix-toolbar-1").remove();
+        </script>
+    </body>
+</html>

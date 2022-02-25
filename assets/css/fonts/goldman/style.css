@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Goldman";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Goldman"), url("../../../fonts/goldman/goldman-regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Goldman";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Goldman"), url("../../../fonts/goldman/goldman-bold.woff") format("woff");
+}

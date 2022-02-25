@@ -1,0 +1,135 @@
+/* Media Query's Navbar */
+@media screen and (max-width: 400px) {
+    .navbar-brand {
+        font-size: 1.125rem;
+    }
+    .navbar-toggler {
+        font-size: 0.75rem;
+    }
+}
+
+/* Media Query's Carousel */
+@media screen and (max-width: 576px) {
+    .carousel-title {
+        font-size: 1.3125rem;
+    }
+    .carousel-subtitle {
+        font-size: 0.8125rem;
+    }
+    .carousel-btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.8rem;
+        border-radius: 0.2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .carousel-title {
+        font-size: 1.125rem;
+    }
+    .carousel-subtitle {
+        font-size: 0.6875rem;
+    }
+    .carousel-btn {
+        font-size: 0.6875rem;
+    }
+    .carousel-indicators {
+        margin-bottom: 1.3rem;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 2.1875rem;
+        height: 0.21875rem;
+    }
+}
+
+/*  */
+@media screen and (max-width: 1200px) {
+    .sidebar-content-img {
+        height: 150px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .sidebar-content-img {
+        height: 175px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .sidebar-content-img {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .sidebar-content-img {
+        height: 240px;
+    }
+}
+/*  */
+
+/* Media Query's Details (.details-list) */
+@media screen and (max-width: 767px) {
+    .divider-left {
+        padding-left: 16px;
+    }
+}
+
+/* Media Query's Details (.details-cast) */
+@media screen and (max-width: 1200px) {
+    .details-cast-img {
+        width: 100px;
+    }
+    .details-cast-name,
+    .details-cast-char {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1122px) {
+    .details-cast-name,
+    .details-cast-char {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .details-cast-col {
+        margin: 1rem 0;
+    }
+    .details-cast-img {
+        width: 130px;
+    }
+    .details-cast-name,
+    .details-cast-char {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .details-cast-col {
+        margin: 0;
+    }
+    .details-cast-img {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .details-cast-img {
+        width: 120px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .details-cast-img {
+        width: 115px;
+    }
+    .details-cast-name,
+    .details-cast-char {
+        font-size: 15px;
+    }
+}
+
+/* Media Query's Footer */
+@media screen and (max-width: 1200px) {
+    .footer {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer {
+        font-size: 16px;
+    }
+}
