@@ -27,6 +27,27 @@
 
         <!-- title -->
         <title>Anapdrama</title>
+        <style>
+            .details-poster-wrapper {
+                background: transparent;
+                overflow: hidden;
+                border: 0;
+            }
+            .details-poster-status {
+                position: absolute;
+                top: 25px;
+                right: -32px;
+                transform: rotate(45deg);
+            }
+            .details-poster-status span {
+                font-size: 15px;
+                font-weight: 500;
+                color: #fff;
+                letter-spacing: 0.5px;
+                padding: 5px 40px;
+                background-color: #dc3545;
+            }
+        </style>
     </head>
     <body>
         <section id="navbar">
@@ -42,13 +63,13 @@
                                 <a class="nav-link p-2 px-lg-3 mx-lg-3 pe-md-3 nav-active" href="../../index.html" aria-current="true">Home</a>
                             </li>
                             <li class="nav-item col-6 col-md-auto">
-                                <a class="nav-link p-2 pe-lg-4 pe-md-3" href="soundtrack.html">Drama</a>
+                                <a class="nav-link p-2 pe-lg-4 pe-md-3" href="../category.html">Category</a>
                             </li>
                             <li class="nav-item col-6 col-md-auto">
-                                <a class="nav-link p-2 pe-lg-4 pe-md-3" href="blog.html">Blog</a>
+                                <a class="nav-link p-2 pe-lg-4 pe-md-3" href="#">Blog</a>
                             </li>
                             <li class="nav-item col-6 col-md-auto">
-                                <a class="nav-link p-2 pe-md-3" href="about.html">Contact</a>
+                                <a class="nav-link p-2 pe-md-3" href="#">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -100,7 +121,12 @@
             <section data-aos="zoom-in" data-aos-duration="1000">
                 <div class="row mt-4">
                     <div class="col-md-3">
-                        <img src="../../assets/img/poster/potret/the-kings-affection.jpg" alt="The King's Affection" class="img-fluid rounded" />
+                        <div class="card details-poster-wrapper">
+                            <img src="../../assets/img/poster/potret/the-kings-affection.jpg" alt="The King's Affection" class="img-fluid details-poster-img rounded" />
+                            <div class="details-poster-status">
+                                <span>Ongoing</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-9">
                         <h3 class="details-title mt-md-0 mt-4">The King's Affection</h3>
@@ -256,34 +282,37 @@
                         <div class="sidebar-content">
                             <h5 class="sections-title mb-3">You Might Like...</h5>
                             <div class="row justify-content-center">
-                                <div class="col-lg-12 col-md-6">
-                                    <a href="snowdrop.html">
-                                        <div class="card bg-dark border-0 text-white mb-3">
+                                <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
+                                    <a href="#" class="sidebar-content-wrapper">
+                                        <div class="card bg-dark border-0 mb-3">
                                             <img src="../../assets/img/poster/landscape/slider/snowdrop.jpg" class="sidebar-content-img" alt="Snowdrop" />
                                             <div class="card-img-overlay sidebar-content-overlay">
-                                                <span class="badge bg-danger">2022</span>
+                                                <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
+                                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2022</span>
                                                 <h6 class="sidebar-content-title">Snowdrop</h6>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-lg-12 col-md-6">
-                                    <a href="hush.html">
-                                        <div class="card bg-dark border-0 text-white mb-3">
+                                <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
+                                    <a href="#" class="sidebar-content-wrapper">
+                                        <div class="card bg-dark border-0 mb-3">
                                             <img src="../../assets/img/poster/landscape/hush.jpg" class="sidebar-content-img" alt="Hush" />
                                             <div class="card-img-overlay sidebar-content-overlay">
-                                                <span class="badge bg-danger">2021</span>
+                                                <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
+                                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2021</span>
                                                 <h6 class="sidebar-content-title">H.U.S.H</h6>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-lg-12 col-md-6">
-                                    <a href="do-you-like-brahms.html">
-                                        <div class="card bg-dark border-0 text-white mb-3">
+                                <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
+                                    <a href="#" class="sidebar-content-wrapper">
+                                        <div class="card bg-dark border-0 mb-3">
                                             <img src="../../assets/img/poster/landscape/slider/do-you-like-brahms.jpg" class="sidebar-content-img" alt="Do You Like Brahms?" />
                                             <div class="card-img-overlay sidebar-content-overlay">
-                                                <span class="badge bg-danger">2020</span>
+                                                <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
+                                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2020</span>
                                                 <h6 class="sidebar-content-title">Do You Like Brahms?</h6>
                                             </div>
                                         </div>
@@ -310,10 +339,10 @@
                         </form>
                         <div class="comment-wrapper mb-3">
                             <div class="comment-user-icon">
-                                <img src="../../assets/img/aktor/130px/yoona.png" alt="" />
+                                <img src="https://source.unsplash.com/1000x1000?people,profile" alt="Steven" />
                             </div>
                             <div class="comment-text-wrapper">
-                                <h6 class="comment-user-name">Yoona</h6>
+                                <h6 class="comment-user-name">Steven</h6>
                                 <small class="comment-date">02/22/2022, 11:09 am</small>
                                 <div class="comment-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium rerum enim at veritatis. Sint, nobis animi quos consequatur eius hic earum. Ipsum, commodi corrupti iure similique ut eius aperiam
@@ -323,10 +352,10 @@
                         </div>
                         <div class="comment-wrapper mb-3">
                             <div class="comment-user-icon">
-                                <img src="../../assets/img/aktor/130px/krystal.png" alt="" />
+                                <img src="https://source.unsplash.com/1000x1000?people,user" alt="Johannes" />
                             </div>
                             <div class="comment-text-wrapper">
-                                <h6 class="comment-user-name">Krystal</h6>
+                                <h6 class="comment-user-name">Johannes</h6>
                                 <small class="comment-date">02/22/2022, 10:30 am</small>
                                 <div class="comment-text">
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit sunt blanditiis rerum consequuntur possimus ut consectetur quasi quaerat labore. Alias libero velit, numquam ipsum maxime ratione? Maiores
