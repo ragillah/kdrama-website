@@ -70,7 +70,7 @@ body {
 }
 .nav-user[data-bs-popper] {
     top: 50px;
-    left: -145px;
+    left: -122px;
 }
 .nav-user li .dropdown-item:hover {
     color: #dc3545;
