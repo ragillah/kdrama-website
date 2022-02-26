@@ -50,7 +50,6 @@ body {
     font-size: 25px;
 }
 .nav-link {
-    font-family: var(--mulish-font);
     font-size: 16px;
     font-weight: 500;
     color: #cccccc;
@@ -221,7 +220,6 @@ body {
     width: 100%;
     padding: 15px 0;
     margin: 0;
-    font-family: var(--mulish-font);
     font-size: 18px;
     font-weight: 700;
     text-align: center;
@@ -257,7 +255,6 @@ body {
 
 /* Style's details */
 .breadcrumb-item {
-    font-family: var(--mulish-font);
     font-size: 15px;
     color: #ffffff;
 }
@@ -285,14 +282,24 @@ body {
 .details-list {
     color: #b7b7b7;
 }
-.details-title,
-.details-subtitle,
-.details-description,
-.details-list,
-.details-ratings,
-.details-card-title,
-.details-cast {
-    font-family: var(--mulish-font);
+.details-poster-wrapper {
+    background: transparent;
+    overflow: hidden;
+    border: 0;
+}
+.details-poster-status {
+    position: absolute;
+    top: 25px;
+    right: -32px;
+    transform: rotate(45deg);
+}
+.details-poster-status span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.5px;
+    padding: 5px 40px;
+    background-color: #dc3545;
 }
 .details-title {
     font-weight: 700;
