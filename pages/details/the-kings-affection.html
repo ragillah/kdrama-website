@@ -27,27 +27,6 @@
 
         <!-- title -->
         <title>Anapdrama</title>
-        <style>
-            .details-poster-wrapper {
-                background: transparent;
-                overflow: hidden;
-                border: 0;
-            }
-            .details-poster-status {
-                position: absolute;
-                top: 25px;
-                right: -32px;
-                transform: rotate(45deg);
-            }
-            .details-poster-status span {
-                font-size: 15px;
-                font-weight: 500;
-                color: #fff;
-                letter-spacing: 0.5px;
-                padding: 5px 40px;
-                background-color: #dc3545;
-            }
-        </style>
     </head>
     <body>
         <section id="navbar">
@@ -105,20 +84,18 @@
             </header>
         </section>
 
-        <div class="container-fluid px-md-5 pt-4">
-            <section>
-                <nav>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item breadcrumb-home">
-                            <i class="fa fa-home breadcrumb-icon"></i>
-                            <a class="text-decoration-none" href="#">Home</a>
-                        </li>
-                        <li class="breadcrumb-item breadcrumb-active">Detail</li>
-                        <li class="breadcrumb-item breadcrumb-active" aria-current="page">The King's Affection</li>
-                    </ol>
-                </nav>
-            </section>
-            <section data-aos="zoom-in" data-aos-duration="1000">
+        <section id="content" class="container-fluid px-md-5 pt-4">
+            <nav id="page-menu">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item breadcrumb-home">
+                        <i class="fa fa-home breadcrumb-icon"></i>
+                        <a class="text-decoration-none" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item breadcrumb-active">Detail</li>
+                    <li class="breadcrumb-item breadcrumb-active" aria-current="page">The King's Affection</li>
+                </ol>
+            </nav>
+            <div data-aos="zoom-in" data-aos-duration="1000">
                 <div class="row mt-4">
                     <div class="col-md-3">
                         <div class="card details-poster-wrapper">
@@ -365,8 +342,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
         <section id="footer" class="mt-5">
             <div class="footer position-relative bg-dark pt-5">
