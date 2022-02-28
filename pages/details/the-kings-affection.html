@@ -7,102 +7,61 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- css -->
-        <link rel="stylesheet" href="../../assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="../../assets/css/style.css" />
         <link rel="stylesheet" href="../../assets/css/media-query.css" />
 
         <!-- custom fonts -->
-        <link rel="stylesheet" href="../../assets/css/fonts/goldman/style.css" />
-        <link rel="stylesheet" href="../../assets/css/fonts/oswald/style.css" />
-        <link rel="stylesheet" href="../../assets/css/fonts/mulish/style.css" />
+        <link rel="stylesheet" href="../../assets/fonts/goldman/css/style.css" />
+        <link rel="stylesheet" href="../../assets/fonts/oswald/css/style.css" />
+        <link rel="stylesheet" href="../../assets/fonts/mulish/css/style.css" />
 
         <!-- scroll animation -->
-        <link rel="stylesheet" href="../../assets/css/aos/aos.min.css" />
+        <link rel="stylesheet" href="../../assets/libraries/aos/css/aos.min.css" />
 
         <!-- trix editor -->
-        <link rel="stylesheet" href="../../assets/css/trix-editor/trix.css" />
+        <link rel="stylesheet" href="../../assets/libraries/trix-editor/css/trix.css" />
 
         <!-- fontawesome -->
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="../../assets/libraries/fontawesome/css/all.min.css" />
 
         <!-- title -->
-        <title>Anapdrama</title>
+        <title>Detail | Anapdrama</title>
     </head>
     <body>
         <section id="navbar">
-            <header class="navbar navbar-expand-md navbar-light bd-navbar p-0">
-                <nav class="container-xxl flex-wrap flex-md-nowrap px-lg-5 py-lg-1 py-md-1 py-3 bg-dark" id="nav">
-                    <a class="navbar-brand text-danger m-0 p-0" href="../../index.html" id="brand"> ANAP<span class="text-white">DRAMA</span> </a>
-                    <button type="button" class="navbar-toggler border-0 ms-auto" id="togglerOpen" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
-                        <i class="fas fa-align-justify text-white py-1"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="bdNavbar">
-                        <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav py-md-3 py-sm-3 ms-auto">
-                            <li class="nav-item col-6 col-md-auto">
-                                <a class="nav-link p-2 px-lg-3 mx-lg-3 pe-md-3 nav-active" href="../../index.html" aria-current="true">Home</a>
-                            </li>
-                            <li class="nav-item col-6 col-md-auto">
-                                <a class="nav-link p-2 pe-lg-4 pe-md-3" href="../category.html">Category</a>
-                            </li>
-                            <li class="nav-item col-6 col-md-auto">
-                                <a class="nav-link p-2 pe-lg-4 pe-md-3" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item col-6 col-md-auto">
-                                <a class="nav-link p-2 pe-md-3" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item col-6 col-md-auto">
-                                <div class="dropdown">
-                                    <a class="nav-link p-2 pe-md-3" data-bs-toggle="dropdown" href="#">
-                                        <i class="far fa-user"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-dark nav-user">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="far fa-chart-line pe-1"></i>
-                                                <span>Dashboard</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="far fa-sign-out-alt pe-1"></i>
-                                                <span>Log-out</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
+            <nav class="bg-dark py-4">
+                <div class="nav-wrapper">
+                    <div class="nav-brand">
+                        <a class="text-danger" href="../../index.html"> ANAP<span class="text-white">DRAMA</span> </a>
                     </div>
-                    <div class="offcanvas sidebar offcanvas-start bg-dark text-white w-100" data-bs-scroll="false" data-bs-backdrop="false" tabindex="-1" id="sidebar">
-                        <div class="offcanvas-header">
-                            <a class="navbar-brand text-danger m-0 p-0" href="../../index.html" id="brand"> ANAP<span class="text-white">DRAMA</span> </a>
-                            <button type="button" class="bg-transparent border-0" id="togglerClose" data-bs-dismiss="offcanvas">
-                                <i class="fa fa-times fa-2x text-white"></i>
-                            </button>
+                    <ul class="nav-content mb-0">
+                        <div class="nav-toggler-close">
+                            <i class="fas fa-times"></i>
                         </div>
-                        <div class="offcanvas-body">
-                            <div class="d-flex justify-content-center align-items-center h-100">
-                                <div class="d-block" id="bdNavbar">
-                                    <ul class="navbar-nav d-block">
-                                        <li class="nav-item text-center mb-3">
-                                            <a class="nav-link text-decoration-none ms-3 nav-active" href="../../index.html">Home</a>
-                                        </li>
-                                        <li class="nav-item text-center my-4">
-                                            <a class="nav-link text-decoration-none" href="../category.html">Category</a>
-                                        </li>
-                                        <li class="nav-item text-center my-4">
-                                            <a class="nav-link text-decoration-none" href="#">Blog</a>
-                                        </li>
-                                        <li class="nav-item text-center my-4">
-                                            <a class="nav-link text-decoration-none" href="#">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <li>
+                            <a href="../../index.html" class="nav-active">Home</a>
+                        </li>
+                        <li>
+                            <a href="../category.html">Category</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-sign-in-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav-toggler-open">
+                        <i class="fas fa-bars"></i>
                     </div>
-                </nav>
-            </header>
+                </div>
+            </nav>
         </section>
 
         <section id="content" class="container-fluid px-md-5 pt-4">
@@ -173,8 +132,8 @@
                     </div>
                 </div>
                 <div class="row flex-row-reverse mt-4">
-                    <div class="col-lg-9 mb-4">
-                        <div class="card border-0 mb-4">
+                    <div class="col-lg-9">
+                        <div id="main-casts" class="card border-0 mb-4">
                             <div class="card-header bg-dark">
                                 <h5 class="details-card-title text-white mb-0">Main Casts</h5>
                             </div>
@@ -237,7 +196,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card border-0">
+                        <div id="trailer" class="card border-0 mb-4">
                             <div class="card-header bg-dark">
                                 <h5 class="details-card-title text-white mb-0">Trailer</h5>
                             </div>
@@ -250,8 +209,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card border-0 mb-4">
+                    <div class="col-lg-3">
+                        <div id="ratings" class="card border-0 mb-4">
                             <div class="card-header bg-dark">
                                 <h5 class="details-card-title text-white mb-0">Ratings</h5>
                             </div>
@@ -277,7 +236,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="sidebar-content">
+                        <div class="sidebar-content mb-2">
                             <h5 class="sections-title mb-3">You Might Like...</h5>
                             <div class="row justify-content-center">
                                 <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
@@ -295,11 +254,11 @@
                                 <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
                                     <a href="#" class="sidebar-content-wrapper">
                                         <div class="card bg-dark border-0 mb-3">
-                                            <img src="../../assets/img/poster/landscape/hush.jpg" class="sidebar-content-img" alt="Hush" />
+                                            <img src="../../assets/img/poster/landscape/slider/the-kings-affection.jpg" class="sidebar-content-img" alt="The King's affection" />
                                             <div class="card-img-overlay sidebar-content-overlay">
-                                                <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
+                                                <span class="rating"><i class="fa fa-star"></i> 9.0 / 10</span>
                                                 <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2021</span>
-                                                <h6 class="sidebar-content-title">H.U.S.H</h6>
+                                                <h6 class="sidebar-content-title">The King's Affection</h6>
                                             </div>
                                         </div>
                                     </a>
@@ -321,43 +280,85 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
-                        <span class="sections-title mb-3">COMMENTS</span>
-                        <form class="comment-input-wrapper">
-                            <div class="form-group mb-3">
-                                <input type="text" name="username" id="username" class="form-control comment-input-text" placeholder="Enter username..." />
-                            </div>
-                            <div class="form-group mb-3">
-                                <input id="text" type="hidden" name="text" />
-                                <trix-editor input="text" class="form-control comment-input-text" placeholder="Enter text..."></trix-editor>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-danger">Submit</button>
-                            </div>
-                        </form>
-                        <div class="comment-wrapper mb-3">
-                            <div class="comment-user-icon">
-                                <img src="https://source.unsplash.com/1000x1000?people,profile" alt="Steven" />
-                            </div>
-                            <div class="comment-text-wrapper">
-                                <h6 class="comment-user-name">Steven</h6>
-                                <small class="comment-date">02/22/2022, 11:09 am</small>
-                                <div class="comment-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium rerum enim at veritatis. Sint, nobis animi quos consequatur eius hic earum. Ipsum, commodi corrupti iure similique ut eius aperiam
-                                    illo necessitatibus quam corporis aut qui. Ratione, provident! Doloribus, sunt?
+                    <div class="col-lg-3">
+                        <div class="sidebar-content">
+                            <h5 class="sections-title mb-3">Featured Article...</h5>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
+                                    <a href="#" class="sidebar-content-wrapper">
+                                        <div class="card bg-dark border-0 mb-3">
+                                            <img src="../../assets/img/poster/landscape/slider/snowdrop.jpg" class="sidebar-content-img" alt="Snowdrop" />
+                                            <div class="card-img-overlay sidebar-content-overlay">
+                                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> Feb/22/2022</span>
+                                                <h6 class="sidebar-content-title">Article Title</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
+                                    <a href="#" class="sidebar-content-wrapper">
+                                        <div class="card bg-dark border-0 mb-3">
+                                            <img src="../../assets/img/poster/landscape/hush.jpg" class="sidebar-content-img" alt="Hush" />
+                                            <div class="card-img-overlay sidebar-content-overlay">
+                                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> Feb/21/2022</span>
+                                                <h6 class="sidebar-content-title">Article Title</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
+                                    <a href="#" class="sidebar-content-wrapper">
+                                        <div class="card bg-dark border-0 mb-3">
+                                            <img src="../../assets/img/poster/landscape/slider/do-you-like-brahms.jpg" class="sidebar-content-img" alt="Do You Like Brahms?" />
+                                            <div class="card-img-overlay sidebar-content-overlay">
+                                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> Feb/20/2022</span>
+                                                <h6 class="sidebar-content-title">Article Title</h6>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="comment-wrapper mb-3">
-                            <div class="comment-user-icon">
-                                <img src="https://source.unsplash.com/1000x1000?people,user" alt="Johannes" />
+                    </div>
+                    <div class="col-lg-9">
+                        <div id="comments">
+                            <span class="sections-title mb-3">COMMENTS</span>
+                            <form class="comment-input-wrapper">
+                                <div class="form-group mb-2">
+                                    <input type="text" name="username" id="username" class="form-control comment-input-text" placeholder="Enter username..." />
+                                </div>
+                                <div class="form-group mb-2">
+                                    <input id="text" type="hidden" name="text" />
+                                    <trix-editor input="text" class="form-control comment-input-text" placeholder="Enter text..."></trix-editor>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-danger">Submit</button>
+                                </div>
+                            </form>
+                            <div class="comment-wrapper mb-3">
+                                <div class="comment-user-icon">
+                                    <img src="https://source.unsplash.com/1000x1000?people,profile" alt="Steven" /> 
+                                </div>
+                                <div class="comment-text-wrapper">
+                                    <h6 class="comment-user-name">Steven</h6>
+                                    <small class="comment-date">02/22/2022, 11:09 am</small>
+                                    <div class="comment-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium rerum enim at veritatis. Sint, nobis animi quos consequatur eius hic earum. Ipsum, commodi corrupti iure similique ut eius aperiam
+                                        illo necessitatibus quam corporis aut qui. Ratione, provident! Doloribus, sunt?
+                                    </div>
+                                </div>
                             </div>
-                            <div class="comment-text-wrapper">
-                                <h6 class="comment-user-name">Johannes</h6>
-                                <small class="comment-date">02/22/2022, 10:30 am</small>
-                                <div class="comment-text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit sunt blanditiis rerum consequuntur possimus ut consectetur quasi quaerat labore. Alias libero velit, numquam ipsum maxime ratione? Maiores
-                                    nulla eaque exercitationem? Sunt repellat rem placeat? Voluptatibus!
+                            <div class="comment-wrapper mb-3">
+                                <div class="comment-user-icon">
+                                    <img src="https://source.unsplash.com/1000x1000?people,user" alt="Johannes" />  
+                                </div>
+                                <div class="comment-text-wrapper">
+                                    <h6 class="comment-user-name">Johannes</h6>
+                                    <small class="comment-date">02/22/2022, 10:30 am</small>
+                                    <div class="comment-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit sunt blanditiis rerum consequuntur possimus ut consectetur quasi quaerat labore. Alias libero velit, numquam ipsum maxime ratione? Maiores
+                                        nulla eaque exercitationem? Sunt repellat rem placeat? Voluptatibus!
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -366,7 +367,7 @@
             </div>
         </section>
 
-        <section id="footer" class="mt-5">
+        <section id="footer" class="mt-lg-5 mt-5">
             <div class="footer position-relative bg-dark pt-5">
                 <div class="footer-btnUp">
                     <a href="#">
@@ -386,41 +387,41 @@
                         <div class="col-lg-3 col-md-4 mx-auto mb-md-0 mb-3">
                             <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0">Social Media</h6>
                             <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
-                            <p>
+                            <p class="footer-link">
                                 <i class="far fa-envelope text-danger mr-3"></i>
-                                <a href="mailto:anaptech.team@gmail.com" class="footer-link">anaptech.team@gmail.com</a>
+                                <a href="mailto:anaptech.team@gmail.com">anaptech.team@gmail.com</a>
                             </p>
-                            <p>
+                            <p class="footer-link">
                                 <i class="fab fa-instagram text-danger mr-3"></i>
-                                <a href="https://www.instagram.com/anaptech.team" target="_blank" class="footer-link">anaptech.team</a>
+                                <a href="https://www.instagram.com/anaptech.team" target="_blank">anaptech.team</a>
                             </p>
-                            <p>
+                            <p class="footer-link">
                                 <i class="fab fa-github text-danger mr-3"></i>
-                                <a class="footer-link">anaptech</a>
+                                <a href="#">anaptech</a>
                             </p>
-                            <p>
+                            <p class="footer-link">
                                 <i class="fal fa-globe text-danger mr-3"></i>
-                                <a class="footer-link">anaptech.site</a>
+                                <a href="#">anaptech.site</a>
                             </p>
                         </div>
                         <div class="col-lg-2 col-md-3 mx-auto mb-3">
                             <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0">Useful Links</h6>
                             <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
-                            <p>
+                            <p class="footer-link">
                                 <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
-                                <a class="footer-link">Home</a>
+                                <a href="../../index.html">Home</a>
                             </p>
-                            <p>
+                            <p class="footer-link">
                                 <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
-                                <a class="footer-link">Drama</a>
+                                <a href="../category.html">Category</a>
                             </p>
-                            <p>
+                            <p class="footer-link">
                                 <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
-                                <a class="footer-link">Blog</a>
+                                <a href="../blog.html">Blog</a>
                             </p>
-                            <p>
+                            <p class="footer-link">
                                 <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
-                                <a class="footer-link">Contact</a>
+                                <a href="../contact.html">Contact</a>
                             </p>
                         </div>
                     </div>
@@ -432,19 +433,24 @@
         </section>
 
         <!-- jquery -->
-        <script src="../../assets/js/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../../assets/libraries/jquery/js/jquery-3.6.0.min.js"></script>
 
         <!-- bootstrap -->
-        <script src="../../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
 
         <!-- scroll animation -->
-        <script src="../../assets/js/aos/aos.min.js"></script>
-        <script src="../../assets/js/aos/config.js"></script>
+        <script src="../../assets/libraries/aos/js/aos.min.js"></script>
+        <script src="../../assets/libraries/aos/js/config.js"></script>
+
+        <!-- custom -->
+        <script src="../../assets/js/script.js"></script>
 
         <!-- trix editor -->
-        <script src="../../assets/js/trix-editor/trix.min.js"></script>
+        <script src="../../assets/libraries/trix-editor/js/trix.min.js"></script>
         <script>
-            $("#trix-toolbar-1").remove();
+            $(document).ready(() => {
+                $("#trix-toolbar-1").remove();
+            });
         </script>
     </body>
 </html>

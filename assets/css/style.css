@@ -38,7 +38,58 @@ body {
 /* End */
 
 /* Style's navbar */
-.navbar {
+nav {
+    width: 100%;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1250px;
+    margin: auto;
+}
+.nav-brand a {
+    font-family: var(--goldman-font);
+    font-size: 25px;
+    text-decoration: none;
+}
+.nav-content {
+    display: inline-flex;
+}
+.nav-content li {
+    list-style: none;
+    padding-left: 0.5rem;
+}
+.nav-content li a {
+    color: #cccccc;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.nav-content li a:hover {
+    color: #dc3545;
+}
+.nav-toggler-open,
+.nav-toggler-close {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.nav-toggler-close {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.nav-active {
+    border-bottom: 2px solid #dc3545;
+    padding: 0.5rem;
+}
+/* .navbar {
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -49,10 +100,13 @@ body {
     font-family: var(--goldman-font);
     font-size: 25px;
 }
+.navbar-text .dropdown a,
+.nav-link {
+    color: #cccccc;
+}
 .nav-link {
     font-size: 16px;
     font-weight: 500;
-    color: #cccccc;
 }
 .nav-user {
     background-color: #292e38;
@@ -72,6 +126,8 @@ body {
     top: 50px;
     left: -122px;
 }
+.navbar-text .dropdown a:hover,
+.navbar-text .dropdown a:focus,
 .nav-user li .dropdown-item:hover {
     color: #dc3545;
     background-color: transparent;
@@ -83,7 +139,7 @@ body {
     margin-left: 0;
     padding-right: 1rem !important;
     padding-left: 1rem !important;
-}
+} */
 /* End */
 
 /* Style's slider/carousels */
@@ -357,12 +413,7 @@ body {
 .comment-input-text {
     border: 0;
 }
-.comment-input-text,
 .comment-input-text:focus {
-    /* background-color: #999999; */
-}
-.comment-input-text:focus {
-    /* border-color: #999999; */
     box-shadow: none;
 }
 .comment-wrapper {
@@ -378,15 +429,15 @@ body {
 .comment-user-icon::before {
     position: absolute;
     right: -30px;
-    top: 30px;
+    top: 20px;
     content: "";
     transform: rotate(45deg);
     border-top: 15px solid transparent;
     border-left: 15px solid #999999;
 }
 .comment-user-icon img {
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
 }
 .comment-text-wrapper {
@@ -433,11 +484,14 @@ body {
     height: 2px;
     background-color: #ffffff;
 }
-.footer-link {
+.footer-link i {
+    font-size: 13px;
+}
+.footer-link a {
     text-decoration: none;
     color: #999999;
 }
-.footer-link:hover {
+.footer-link a:hover {
     color: #dc3545;
 }
 /* End */
