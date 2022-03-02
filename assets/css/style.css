@@ -24,6 +24,12 @@
 }
 /*! End */
 
+/*  */
+html {
+    overflow-x: hidden;
+}
+/*  */
+
 /*! Body */
 body {
     background: #343d50;
@@ -217,10 +223,7 @@ nav {
     color: #f2f2f2;
 }
 .sidebar-content-wrapper:hover .sidebar-content-img {
-    left: 0;
-    transform: translateX(0);
     filter: brightness(100%);
-    transform: scale(1.1);
 }
 .sidebar-content-wrapper:hover .sidebar-content-title {
     padding: 6px 0;
@@ -255,7 +258,7 @@ nav {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    transition: 0.7s ease;
+    transition: 0.5s linear;
 }
 .sidebar-content-overlay {
     padding: 10px;
