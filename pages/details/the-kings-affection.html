@@ -5,6 +5,8 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Anaptech" />
+        <meta name="description" content="Anapdrama is a website template that provides information about Korean dramas." />
 
         <!-- css -->
         <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
@@ -20,10 +22,13 @@
         <link rel="stylesheet" href="../../assets/libraries/aos/css/aos.min.css" />
 
         <!-- trix editor -->
-        <link rel="stylesheet" href="../../assets/libraries/trix-editor/css/trix.css" />
+        <link rel="stylesheet" href="../../assets/libraries/trix-editor/css/trix.min.css" />
 
         <!-- fontawesome -->
         <link rel="stylesheet" href="../../assets/libraries/fontawesome/css/all.min.css" />
+
+        <!-- bootstrap icons -->
+        <link rel="stylesheet" href="../../assets/libraries/bootstrap-icons/css/bootstrap-icons.min.css" />
 
         <!-- title -->
         <title>Detail | Anapdrama</title>
@@ -36,26 +41,28 @@
                         <a class="text-danger" href="../../index.html"> ANAP<span class="text-white">DRAMA</span> </a>
                     </div>
                     <ul class="nav-content mb-0">
-                        <div class="nav-toggler-close">
-                            <i class="fas fa-times"></i>
+                        <div class="nav-group">
+                            <div class="nav-toggler-close">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <li>
+                                <a href="../../index.html" class="nav-active">Home</a>
+                            </li>
+                            <li>
+                                <a href="../category.html">Category</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="far fa-sign-in-alt"></i>
+                                </a>
+                            </li>
                         </div>
-                        <li>
-                            <a href="../../index.html" class="nav-active">Home</a>
-                        </li>
-                        <li>
-                            <a href="../category.html">Category</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="far fa-sign-in-alt"></i>
-                            </a>
-                        </li>
                     </ul>
                     <div class="nav-toggler-open">
                         <i class="fas fa-bars"></i>
@@ -81,7 +88,7 @@
                         <div class="card details-poster-wrapper">
                             <img src="../../assets/img/poster/potret/the-kings-affection.jpg" alt="The King's Affection" class="img-fluid details-poster-img rounded" />
                             <div class="details-poster-status">
-                                <span>Ongoing</span>
+                                <span>Finished</span>
                             </div>
                         </div>
                     </div>
@@ -240,8 +247,8 @@
                             <h5 class="sections-title mb-3">You Might Like...</h5>
                             <div class="row justify-content-center">
                                 <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
-                                    <a href="#" class="sidebar-content-wrapper">
-                                        <div class="card bg-dark border-0 mb-3">
+                                    <a href="snowdrop.html" class="sidebar-content-wrapper">
+                                        <div class="card mb-3">
                                             <img src="../../assets/img/poster/landscape/slider/snowdrop.jpg" class="sidebar-content-img" alt="Snowdrop" />
                                             <div class="card-img-overlay sidebar-content-overlay">
                                                 <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
@@ -252,8 +259,8 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
-                                    <a href="#" class="sidebar-content-wrapper">
-                                        <div class="card bg-dark border-0 mb-3">
+                                    <a href="the-kings-affection.html" class="sidebar-content-wrapper">
+                                        <div class="card mb-3">
                                             <img src="../../assets/img/poster/landscape/slider/the-kings-affection.jpg" class="sidebar-content-img" alt="The King's affection" />
                                             <div class="card-img-overlay sidebar-content-overlay">
                                                 <span class="rating"><i class="fa fa-star"></i> 9.0 / 10</span>
@@ -264,8 +271,8 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
-                                    <a href="#" class="sidebar-content-wrapper">
-                                        <div class="card bg-dark border-0 mb-3">
+                                    <a href="do-you-like-brahms.html" class="sidebar-content-wrapper">
+                                        <div class="card mb-3">
                                             <img src="../../assets/img/poster/landscape/slider/do-you-like-brahms.jpg" class="sidebar-content-img" alt="Do You Like Brahms?" />
                                             <div class="card-img-overlay sidebar-content-overlay">
                                                 <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
@@ -282,37 +289,43 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="sidebar-content">
-                            <h5 class="sections-title mb-3">Featured Article...</h5>
+                            <h5 class="sections-title mb-3">Featured Blog Posts</h5>
+                            <div class="sections-button ms-3 mb-4">
+                                <a class="text-decoration-none" href="#">
+                                    <span>VIEW ALL</span>
+                                    <i class="bi bi-arrow-bar-right"></i>
+                                </a>
+                            </div>
                             <div class="row justify-content-center">
                                 <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
-                                    <a href="#" class="sidebar-content-wrapper">
-                                        <div class="card bg-dark border-0 mb-3">
-                                            <img src="../../assets/img/poster/landscape/slider/snowdrop.jpg" class="sidebar-content-img" alt="Snowdrop" />
+                                    <a href="post.html" class="sidebar-content-wrapper">
+                                        <div class="card mb-3">
+                                            <img src="../../assets/img/blog/snowdrop-drama-facts.jpg" alt="Snowdrop Drama Facts" class="sidebar-content-img">
                                             <div class="card-img-overlay sidebar-content-overlay">
-                                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> Feb/22/2022</span>
-                                                <h6 class="sidebar-content-title">Article Title</h6>
+                                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 02/22/2022</span>
+                                                <h6 class="sidebar-content-title">Snowdrop Drama Facts</h6>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
-                                    <a href="#" class="sidebar-content-wrapper">
-                                        <div class="card bg-dark border-0 mb-3">
-                                            <img src="../../assets/img/poster/landscape/hush.jpg" class="sidebar-content-img" alt="Hush" />
+                                    <a href="post.html" class="sidebar-content-wrapper">
+                                        <div class="card mb-3">
+                                            <img src="../../assets/img/blog/top-10-healing-dramas.jpg" alt="Top 10 Healing Dramas" class="sidebar-content-img">
                                             <div class="card-img-overlay sidebar-content-overlay">
-                                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> Feb/21/2022</span>
-                                                <h6 class="sidebar-content-title">Article Title</h6>
+                                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 02/21/2022</span>
+                                                <h6 class="sidebar-content-title">Top 10 Healing Dramas</h6>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2">
-                                    <a href="#" class="sidebar-content-wrapper">
-                                        <div class="card bg-dark border-0 mb-3">
-                                            <img src="../../assets/img/poster/landscape/slider/do-you-like-brahms.jpg" class="sidebar-content-img" alt="Do You Like Brahms?" />
+                                    <a href="post.html" class="sidebar-content-wrapper">
+                                        <div class="card mb-3">
+                                            <img src="../../assets/img/blog/the-cast-of-drama-the-kings-affection.jpg" alt="The Cast of Drama The King's Affection" class="sidebar-content-img">
                                             <div class="card-img-overlay sidebar-content-overlay">
-                                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> Feb/20/2022</span>
-                                                <h6 class="sidebar-content-title">Article Title</h6>
+                                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 02/20/2022</span>
+                                                <h6 class="sidebar-content-title">The Cast of Drama The King's Affection</h6>
                                             </div>
                                         </div>
                                     </a>
@@ -337,27 +350,27 @@
                             </form>
                             <div class="comment-wrapper mb-3">
                                 <div class="comment-user-icon">
-                                    <img src="https://source.unsplash.com/1000x1000?people,profile" alt="Steven" /> 
+                                    <img src="https://source.unsplash.com/1000x1000?people,profile" alt="Steven" />
                                 </div>
                                 <div class="comment-text-wrapper">
                                     <h6 class="comment-user-name">Steven</h6>
                                     <small class="comment-date">02/22/2022, 11:09 am</small>
                                     <div class="comment-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium rerum enim at veritatis. Sint, nobis animi quos consequatur eius hic earum. Ipsum, commodi corrupti iure similique ut eius aperiam
-                                        illo necessitatibus quam corporis aut qui. Ratione, provident! Doloribus, sunt?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium rerum enim at veritatis. Sint, nobis animi quos consequatur eius hic earum. Ipsum, commodi corrupti iure similique ut eius
+                                        aperiam illo necessitatibus quam corporis aut qui. Ratione, provident! Doloribus, sunt?
                                     </div>
                                 </div>
                             </div>
                             <div class="comment-wrapper mb-3">
                                 <div class="comment-user-icon">
-                                    <img src="https://source.unsplash.com/1000x1000?people,user" alt="Johannes" />  
+                                    <img src="https://source.unsplash.com/1000x1000?people,user" alt="Johannes" />
                                 </div>
                                 <div class="comment-text-wrapper">
                                     <h6 class="comment-user-name">Johannes</h6>
                                     <small class="comment-date">02/22/2022, 10:30 am</small>
                                     <div class="comment-text">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit sunt blanditiis rerum consequuntur possimus ut consectetur quasi quaerat labore. Alias libero velit, numquam ipsum maxime ratione? Maiores
-                                        nulla eaque exercitationem? Sunt repellat rem placeat? Voluptatibus!
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit sunt blanditiis rerum consequuntur possimus ut consectetur quasi quaerat labore. Alias libero velit, numquam ipsum maxime ratione?
+                                        Maiores nulla eaque exercitationem? Sunt repellat rem placeat? Voluptatibus!
                                     </div>
                                 </div>
                             </div>
@@ -367,21 +380,21 @@
             </div>
         </section>
 
-        <section id="footer" class="mt-lg-5 mt-5">
+        <section id="footer" class="mt-5">
             <div class="footer position-relative bg-dark pt-5">
                 <div class="footer-btnUp">
-                    <a href="#">
+                    <a href="#navbar">
                         <i class="fa fa-chevron-up"></i>
                     </a>
                 </div>
                 <div class="container-fluid px-lg-5" data-aos="zoom-in" data-aos-duration="700">
                     <div class="row justify-content-center mt-3">
                         <div class="col-lg-6 col-md-5 mx-auto mb-4">
-                            <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0" id="navbar-brand">ANAPDRAMA</h6>
+                            <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0">ANAPDRAMA</h6>
                             <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
                             <p class="text-muted">
-                                Anapdrama is a website template that provides information about Korean dramas. This template was designed and built by Anaptech team. The information contained on this website, we collect is based on
-                                <strong>Wikipedia</strong>, <strong>Asianwiki</strong>, and <strong>MyDramaList</strong>.
+                                <strong>Anapdrama</strong> is a website template that provides information about Korean dramas. This template was designed and built by <strong>Anaptech</strong> team. The information contained on this
+                                website, we collect is based on <strong>Wikipedia</strong>, <strong>Asianwiki</strong>, and <strong>MyDramaList</strong>.
                             </p>
                         </div>
                         <div class="col-lg-3 col-md-4 mx-auto mb-md-0 mb-3">
@@ -389,44 +402,44 @@
                             <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
                             <p class="footer-link">
                                 <i class="far fa-envelope text-danger mr-3"></i>
-                                <a href="mailto:anaptech.team@gmail.com">anaptech.team@gmail.com</a>
+                                <a href="mailto:anaptech.team@gmail.com">anapdrama@mail.com</a>
                             </p>
                             <p class="footer-link">
                                 <i class="fab fa-instagram text-danger mr-3"></i>
-                                <a href="https://www.instagram.com/anaptech.team" target="_blank">anaptech.team</a>
+                                <a href="https://www.instagram.com/anaptech.team" target="_blank">@anapdrama</a>
                             </p>
                             <p class="footer-link">
                                 <i class="fab fa-github text-danger mr-3"></i>
-                                <a href="#">anaptech</a>
+                                <a href="#">anapdrama</a>
                             </p>
                             <p class="footer-link">
                                 <i class="fal fa-globe text-danger mr-3"></i>
-                                <a href="#">anaptech.site</a>
+                                <a href="#">anapdrama.com</a>
                             </p>
                         </div>
                         <div class="col-lg-2 col-md-3 mx-auto mb-3">
                             <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0">Useful Links</h6>
                             <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
                             <p class="footer-link">
-                                <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
                                 <a href="../../index.html">Home</a>
                             </p>
                             <p class="footer-link">
-                                <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
                                 <a href="../category.html">Category</a>
                             </p>
                             <p class="footer-link">
-                                <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
                                 <a href="../blog.html">Blog</a>
                             </p>
                             <p class="footer-link">
-                                <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
                                 <a href="../contact.html">Contact</a>
                             </p>
                         </div>
                     </div>
                     <div class="row pb-5">
-                        <p class="text-center text-muted mb-0">Copyright &copy;2022 Anaptech. All rights reserved.</p>
+                        <p class="text-center text-muted mb-0">Copyright &copy;2022 Anapdrama. All rights reserved.</p>
                     </div>
                 </div>
             </div>

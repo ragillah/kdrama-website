@@ -5,102 +5,70 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Anaptech" />
+        <meta name="description" content="Anapdrama is a website template that provides information about Korean dramas." />
 
         <!-- css -->
-        <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="assets/css/media-query.css" />
 
         <!-- custom fonts -->
-        <link rel="stylesheet" href="assets/css/fonts/goldman/style.css" />
-        <link rel="stylesheet" href="assets/css/fonts/oswald/style.css" />
-        <link rel="stylesheet" href="assets/css/fonts/mulish/style.css" />
-
-        <!-- icons -->
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="assets/fonts/goldman/css/style.css" />
+        <link rel="stylesheet" href="assets/fonts/oswald/css/style.css" />
+        <link rel="stylesheet" href="assets/fonts/mulish/css/style.css" />
 
         <!-- scroll animation -->
-        <link rel="stylesheet" href="assets/css/aos/aos.min.css" />
+        <link rel="stylesheet" href="assets/libraries/aos/css/aos.min.css" />
+
+        <!-- trix editor -->
+        <link rel="stylesheet" href="assets/libraries/trix-editor/css/trix.min.css" />
+
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="assets/libraries/fontawesome/css/all.min.css" />
+
+        <!-- bootstrap icons -->
+        <link rel="stylesheet" href="assets/libraries/bootstrap-icons/css/bootstrap-icons.min.css" />
 
         <!-- title -->
         <title>Anapdrama</title>
     </head>
     <body id="body">
         <section id="navbar">
-            <header class="navbar navbar-expand-md navbar-light bd-navbar fixed-top p-0">
-                <nav class="container-xxl flex-wrap flex-md-nowrap px-lg-5 py-lg-1 py-md-1 py-3" id="nav">
-                    <a class="navbar-brand text-danger m-0 p-0" href="index.html" id="brand"> ANAP<span class="text-white">DRAMA</span> </a>
-                    <button type="button" class="navbar-toggler border-0 ms-auto" id="togglerOpen" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
-                        <i class="fas fa-align-justify text-white py-1"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="bdNavbar">
-                        <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav py-md-3 py-sm-3 ms-auto">
-                            <li class="nav-item col-6 col-md-auto">
-                                <a class="nav-link px-lg-4 pe-md-3 nav-active" href="index.html" aria-current="true">Home</a>
-                            </li>
-                            <li class="nav-item col-6 col-md-auto">
-                                <a class="nav-link pe-lg-4 pe-md-3" href="pages/category.html">Category</a>
-                            </li>
-                            <li class="nav-item col-6 col-md-auto">
-                                <a class="nav-link pe-lg-4 pe-md-3" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item col-6 col-md-auto">
-                                <a class="nav-link pe-lg-4 pe-md-3" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item col-6 col-md-auto">
-                                <div class="dropdown">
-                                    <a class="nav-link p-2 pe-md-3" data-bs-toggle="dropdown" href="#">
-                                        <i class="far fa-user"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-dark nav-user">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="far fa-chart-line pe-1"></i>
-                                                <span>Dashboard</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="far fa-sign-out-alt pe-1"></i>
-                                                <span>Log-out</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
+            <nav class="fixed-top py-4">
+                <div class="nav-wrapper">
+                    <div class="nav-brand">
+                        <a class="text-danger" href="index.html"> ANAP<span class="text-white">DRAMA</span> </a>
                     </div>
-                    <div class="offcanvas sidebar offcanvas-start bg-dark text-white w-100" data-bs-scroll="false" data-bs-backdrop="false" tabindex="-1" id="sidebar">
-                        <div class="offcanvas-header">
-                            <a class="navbar-brand text-danger m-0 p-0" href="index.html" id="brand"> ANAP<span class="text-white">DRAMA</span> </a>
-                            <button type="button" class="bg-transparent border-0" id="togglerClose" data-bs-dismiss="offcanvas">
-                                <i class="fa fa-times fa-2x text-white"></i>
-                            </button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div class="d-flex justify-content-center align-items-center h-100">
-                                <div class="d-block" id="bdNavbar">
-                                    <ul class="navbar-nav d-block">
-                                        <li class="nav-item text-center mb-4">
-                                            <a class="nav-link text-decoration-none ms-3 nav-active" href="#">Home</a>
-                                        </li>
-                                        <li class="nav-item text-center my-4">
-                                            <a class="nav-link text-decoration-none" href="pages/category.html">Category</a>
-                                        </li>
-                                        <li class="nav-item text-center my-4">
-                                            <a class="nav-link text-decoration-none" href="#">Blog</a>
-                                        </li>
-                                        <li class="nav-item text-center my-4">
-                                            <a class="nav-link text-decoration-none" href="#">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                    <ul class="nav-content mb-0">
+                        <div class="nav-group">
+                            <div class="nav-toggler-close">
+                                <i class="fas fa-times"></i>
                             </div>
+                            <li>
+                                <a href="index.html" class="nav-active">Home</a>
+                            </li>
+                            <li>
+                                <a href="pages/category.html">Category</a>
+                            </li>
+                            <li>
+                                <a href="pages/blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="pages/contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="far fa-sign-in-alt"></i>
+                                </a>
+                            </li>
                         </div>
+                    </ul>
+                    <div class="nav-toggler-open">
+                        <i class="fas fa-bars"></i>
                     </div>
-                </nav>
-            </header>
+                </div>
+            </nav>
         </section>
 
         <section id="slider" data-aos="zoom-in" data-aos-duration="1000">
@@ -166,7 +134,7 @@
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ab placeat sit eos incidunt officia, quia consectetur ea. Rerum dolorem neque laudantium voluptatum officia expedita laboriosam
                                         consequatur magnam voluptatibus error?
                                     </p>
-                                    <a href="" class="btn btn-danger carousel-btn mt-md-0 mt-sm-3 mt-2">
+                                    <a href="#" class="btn btn-danger carousel-btn mt-md-0 mt-sm-3 mt-2">
                                         <i class="fa fa-book-alt pe-1"></i>
                                         <span>Read more</span>
                                     </a>
@@ -186,14 +154,14 @@
             </div>
         </section>
 
-        <section id="content" class="px-md-5 px-3 pt-md-5 pt-3">
+        <section id="content" class="px-md-5 px-3 pt-md-4 pt-4">
             <div class="row">
                 <div class="col-lg-9">
-                    <div class="row mb-3" id="romance-melodrama">
-                        <div class="d-flex flex-md-row flex-column mt-lg-1 mt-md-4 mt-1 mb-4 justify-content-md-between align-items-md-center">
+                    <div class="row justify-content-center mb-3" id="romance-melodrama">
+                        <div class="d-flex flex-md-row flex-column mt-lg-1 mt-md-4 mt-1 mb-3 justify-content-md-between align-items-md-center">
                             <div class="sections-title" data-aos="fade-right" data-aos-duration="1000">ROMANCE - MELODRAMA</div>
-                            <div class="sections-button mt-md-0 mt-3" data-aos="fade-left" data-aos-duration="1000">
-                                <a class="text-decoration-none" href="">
+                            <div class="sections-button mt-md-0 mt-2 ms-md-0 ms-3" data-aos="fade-left" data-aos-duration="1000">
+                                <a class="text-decoration-none" href="#">
                                     <span>VIEW ALL</span>
                                     <i class="bi bi-arrow-bar-right"></i>
                                 </a>
@@ -207,7 +175,7 @@
                                 <span class="rating"><i class="fa fa-star"></i> 9.0 / 10</span>
                                 <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2017</span>
                                 <div class="card-body">
-                                    <a href="" class="card-title content-title">While You Were Sleeping</a>
+                                    <a href="#" class="card-title content-title">While You Were Sleeping</a>
                                     <small class="text-muted">16 Episodes</small>
                                 </div>
                             </div>
@@ -220,7 +188,7 @@
                                 <span class="rating"><i class="fa fa-star"></i> 8.7 / 10</span>
                                 <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2018</span>
                                 <div class="card-body">
-                                    <a href="" class="card-title content-title">Tempted</a>
+                                    <a href="#" class="card-title content-title">Tempted</a>
                                     <small class="text-muted">32 Episodes</small>
                                 </div>
                             </div>
@@ -233,7 +201,7 @@
                                 <span class="rating"><i class="fa fa-star"></i> 8.3 / 10</span>
                                 <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2019</span>
                                 <div class="card-body">
-                                    <a href="" class="card-title content-title">One Spring Night</a>
+                                    <a href="#" class="card-title content-title">One Spring Night</a>
                                     <small class="text-muted">16 Episodes</small>
                                 </div>
                             </div>
@@ -246,16 +214,16 @@
                                 <span class="rating"><i class="fa fa-star"></i> 9.0 / 10</span>
                                 <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2020</span>
                                 <div class="card-body">
-                                    <a href="" class="card-title content-title">It's Okay to Not be Okay</a>
+                                    <a href="#" class="card-title content-title">It's Okay to Not be Okay</a>
                                     <small class="text-muted">16 Episodes</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-3" id="action-mystery-thriller">
-                        <div class="d-flex flex-md-row flex-column mt-lg-1 mt-md-4 mt-1 mb-4 justify-content-md-between align-items-md-center">
+                    <div class="row justify-content-center mb-3" id="action-mystery-thriller">
+                        <div class="d-flex flex-md-row flex-column mt-lg-1 mt-md-4 mt-1 mb-3 justify-content-md-between align-items-md-center">
                             <div class="sections-title" data-aos="fade-right" data-aos-duration="1000">ACTION - MYSTERY - THRILLER</div>
-                            <div class="sections-button mt-md-0 mt-3" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="sections-button mt-md-0 mt-2 ms-md-0 ms-3" data-aos="fade-left" data-aos-duration="1000">
                                 <a class="text-decoration-none" href="#">
                                     <span>VIEW ALL</span>
                                     <i class="bi bi-arrow-bar-right"></i>
@@ -270,7 +238,7 @@
                                 <span class="rating"><i class="fa fa-star"></i> 9.0 / 10</span>
                                 <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2017</span>
                                 <div class="card-body">
-                                    <a href="" class="card-title content-title">Mad Dog</a>
+                                    <a href="#" class="card-title content-title">Mad Dog</a>
                                     <small class="text-muted">16 Episodes</small>
                                 </div>
                             </div>
@@ -283,7 +251,7 @@
                                 <span class="rating"><i class="fa fa-star"></i> 8.8 / 10</span>
                                 <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2018</span>
                                 <div class="card-body">
-                                    <a href="" class="card-title content-title">The Player</a>
+                                    <a href="#" class="card-title content-title">The Player</a>
                                     <small class="text-muted">14 Episodes</small>
                                 </div>
                             </div>
@@ -296,7 +264,7 @@
                                 <span class="rating"><i class="fa fa-star"></i> 8.7 / 10</span>
                                 <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2019</span>
                                 <div class="card-body">
-                                    <a href="" class="card-title content-title">Voice 3</a>
+                                    <a href="#" class="card-title content-title">Voice 3</a>
                                     <small class="text-muted">16 Episodes</small>
                                 </div>
                             </div>
@@ -309,16 +277,16 @@
                                 <span class="rating"><i class="fa fa-star"></i> 9.0 / 10</span>
                                 <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2020</span>
                                 <div class="card-body">
-                                    <a href="" class="card-title content-title">Search</a>
+                                    <a href="#" class="card-title content-title">Search</a>
                                     <small class="text-muted">10 Episodes</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-3" id="slice-of-life">
-                        <div class="d-flex flex-md-row flex-column mt-lg-1 mt-md-4 mt-1 mb-4 justify-content-md-between align-items-md-center">
+                    <div class="row justify-content-center mb-3" id="slice-of-life">
+                        <div class="d-flex flex-md-row flex-column mt-lg-1 mt-md-4 mt-1 mb-3 justify-content-md-between align-items-md-center">
                             <div class="sections-title" data-aos="fade-right" data-aos-duration="1000">SLICE OF LIFE</div>
-                            <div class="sections-button mt-md-0 mt-3" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="sections-button mt-md-0 mt-2 ms-md-0 ms-3" data-aos="fade-left" data-aos-duration="1000">
                                 <a class="text-decoration-none" href="#">
                                     <span>VIEW ALL</span>
                                     <i class="bi bi-arrow-bar-right"></i>
@@ -333,7 +301,7 @@
                                 <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
                                 <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2017</span>
                                 <div class="card-body">
-                                    <a href="" class="card-title content-title">Prison Playbook</a>
+                                    <a href="#" class="card-title content-title">Prison Playbook</a>
                                     <small class="text-muted">16 Episodes</small>
                                 </div>
                             </div>
@@ -346,7 +314,7 @@
                                 <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
                                 <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2018</span>
                                 <div class="card-body">
-                                    <a href="" class="card-title content-title">My Mister</a>
+                                    <a href="#" class="card-title content-title">My Mister</a>
                                     <small class="text-muted">16 Episodes</small>
                                 </div>
                             </div>
@@ -359,7 +327,7 @@
                                 <span class="rating"><i class="fa fa-star"></i> 8.9 / 10</span>
                                 <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2019</span>
                                 <div class="card-body">
-                                    <a href="" class="card-title content-title">Be Melodramatic</a>
+                                    <a href="#" class="card-title content-title">Be Melodramatic</a>
                                     <small class="text-muted">16 Episodes</small>
                                 </div>
                             </div>
@@ -372,7 +340,7 @@
                                 <span class="rating"><i class="fa fa-star"></i> 8.4 / 10</span>
                                 <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2020</span>
                                 <div class="card-body">
-                                    <a href="" class="card-title content-title">Start-Up</a>
+                                    <a href="#" class="card-title content-title">Start-Up</a>
                                     <small class="text-muted">16 Episodes</small>
                                 </div>
                             </div>
@@ -380,13 +348,19 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="row justify-content-center" id="popular-dramas">
-                        <div class="mt-lg-1 mt-md-4 mt-1 mb-4">
+                    <div class="row justify-content-center mb-3" id="popular-dramas">
+                        <div class="d-flex flex-lg-column flex-md-row flex-column justify-content-md-between mt-lg-1 mt-md-4 mt-1 mb-4">
                             <div class="sections-title" data-aos="fade-left" data-aos-duration="1000">POPULAR DRAMAS</div>
+                            <div class="sections-button ms-lg-3 ms-md-0 ms-3 mt-lg-2 mt-md-0 mt-2" data-aos="fade-left" data-aos-duration="1000">
+                                <a class="text-decoration-none" href="#">
+                                    <span>VIEW ALL</span>
+                                    <i class="bi bi-arrow-bar-right"></i>
+                                </a>
+                            </div>
                         </div>
                         <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
                             <a href="#" class="sidebar-content-wrapper">
-                                <div class="card bg-dark border-0 mb-3">
+                                <div class="card mb-3">
                                     <img src="assets/img/poster/landscape/slider/snowdrop.jpg" class="sidebar-content-img" alt="Snowdrop" />
                                     <div class="card-img-overlay sidebar-content-overlay">
                                         <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
@@ -398,7 +372,7 @@
                         </div>
                         <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
                             <a href="#" class="sidebar-content-wrapper">
-                                <div class="card bg-dark border-0 mb-3">
+                                <div class="card mb-3">
                                     <img src="assets/img/poster/landscape/vincenzo.jpg" class="sidebar-content-img" alt="Hush" />
                                     <div class="card-img-overlay sidebar-content-overlay">
                                         <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
@@ -410,7 +384,7 @@
                         </div>
                         <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
                             <a href="#" class="sidebar-content-wrapper">
-                                <div class="card bg-dark border-0 mb-3">
+                                <div class="card mb-3">
                                     <img src="assets/img/poster/landscape/startup.jpg" class="sidebar-content-img" alt="Startup" />
                                     <div class="card-img-overlay sidebar-content-overlay">
                                         <span class="rating"><i class="fa fa-star"></i> 8.4 / 10</span>
@@ -420,38 +394,46 @@
                                 </div>
                             </a>
                         </div>
+                    </div>
+                    <div class="row justify-content-center" id="featured-blog-posts">
+                        <div class="d-flex flex-lg-column flex-md-row flex-column justify-content-md-between mt-lg-1 mt-md-4 mt-1 mb-4">
+                            <div class="sections-title" data-aos="fade-left" data-aos-duration="1000">FEATURED BLOG POSTS</div>
+                            <div class="sections-button ms-lg-3 ms-md-0 ms-3 mt-lg-2 mt-md-0 mt-2" data-aos="fade-left" data-aos-duration="1000">
+                                <a class="text-decoration-none" href="#">
+                                    <span>VIEW ALL</span>
+                                    <i class="bi bi-arrow-bar-right"></i>
+                                </a>
+                            </div>
+                        </div>
                         <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
-                            <a href="#" class="sidebar-content-wrapper">
-                                <div class="card bg-dark border-0 mb-3">
-                                    <img src="assets/img/poster/landscape/love-alarm.jpg" class="sidebar-content-img" alt="Love Alarm" />
+                            <a href="post.html" class="sidebar-content-wrapper">
+                                <div class="card mb-3">
+                                    <img src="assets/img/blog/snowdrop-drama-facts.jpg" alt="Snowdrop Drama Facts" class="sidebar-content-img">
                                     <div class="card-img-overlay sidebar-content-overlay">
-                                        <span class="rating"><i class="fa fa-star"></i> 8.5 / 10</span>
-                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2019</span>
-                                        <h6 class="sidebar-content-title">Love Alarm</h6>
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> 02/22/2022</span>
+                                        <h6 class="sidebar-content-title">Snowdrop Drama Facts</h6>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
-                            <a href="#" class="sidebar-content-wrapper">
-                                <div class="card bg-dark border-0 mb-3">
-                                    <img src="assets/img/poster/landscape/the-player.jpg" class="sidebar-content-img" alt="The Player" />
+                            <a href="post.html" class="sidebar-content-wrapper">
+                                <div class="card mb-3">
+                                    <img src="assets/img/blog/top-10-healing-dramas.jpg" alt="Top 10 Healing Dramas" class="sidebar-content-img">
                                     <div class="card-img-overlay sidebar-content-overlay">
-                                        <span class="rating"><i class="fa fa-star"></i> 8.8 / 10</span>
-                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2018</span>
-                                        <h6 class="sidebar-content-title">The Player</h6>
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> 02/21/2022</span>
+                                        <h6 class="sidebar-content-title">Top 10 Healing Dramas</h6>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
-                            <a href="#" class="sidebar-content-wrapper">
-                                <div class="card bg-dark border-0 mb-3">
-                                    <img src="assets/img/poster/landscape/prison-playbook.jpg" class="sidebar-content-img" alt="Prison Playbook" />
+                            <a href="post.html" class="sidebar-content-wrapper">
+                                <div class="card mb-3">
+                                    <img src="assets/img/blog/the-cast-of-drama-the-kings-affection.jpg" alt="The Cast of Drama The King's Affection" class="sidebar-content-img">
                                     <div class="card-img-overlay sidebar-content-overlay">
-                                        <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
-                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2017</span>
-                                        <h6 class="sidebar-content-title">Prison Playbook</h6>
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> 02/20/2022</span>
+                                        <h6 class="sidebar-content-title">The Cast of Drama The King's Affection</h6>
                                     </div>
                                 </div>
                             </a>
@@ -464,7 +446,7 @@
         <section id="footer" class="mt-5">
             <div class="footer position-relative bg-dark pt-5">
                 <div class="footer-btnUp">
-                    <a href="#">
+                    <a href="#navbar">
                         <i class="fa fa-chevron-up"></i>
                     </a>
                 </div>
@@ -474,69 +456,70 @@
                             <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0" id="navbar-brand">ANAPDRAMA</h6>
                             <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
                             <p class="text-muted">
-                                Anapdrama is a website template that provides information about Korean dramas. This template was designed and built by Anaptech team. The information contained on this website, we collect is based on
-                                <strong>Wikipedia</strong>, <strong>Asianwiki</strong>, and <strong>MyDramaList</strong>.
+                                <strong>Anapdrama</strong> is a website template that provides information about Korean dramas. This template was designed and built by <strong>Anaptech</strong> team. The information contained on this
+                                website, we collect is based on <strong>Wikipedia</strong>, <strong>Asianwiki</strong>, and <strong>MyDramaList</strong>.
                             </p>
                         </div>
                         <div class="col-lg-3 col-md-4 mx-auto mb-md-0 mb-3">
                             <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0">Social Media</h6>
                             <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
-                            <p>
+                            <p class="footer-link">
                                 <i class="far fa-envelope text-danger mr-3"></i>
-                                <a href="mailto:anaptech.team@gmail.com" class="footer-link">anaptech.team@gmail.com</a>
+                                <a href="mailto:anaptech.team@gmail.com">anapdrama@mail.com</a>
                             </p>
-                            <p>
+                            <p class="footer-link">
                                 <i class="fab fa-instagram text-danger mr-3"></i>
-                                <a href="https://www.instagram.com/anaptech.team" target="_blank" class="footer-link">anaptech.team</a>
+                                <a href="https://www.instagram.com/anaptech.team" target="_blank">@anapdrama</a>
                             </p>
-                            <p>
+                            <p class="footer-link">
                                 <i class="fab fa-github text-danger mr-3"></i>
-                                <a class="footer-link">anaptech</a>
+                                <a href="#">anapdrama</a>
                             </p>
-                            <p>
+                            <p class="footer-link">
                                 <i class="fal fa-globe text-danger mr-3"></i>
-                                <a class="footer-link">anaptech.site</a>
+                                <a href="#">anapdrama.com</a>
                             </p>
                         </div>
                         <div class="col-lg-2 col-md-3 mx-auto mb-3">
                             <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0">Useful Links</h6>
                             <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
-                            <p>
-                                <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
-                                <a class="footer-link" href="#">Home</a>
+                            <p class="footer-link">
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
+                                <a href="index.html">Home</a>
                             </p>
-                            <p>
-                                <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
-                                <a class="footer-link" href="pages/category.html">Category</a>
+                            <p class="footer-link">
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
+                                <a href="pages/category.html">Category</a>
                             </p>
-                            <p>
-                                <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
-                                <a class="footer-link" href="pages/blog.html">Blog</a>
+                            <p class="footer-link">
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
+                                <a href="pages/blog.html">Blog</a>
                             </p>
-                            <p>
-                                <i class="fa fa-chevron-right text-danger mr-3" style="font-size: 13px"></i>
-                                <a class="footer-link" href="pages/contact.html">Contact</a>
+                            <p class="footer-link">
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
+                                <a href="pages/contact.html">Contact</a>
                             </p>
                         </div>
                     </div>
                     <div class="row pb-5">
-                        <p class="text-center text-muted mb-0">Copyright &copy;2022 Anaptech. All rights reserved.</p>
+                        <p class="text-center text-muted mb-0">Copyright &copy;2022 Anapdrama. All rights reserved.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- jquery -->
-        <script src="assets/js/jquery/jquery-3.6.0.min.js"></script>
+        <script src="assets/libraries/jquery/js/jquery-3.6.0.min.js"></script>
 
         <!-- bootstrap -->
-        <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
 
         <!-- scroll animation -->
-        <script src="assets/js/aos/aos.min.js"></script>
-        <script src="assets/js/aos/config.js"></script>
+        <script src="assets/libraries/aos/js/aos.min.js"></script>
+        <script src="assets/libraries/aos/js/config.js"></script>
 
-        <!-- navbar setting -->
+        <!-- custom -->
+        <script src="assets/js/script.js"></script>
         <script src="assets/js/navbar-home.js"></script>
     </body>
 </html>
