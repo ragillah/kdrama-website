@@ -38,6 +38,9 @@
     .nav-group {
         display: block !important;
     }
+    .nav-group li:first-child{
+        margin-top: 0 !important;
+    }
     .nav-group li {
         margin-top: 45px;
         padding-left: 0;
