@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Anaptech" />
+        <meta name="description" content="Anapdrama is a website template that provides information about Korean dramas." />
+
+        <!-- icon -->
+        <link rel="icon" href="../../../assets/img/brands/logo.png" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../../../assets/css/style.css" />
+        <link rel="stylesheet" href="../../../assets/css/media-query.css" />
+
+        <!-- custom fonts -->
+        <link rel="stylesheet" href="../../../assets/fonts/goldman/css/style.css" />
+        <link rel="stylesheet" href="../../../assets/fonts/oswald/css/style.css" />
+        <link rel="stylesheet" href="../../../assets/fonts/mulish/css/style.css" />
+
+        <!-- scroll animation -->
+        <link rel="stylesheet" href="../../../assets/libraries/aos/css/aos.min.css" />
+
+        <!-- trix editor -->
+        <link rel="stylesheet" href="../../../assets/libraries/trix-editor/css/trix.min.css" />
+
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="../../../assets/libraries/fontawesome/css/all.min.css" />
+
+        <!-- bootstrap icons -->
+        <link rel="stylesheet" href="../../../assets/libraries/bootstrap-icons/css/bootstrap-icons.min.css" />
+
+        <!-- title -->
+        <title>Anapdrama</title>
+
+        <style>
+            .blog-post-detail-img-wrapper {
+                height: 500px;
+                overflow: hidden;
+                border-radius: 0.25rem;
+            }
+            .blog-post-detail-title {
+                color: #ffffff;
+                font-weight: 700;
+            }
+            .blog-post-detail-subtitle {
+                font-size: 1rem;
+            }
+            .blog-post-detail-subtitle,
+            .blog-post-detail-description {
+                color: #b7b7b7;
+            }
+            .blog-post-detail-description div {
+                margin-bottom: 1rem;
+                font-size: 18px;
+            }
+            .blog-post-detail-description div p {
+                margin-bottom: 0.5rem;
+            }
+            .blog-post-detail-date {
+                letter-spacing: 1px;
+            }
+            .blog-post-detail-date::before {
+                content: "-";
+                padding-right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="navbar">
+            <nav class="shadow py-4">
+                <div class="nav-wrapper">
+                    <a class="nav-brand" href="../index.html">
+                        <img src="../../../assets/img/brands/text-logo.png" alt="Anapdrama" height="25" />
+                    </a>
+                    <ul class="nav-content mb-0">
+                        <div class="nav-group">
+                            <li>
+                                <a href="../../../index.html">
+                                    <span class="far fa-home"></span>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../categories.html">
+                                    <span class="far fa-folders"></span>
+                                    <span>Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../blog.html" class="nav-active">
+                                    <span class="far fa-newspaper"></span>
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../about.html">
+                                    <span class="far fa-clone"></span>
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-danger">
+                                    <span class="far fa-sign-in-alt"></span>
+                                    <span>Login</span>
+                                </a>
+                            </li>
+                            <div class="nav-toggler-close">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="nav-toggler-open">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section id="content" class="px-md-5 px-3 pt-md-5 pt-sm-5 pt-4 pb-3">
+            <nav id="page-menu" data-aos="fade-right" data-aos-duration="1000">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item breadcrumb-icon">
+                        <i class="far fa-home"></i>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item breadcrumb-icon" aria-current="page">
+                        <i class="far fa-newspaper"></i>
+                        <a href="../../blog.html">Blog Posts</a>
+                    </li>
+                    <li class="breadcrumb-item breadcrumb-icon breadcrumb-active" aria-current="page">
+                        <i class="far fa-book-open"></i>
+                        <a>Detail</a>
+                    </li>
+                </ol>
+            </nav>
+            <div class="row pt-sm-1 pt-0">
+                <div class="col-lg-9" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="blog-post-detail-img-wrapper mb-4">
+                        <img src="../../../assets/img/blogs/blog-post-1.jpg" alt="3 Facts About Snowdrop Drama" class="img-fluid w-100" />
+                    </div>
+                    <div class="blog-post-detail-text-wrapper">
+                        <h3 class="blog-post-detail-title">3 Facts About Snowdrop Drama</h3>
+                        <div class="blog-post-detail-subtitle">
+                            <span class="blog-post-detail-writer">By <a class="text-danger">Johannes</a></span>
+                            <span class="blog-post-detail-date">Dec/01/2021</span>
+                        </div>
+                        <div class="blog-post-detail-description pt-4">
+                            <div>
+                                <h5>1. Adapted from the life records of former North Korean prisoners</h5>
+                                <p>
+                                    The Korean drama Snowdrop tells the story of Eun Young-ro (Jisoo), a student who finds a man covered in blood in his dormitory. The man is Lim Soo-ho (Jung Hae-in), a student with a big secret related to
+                                    the upheaval of Korean politics at the time. However, despite the dangers that haunt Soo-ho, Young-ro still falls for him.
+                                </p>
+                                <p>
+                                    Interestingly, the story in this drama was inspired by a memoir or life record of a man who was a political prisoner of North Korea. After escaping, the man from North Korea then lives on the run in South
+                                    Korea. Well, the life story of the North Korean man became the inspiration for the background story of Soo-ho as the main character.
+                                </p>
+                            </div>
+                            <div>
+                                <h5>2. Being the debut of 'Blackpink' Jisoo as the main character</h5>
+                                <p>
+                                    For those of you who like K-POP, maybe you know Jisoo better as a member of the girl group Blackpink. Even so, Jisoo actually debuted as an actress when she appeared as a cameo in the drama The Producers,
+                                    starring IU and Kim Soo-hyun. Not only that, but Jisoo also appeared through a small role in the drama Arthdal Chronicles involving Song Joong-ki.
+                                </p>
+                                <p>
+                                    However, regardless of the number of appearances in both dramas, Snowdrop will be Jisoo's first time being involved as the main character. Despite already having a popular status and having played in
+                                    dramas, Jisoo reportedly still has to go through the audition process first in order to get the role. Jisoo's debut as the main character in this drama is worth waiting for.
+                                </p>
+                            </div>
+                            <div>
+                                <h5>3. Becomes controversial in South Korea because of the background shoot</h5>
+                                <p>
+                                    Despite being one of the dramas that quite a lot of people have been waiting for, in fact Snowdrop had caused a controversy. In fact, the controversy arose while it was still in production, precisely when
+                                    the synopsis spread all over social media. This is related to the background of Jung Hae-in's character, namely Im Soo-ho.
+                                </p>
+                                <p>
+                                    You see, based on the leaked synopsis, Soo-ho is a spy from North Korea who disguises himself as a pro-democracy activist to spark political upheaval in South Korea. This then becomes a problem because
+                                    the time setting of the drama takes place in the 1980s which is quite important for South Korean history.
+                                </p>
+                                <p>
+                                    Well, the background of Soo-ho is controversial because according to the public it will not match the original history. Even so, JTBC as the TV station that broadcast the drama clarified that the
+                                    background was only for satire and would not change the original meaning of its history.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="row justify-content-center mb-3" id="featured-blog-posts">
+                        <div class="d-flex flex-lg-column flex-md-row flex-column justify-content-md-between mt-lg-1 mt-md-4 mt-1 mb-3">
+                            <span class="sections-title" data-aos="fade-left" data-aos-duration="1000">FEATURED BLOG POSTS</span>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
+                            <a class="sidebar-content-wrapper" href="blog-detail.html">
+                                <div class="card mb-3">
+                                    <img src="../../../assets/img/blogs/blog-post-1.jpg" alt="3 Facts About Snowdrop Drama" class="sidebar-content-img" />
+                                    <div class="card-img-overlay sidebar-content-overlay">
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> Dec/01/2021</span>
+                                        <h6 class="sidebar-content-title">3 Facts About Snowdrop Drama</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
+                            <a class="sidebar-content-wrapper" href="blog-detail.html">
+                                <div class="card mb-3">
+                                    <img src="../../../assets/img/blogs/blog-post-3.jpg" alt="Top 10 Healing Dramas" class="sidebar-content-img" />
+                                    <div class="card-img-overlay sidebar-content-overlay">
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> Mar/01/2022</span>
+                                        <h6 class="sidebar-content-title">Top 10 Healing Dramas</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
+                            <a class="sidebar-content-wrapper" href="blog-detail.html">
+                                <div class="card mb-3">
+                                    <img src="../../../assets/img/blogs/blog-post-2.jpg" alt="The Cast of Drama The King's Affection" class="sidebar-content-img" />
+                                    <div class="card-img-overlay sidebar-content-overlay">
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> Nov/25/2021</span>
+                                        <h6 class="sidebar-content-title">The Cast of Drama The King's Affection</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" id="latest-blog-posts">
+                        <div class="d-flex flex-lg-column flex-md-row flex-column justify-content-md-between mt-lg-1 mt-md-4 mt-1 mb-3">
+                            <span class="sections-title" data-aos="fade-left" data-aos-duration="1000">LATEST BLOG POSTS</span>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
+                            <a class="sidebar-content-wrapper" href="blog-detail.html">
+                                <div class="card mb-3">
+                                    <img src="../../../assets/img/blogs/blog-post-5.jpg" alt="Drama with the Highest Rating in Early 2022" class="sidebar-content-img" />
+                                    <div class="card-img-overlay sidebar-content-overlay">
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> Mar/08/2022</span>
+                                        <h6 class="sidebar-content-title">Drama with the Highest Rating in Early 2022</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
+                            <a class="sidebar-content-wrapper" href="blog-detail.html">
+                                <div class="card mb-3">
+                                    <img src="../../../assets/img/blogs/blog-post-6.jpg" alt="Taxi Driver Drama Season 2 Ready to Shoot" class="sidebar-content-img" />
+                                    <div class="card-img-overlay sidebar-content-overlay">
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> Mar/07/2022</span>
+                                        <h6 class="sidebar-content-title">Taxi Driver Drama Season 2 Ready to Shoot</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
+                            <a class="sidebar-content-wrapper" href="blog-detail.html">
+                                <div class="card mb-3">
+                                    <img src="../../../assets/img/blogs/blog-post-4.jpg" alt="The beauty of Park Eun Bin when she was in high school" class="sidebar-content-img" />
+                                    <div class="card-img-overlay sidebar-content-overlay">
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> Feb/21/2022</span>
+                                        <h6 class="sidebar-content-title">The beauty of Park Eun Bin when she was in High School</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer" class="mt-5">
+            <div class="footer position-relative shadow pt-5">
+                <div class="footer-btnUp">
+                    <a href="#navbar">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+                <div class="container-fluid px-lg-5" data-aos="zoom-in" data-aos-duration="700">
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-lg-6 col-md-5 mx-auto mb-4">
+                            <div class="nav-brand mb-lg-2 mb-0">
+                                <img src="../../../assets/img/brands/text-logo.png" alt="Anapdrama" height="16" />
+                            </div>
+                            <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
+                            <p class="footer-description">
+                                <strong>Anapdrama</strong> is a website template that provides information about Korean dramas. The information contained on this website, we collect is based on
+                                <a href="https://bit.ly/3sYfjhh" target="_blank">Wikipedia</a>, <a href="https://bit.ly/3i06NZ3" target="_blank">Asianwiki</a>, and <a href="https://bit.ly/3J3FBnU" target="_blank">MyDramaList</a>. This
+                                template was designed and built by <a href="https://bit.ly/3CzgcQx" target="_blank">Anaptech</a> team.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 mx-auto mb-md-0 mb-3">
+                            <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0">Social Media</h6>
+                            <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
+                            <p class="footer-link">
+                                <i class="far fa-envelope text-danger mr-3"></i>
+                                <a href="#">anapdrama@mail.com</a>
+                            </p>
+                            <p class="footer-link">
+                                <i class="fal fa-globe text-danger mr-3"></i>
+                                <a href="#">anapdrama.com</a>
+                            </p>
+                            <p class="footer-link">
+                                <i class="fab fa-instagram text-danger mr-3"></i>
+                                <a href="#" target="_blank">@anapdrama</a>
+                            </p>
+                            <p class="footer-link">
+                                <i class="fab fa-twitter text-danger mr-3"></i>
+                                <a href="#">@anapdrama</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-3 mx-auto mb-3">
+                            <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0">Useful Links</h6>
+                            <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
+                            <p class="footer-link">
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
+                                <a href="../../../index.html">Home</a>
+                            </p>
+                            <p class="footer-link">
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
+                                <a href="../../categories.html">Category</a>
+                            </p>
+                            <p class="footer-link">
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
+                                <a href="../../blog.html">Blog</a>
+                            </p>
+                            <p class="footer-link">
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
+                                <a href="../../about.html">About</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row pb-5">
+                        <p class="text-center text-muted mb-0">Copyright &copy;2022 Anapdrama. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- jquery -->
+        <script src="../../../assets/libraries/jquery/js/jquery-3.6.0.min.js"></script>
+
+        <!-- bootstrap -->
+        <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+
+        <!-- scroll animation -->
+        <script src="../../../assets/libraries/aos/js/aos.min.js"></script>
+        <script src="../../../assets/libraries/aos/js/config.js"></script>
+
+        <script src="../../../assets/js/script.js"></script>
+    </body>
+</html>

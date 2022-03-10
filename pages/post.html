@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial;
+                height: 100vh;
+                width: min(800px, 80%);
+                margin: auto;
+                padding: 50px;
+                background-color: #f8f9fd;
+            }
+
+            header {
+                text-align: center;
+            }
+
+            .img-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 15px;
+            }
+
+            .column img {
+                opacity: 0.8;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            .column img:hover {
+                opacity: 1;
+                transform: scale(1.02);
+                transition: 0.3s;
+            }
+
+            /* The expanding image container */
+            .container {
+                position: relative;
+                display: none;
+                top: 20px;
+            }
+
+            /* Expanding image text */
+            #imgtext {
+                position: absolute;
+                bottom: 15px;
+                left: 15px;
+                color: white;
+                font-size: 20px;
+            }
+
+            /* Closable button inside the expanded image */
+            .closebtn {
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                color: white;
+                font-size: 35px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Image Viewer</h2>
+            <p>Click on the images to open</p>
+        </header>
+
+        <div class="img-row">
+            <div class="column">
+                <img src="https://source.unsplash.com/78A265wPiO4" alt="Mountain" onclick="openImage(this);" />
+            </div>
+            <div class="column">
+                <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Sun" onclick="openImage(this);" />
+            </div>
+            <div class="column">
+                <img src="https://source.unsplash.com/pHANr-CpbYM" alt="Rocks" onclick="openImage(this);" />
+            </div>
+        </div>
+
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width: 100%" />
+            <div id="imgtext"></div>
+        </div>
+    </body>
+    <script>
+        function openImage(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+</html>
