@@ -660,6 +660,11 @@ nav {
 .category-wrapper:hover {
     font-size: 1.4rem;
 }
+@media (max-width: 576px) {
+    .category-wrapper:hover {
+        font-size: 1.25rem;
+    }
+}
 .category-title {
     font-weight: var(--font-weight-600);
     letter-spacing: 1.5px;
@@ -1312,7 +1317,7 @@ nav {
 /* .blog-post-detail-subtitle */
 .blog-post-detail-subtitle {
     font-size: 1rem;
-    color: #b7b7b7;
+    color: var(--grey-b-color);
 }
 @media (max-width: 450px) {
     .blog-post-detail-subtitle {
@@ -1323,7 +1328,7 @@ nav {
 
 /* .blog-post-detail-description */
 .blog-post-detail-description {
-    color: #b7b7b7;
+    color: var(--grey-b-color);
 }
 .blog-post-detail-description div {
     margin-bottom: 1rem;
