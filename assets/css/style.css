@@ -1357,9 +1357,9 @@ nav {
 }
 /* end */
 
-/*! BLOG DETAIL [END] */
+/*! ---BLOG DETAIL [END]--- */
 
-/*! About */
+/*! ---ABOUT [START]--- */
 .about-title,
 .about-subtitle a {
     font-weight: var(--font-weight-700);
@@ -1412,7 +1412,71 @@ nav {
 }
 /* end */
 
-/*! ABOUT [END] */
+/*! ---ABOUT [END]--- */
+
+/*! ---LOGIN/REGISTER [START]--- */
+.sign-wrapper {
+    background-color: rgba(52, 71, 80, 0.13) !important;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    border: 2px solid rgba(52, 71, 80, 0.1);
+}
+@media (max-width: 800px) {
+    .link-option {
+        font-size: 14px;
+    }
+}
+@media (max-width: 767px) {
+    .link-option {
+        font-size: 16px;
+    }
+}
+@media (max-width: 340px) {
+    .link-option {
+        font-size: 14px;
+    }
+}
+.sign-divider {
+    color: #fff;
+    height: 2px;
+    border-radius: 0.25rem;
+}
+.btn-social-media {
+    background-color: rgba(255, 255, 255, 0.27);
+    color: #fff;
+}
+.btn-social-media:hover {
+    background-color: transparent;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+}
+@media (max-width: 835px) {
+    .btn-social-media {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1105px) {
+    .btn-social-media {
+        font-size: 12px;
+    }
+}
+@media (max-width: 767px) {
+    .btn-social-media {
+        font-size: 14px;
+    }
+}
+@media (max-width: 585px) {
+    .btn-social-media {
+        font-size: 13px;
+    }
+}
+@media (max-width: 575px) {
+    .btn-social-media {
+        font-size: 16px;
+    }
+}
+/*! ---LOGIN/REGISTER [END]--- */
 
 /*! ---FOOTER [START]--- */
 
