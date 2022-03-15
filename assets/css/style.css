@@ -701,6 +701,18 @@ nav {
 /*! ---CATEGORY [START]--- */
 
 /*! ---FORM SEARCH [START]--- */
+.form-search-modal .modal-body input {
+    background: rgba(255, 255, 255, 0.07);
+    color: #b2b2b2 !important;
+    border: 0;
+}
+.form-search-modal .modal-body input:focus {
+    box-shadow: none;
+}
+.form-search-modal .modal-footer .btn-modal {
+    background: rgba(255, 255, 255, 0.27);
+    color: #fff !important;
+}
 .form-search-wrapper {
     margin: 2rem 0;
 }
