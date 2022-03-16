@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Anaptech" />
+        <meta name="description" content="Anapdrama is a website template that provides information about Korean dramas." />
+
+        <!-- icon -->
+        <link rel="icon" href="assets/img/brands/logo.png" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/style.min.css" />
+
+        <!-- custom fonts -->
+        <link rel="stylesheet" href="assets/fonts/oswald/css/style.css" />
+        <link rel="stylesheet" href="assets/fonts/mulish/css/style.css" />
+
+        <!-- scroll animation -->
+        <link rel="stylesheet" href="assets/libraries/aos/css/aos.min.css" />
+
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="assets/libraries/fontawesome/css/all.min.css" />
+
+        <!-- bootstrap icons -->
+        <link rel="stylesheet" href="assets/libraries/bootstrap-icons/css/bootstrap-icons.min.css" />
+
+        <!-- title -->
+        <title>Anapdrama</title>
+    </head>
+    <body>
+        <section id="navbar">
+            <nav class="fixed-top py-4">
+                <div class="nav-wrapper">
+                    <a href="#" class="nav-brand">
+                        <img src="assets/img/brands/text-logo.png" alt="Anapdrama" height="25" />
+                    </a>
+                    <ul class="nav-content mb-0">
+                        <div class="nav-group">
+                            <li>
+                                <a href="index.html" class="nav-active">
+                                    <span class="far fa-home"></span>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pages/categories.html">
+                                    <span class="far fa-folders"></span>
+                                    <span>Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pages/blog.html">
+                                    <span class="far fa-newspaper"></span>
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pages/about.html">
+                                    <span class="far fa-clone"></span>
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pages/details/drama/drama-detail.html" class="search-toggle" data-bs-toggle="modal" data-bs-target="#searchModal">
+                                    <span class="far fa-search"></span>
+                                    <span>Search</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pages/login.html" class="btn btn-danger">
+                                    <span class="far fa-sign-in-alt"></span>
+                                    <span>Login</span>
+                                </a>
+                            </li>
+                            <div class="nav-toggler-close">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="nav-toggler-open">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section id="slider" data-aos="zoom-in" data-aos-duration="1000">
+            <div id="carousel" class="carousel carousel-light slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="false">
+                        <img src="assets/img/posters/landscape/slider/the-kings-affection.jpg" class="carousel-img d-block w-100" />
+                        <div class="carousel-caption">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8 col-12" id="slider-item">
+                                    <div>
+                                        <span class="carousel-title d-block">THE KING'S AFFECTION</span>
+                                        <span class="carousel-subtitle ps-1">2021 | 20 Episodes | Historical - Romance</span>
+                                    </div>
+                                    <p class="carousel-description d-md-block d-none my-3">
+                                        The story is set during the Joseon Dynasty, at a time when twins were considered an ominous sign. As a result, when the Crown Princess Consort gives birth to twins, an order is sent to kill the
+                                        daughter. To save her, she is secretly sent out of the palace.
+                                    </p>
+                                    <a class="btn btn-danger carousel-btn mt-md-0 mt-sm-3 mt-2" href="pages/details/drama/drama-detail.html">
+                                        <i class="fa fa-book-alt pe-1"></i>
+                                        <span>Read more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="false">
+                        <img src="assets/img/posters/landscape/slider/do-you-like-brahms.jpg" class="carousel-img d-block w-100" />
+                        <div class="carousel-caption">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8 col-12" id="slider-item">
+                                    <div>
+                                        <span class="carousel-title d-block">DO YOU LIKE BRAHMS?</span>
+                                        <span class="carousel-subtitle ps-1">2020 | 16 Episodes | Musical - Romance</span>
+                                    </div>
+                                    <p class="carousel-description d-md-block d-none my-3">
+                                        "Do You Like Brahms?" follows students, majoring in music, at a prestigious university and those around them. Park Joon-Young is an elite pianist. Chae Song-A is a 4th year university student and
+                                        studies to become a violinist.
+                                    </p>
+                                    <a class="btn btn-danger carousel-btn mt-md-0 mt-sm-3 mt-2" href="pages/details/drama/drama-detail.html">
+                                        <i class="fa fa-book-alt pe-1"></i>
+                                        <span>Read more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="false">
+                        <img src="assets/img/posters/landscape/slider/snowdrop.jpg" class="carousel-img d-block w-100" />
+                        <div class="carousel-caption">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8 col-12" id="slider-item">
+                                    <div>
+                                        <span class="carousel-title d-block">SNOWDROP</span>
+                                        <span class="carousel-subtitle ps-1">2021 - 2022 | 16 Episodes | Mystery - Romance</span>
+                                    </div>
+                                    <p class="carousel-description d-md-block d-none my-3">
+                                        Graduate student Lim Soo-Ho (Jung Hae-In) is covered in blood and he jumps into the female dormitory at Hosu Women’s University. Eun Yeong-Ro (Kim Ji-Soo) finds him and helps to hide him. They develop
+                                        a romantic relationship.
+                                    </p>
+                                    <a href="pages/details/drama/drama-detail.html" class="btn btn-danger carousel-btn mt-md-0 mt-sm-3 mt-2">
+                                        <i class="fa fa-book-alt pe-1"></i>
+                                        <span>Read more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev d-md-flex d-none" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next d-md-flex d-none" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="content" class="px-md-5 px-3 pt-md-4 pt-4">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="row justify-content-center mb-3" id="romance-melodrama">
+                        <div class="d-flex flex-md-row flex-column mt-lg-1 mt-md-4 mt-1 mb-3 justify-content-md-between align-items-md-center">
+                            <div class="sections-title" data-aos="fade-right" data-aos-duration="1000">ROMANCE - MELODRAMA</div>
+                            <div class="sections-button mt-md-0 mt-2 ms-md-0 ms-3" data-aos="fade-left" data-aos-duration="1000">
+                                <a class="text-decoration-none" href="pages/categories/category-name.html">
+                                    <span>VIEW ALL</span>
+                                    <i class="bi bi-arrow-bar-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <div class="card bg-transparent border-0">
+                                <a class="overflow-hidden" href="pages/details/drama/drama-detail.html">
+                                    <img src="assets/img/posters/potret/while-you-were-sleeping.jpg" class="card-img-top content-img" alt="While You Were Sleeping" />
+                                </a>
+                                <span class="rating"><i class="fa fa-star"></i> 9.0 / 10</span>
+                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2017</span>
+                                <div class="card-body">
+                                    <a class="card-title content-title" href="pages/details/drama/drama-detail.html">While You Were Sleeping</a>
+                                    <small class="text-muted">16 Episodes</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <div class="card bg-transparent border-0">
+                                <a class="overflow-hidden" href="pages/details/drama/drama-detail.html">
+                                    <img src="assets/img/posters/potret/tempted.jpg" class="card-img-top content-img" alt="Tempted" />
+                                </a>
+                                <span class="rating"><i class="fa fa-star"></i> 8.7 / 10</span>
+                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2018</span>
+                                <div class="card-body">
+                                    <a class="card-title content-title" href="pages/details/drama/drama-detail.html">Tempted</a>
+                                    <small class="text-muted">32 Episodes</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <div class="card bg-transparent border-0">
+                                <a class="overflow-hidden" href="pages/details/drama/drama-detail.html">
+                                    <img src="assets/img/posters/potret/one-spring-night.jpg" class="card-img-top content-img" alt="One Spring Night" />
+                                </a>
+                                <span class="rating"><i class="fa fa-star"></i> 8.3 / 10</span>
+                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2019</span>
+                                <div class="card-body">
+                                    <a class="card-title content-title" href="pages/details/drama/drama-detail.html">One Spring Night</a>
+                                    <small class="text-muted">16 Episodes</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <div class="card bg-transparent border-0">
+                                <a class="overflow-hidden" href="pages/details/drama/drama-detail.html">
+                                    <img src="assets/img/posters/potret/its-okay-to-not-be-okay.jpg" class="card-img-top content-img" alt="It's Okay to Not be Okay" />
+                                </a>
+                                <span class="rating"><i class="fa fa-star"></i> 9.0 / 10</span>
+                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2020</span>
+                                <div class="card-body">
+                                    <a class="card-title content-title" href="pages/details/drama/drama-detail.html">It's Okay to Not be Okay</a>
+                                    <small class="text-muted">16 Episodes</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-3" id="action-mystery-thriller">
+                        <div class="d-flex flex-md-row flex-column mt-lg-1 mt-md-4 mt-1 mb-3 justify-content-md-between align-items-md-center">
+                            <div class="sections-title" data-aos="fade-right" data-aos-duration="1000">ACTION - MYSTERY - THRILLER</div>
+                            <div class="sections-button mt-md-0 mt-2 ms-md-0 ms-3" data-aos="fade-left" data-aos-duration="1000">
+                                <a class="text-decoration-none" href="pages/categories/category-name.html">
+                                    <span>VIEW ALL</span>
+                                    <i class="bi bi-arrow-bar-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <div class="card bg-transparent border-0">
+                                <a class="overflow-hidden" href="pages/details/drama/drama-detail.html">
+                                    <img src="assets/img/posters/potret/mad-dog.jpg" class="card-img-top content-img" alt="Mad Dog" />
+                                </a>
+                                <span class="rating"><i class="fa fa-star"></i> 9.0 / 10</span>
+                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2017</span>
+                                <div class="card-body">
+                                    <a class="card-title content-title" href="pages/details/drama/drama-detail.html">Mad Dog</a>
+                                    <small class="text-muted">16 Episodes</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <div class="card bg-transparent border-0">
+                                <a class="overflow-hidden" href="pages/details/drama/drama-detail.html">
+                                    <img src="assets/img/posters/potret/player.jpg" class="card-img-top content-img" alt="The Player" />
+                                </a>
+                                <span class="rating"><i class="fa fa-star"></i> 8.8 / 10</span>
+                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2018</span>
+                                <div class="card-body">
+                                    <a class="card-title content-title" href="pages/details/drama/drama-detail.html">The Player</a>
+                                    <small class="text-muted">14 Episodes</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <div class="card bg-transparent border-0">
+                                <a class="overflow-hidden" href="pages/details/drama/drama-detail.html">
+                                    <img src="assets/img/posters/potret/voice-3.jpg" class="card-img-top content-img" alt="Voice 3" />
+                                </a>
+                                <span class="rating"><i class="fa fa-star"></i> 8.7 / 10</span>
+                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2019</span>
+                                <div class="card-body">
+                                    <a class="card-title content-title" href="pages/details/drama/drama-detail.html">Voice 3</a>
+                                    <small class="text-muted">16 Episodes</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <div class="card bg-transparent border-0">
+                                <a class="overflow-hidden" href="pages/details/drama/drama-detail.html">
+                                    <img src="assets/img/posters/potret/search.jpg" class="card-img-top content-img" alt="Search" />
+                                </a>
+                                <span class="rating"><i class="fa fa-star"></i> 9.0 / 10</span>
+                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2020</span>
+                                <div class="card-body">
+                                    <a class="card-title content-title" href="pages/details/drama/drama-detail.html">Search</a>
+                                    <small class="text-muted">10 Episodes</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-3" id="slice-of-life">
+                        <div class="d-flex flex-md-row flex-column mt-lg-1 mt-md-4 mt-1 mb-3 justify-content-md-between align-items-md-center">
+                            <div class="sections-title" data-aos="fade-right" data-aos-duration="1000">SLICE OF LIFE</div>
+                            <div class="sections-button mt-md-0 mt-2 ms-md-0 ms-3" data-aos="fade-left" data-aos-duration="1000">
+                                <a class="text-decoration-none" href="pages/categories/category-name.html">
+                                    <span>VIEW ALL</span>
+                                    <i class="bi bi-arrow-bar-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <div class="card bg-transparent border-0">
+                                <a class="overflow-hidden" href="pages/details/drama/drama-detail.html">
+                                    <img src="assets/img/posters/potret/prison-playbook.jpg" class="card-img-top content-img" alt="Prison Playbook" />
+                                </a>
+                                <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
+                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2017</span>
+                                <div class="card-body">
+                                    <a class="card-title content-title" href="pages/details/drama/drama-detail.html">Prison Playbook</a>
+                                    <small class="text-muted">16 Episodes</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <div class="card bg-transparent border-0">
+                                <a class="overflow-hidden" href="pages/details/drama/drama-detail.html">
+                                    <img src="assets/img/posters/potret/my-mister.jpg" class="card-img-top content-img" alt="My Mister" />
+                                </a>
+                                <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
+                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2018</span>
+                                <div class="card-body">
+                                    <a class="card-title content-title" href="pages/details/drama/drama-detail.html">My Mister</a>
+                                    <small class="text-muted">16 Episodes</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <div class="card bg-transparent border-0">
+                                <a class="overflow-hidden" href="pages/details/drama/drama-detail.html">
+                                    <img src="assets/img/posters/potret/be-melodramatic.jpg" class="card-img-top content-img" alt="Be Melodramatic" />
+                                </a>
+                                <span class="rating"><i class="fa fa-star"></i> 8.9 / 10</span>
+                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2019</span>
+                                <div class="card-body">
+                                    <a class="card-title content-title" href="pages/details/drama/drama-detail.html">Be Melodramatic</a>
+                                    <small class="text-muted">16 Episodes</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <div class="card bg-transparent border-0">
+                                <a class="overflow-hidden" href="pages/details/drama/drama-detail.html">
+                                    <img src="assets/img/posters/potret/a-piece-of-your-mind.jpg" class="card-img-top content-img" alt="A Piece of Your Mind" />
+                                </a>
+                                <span class="rating"><i class="fa fa-star"></i> 8.2 / 10</span>
+                                <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2020</span>
+                                <div class="card-body">
+                                    <a class="card-title content-title" href="pages/details/drama/drama-detail.html">A Piece of Your Mind</a>
+                                    <small class="text-muted">12 Episodes</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="row justify-content-center mb-3" id="popular-dramas">
+                        <div class="d-flex flex-lg-column flex-md-row flex-column justify-content-md-between mt-lg-1 mt-md-4 mt-1 mb-3">
+                            <div class="sections-title" data-aos="fade-left" data-aos-duration="1000">POPULAR DRAMAS</div>
+                            <div class="sections-button ms-lg-3 ms-md-0 ms-3 mt-lg-2 mt-md-0 mt-2" data-aos="fade-left" data-aos-duration="1000">
+                                <a class="text-decoration-none" href="pages/categories/category-name.html">
+                                    <span>VIEW ALL</span>
+                                    <i class="bi bi-arrow-bar-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
+                            <a class="sidebar-content-wrapper" href="pages/details/drama/drama-detail.html">
+                                <div class="card mb-3">
+                                    <img src="assets/img/posters/landscape/slider/snowdrop.jpg" class="sidebar-content-img" alt="Snowdrop" />
+                                    <div class="card-img-overlay sidebar-content-overlay">
+                                        <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2022</span>
+                                        <h6 class="sidebar-content-title">Snowdrop</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
+                            <a class="sidebar-content-wrapper" href="pages/details/drama/drama-detail.html">
+                                <div class="card mb-3">
+                                    <img src="assets/img/posters/landscape/vincenzo.jpg" class="sidebar-content-img" alt="Hush" />
+                                    <div class="card-img-overlay sidebar-content-overlay">
+                                        <span class="rating"><i class="fa fa-star"></i> 9.1 / 10</span>
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2021</span>
+                                        <h6 class="sidebar-content-title">Vincenzo</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
+                            <a class="sidebar-content-wrapper" href="pages/details/drama/drama-detail.html">
+                                <div class="card mb-3">
+                                    <img src="assets/img/posters/landscape/startup.jpg" class="sidebar-content-img" alt="Startup" />
+                                    <div class="card-img-overlay sidebar-content-overlay">
+                                        <span class="rating"><i class="fa fa-star"></i> 8.4 / 10</span>
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> 2020</span>
+                                        <h6 class="sidebar-content-title">Startup</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" id="featured-blog-posts">
+                        <div class="d-flex flex-lg-column flex-md-row flex-column justify-content-md-between mt-lg-1 mt-md-4 mt-1 mb-3">
+                            <div class="sections-title" data-aos="fade-left" data-aos-duration="1000">FEATURED BLOG POSTS</div>
+                            <div class="sections-button ms-lg-3 ms-md-0 ms-3 mt-lg-2 mt-md-0 mt-2" data-aos="fade-left" data-aos-duration="1000">
+                                <a class="text-decoration-none" href="pages/details/drama/drama-detail.html">
+                                    <span>VIEW ALL</span>
+                                    <i class="bi bi-arrow-bar-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
+                            <a class="sidebar-content-wrapper" href="pages/details/blog/blog-detail.html">
+                                <div class="card mb-3">
+                                    <img src="assets/img/blogs/blog-post-1.jpg" alt="3 Facts About Snowdrop Drama" class="sidebar-content-img" />
+                                    <div class="card-img-overlay sidebar-content-overlay">
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> Dec/01/2021</span>
+                                        <h6 class="sidebar-content-title">3 Facts About Snowdrop Drama</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
+                            <a class="sidebar-content-wrapper" href="pages/details/blog/blog-detail.html">
+                                <div class="card mb-3">
+                                    <img src="assets/img/blogs/blog-post-3.jpg" alt="Top 10 Healing Dramas" class="sidebar-content-img" />
+                                    <div class="card-img-overlay sidebar-content-overlay">
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> Mar/01/2022</span>
+                                        <h6 class="sidebar-content-title">Top 10 Healing Dramas</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-6 mb-lg-0 mb-2" data-aos="fade-left" data-aos-duration="1000">
+                            <a class="sidebar-content-wrapper" href="pages/details/blog/blog-detail.html">
+                                <div class="card mb-3">
+                                    <img src="assets/img/blogs/blog-post-2.jpg" alt="The Cast of Drama The King's Affection" class="sidebar-content-img" />
+                                    <div class="card-img-overlay sidebar-content-overlay">
+                                        <span class="year"><i class="fa fa-calendar-alt text-light"></i> Nov/25/2021</span>
+                                        <h6 class="sidebar-content-title">The Cast of Drama The King's Affection</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="searchModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content sign-wrapper px-sm-4 py-sm-4 py-1">
+                        <form class="form-search-modal">
+                            <div class="modal-body pb-1">
+                                <input type="text" name="keyword" class="form-control" placeholder="Enter keyword..." />
+                            </div>
+                            <div class="modal-footer border-top-0">
+                                <button type="submit" class="btn btn-danger"><i class="far fa-search"></i> Search</button>
+                                <button type="button" class="btn btn-modal" data-bs-dismiss="modal"><i class="bi bi-box-arrow-down-right"></i> Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer" class="mt-5">
+            <div class="footer position-relative shadow pt-5">
+                <div class="footer-btnUp">
+                    <a href="#navbar">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+                <div class="container-fluid px-lg-5" data-aos="zoom-in" data-aos-duration="700">
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-lg-6 col-md-5 mx-auto mb-4">
+                            <div class="nav-brand mb-lg-2 mb-0">
+                                <img src="assets/img/brands/text-logo.png" alt="Anapdrama" height="16" />
+                            </div>
+                            <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
+                            <p class="footer-description">
+                                <strong>Anapdrama</strong> is a website template that provides information about Korean dramas. The information contained on this website, we collect is based on
+                                <a href="https://bit.ly/3sYfjhh" target="_blank">Wikipedia</a>, <a href="https://bit.ly/3i06NZ3" target="_blank">Asianwiki</a>, and <a href="https://bit.ly/3J3FBnU" target="_blank">MyDramaList</a>. This
+                                template was designed and built by <a href="https://bit.ly/3CzgcQx" target="_blank">Anaptech</a> team.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 mx-auto mb-md-0 mb-3">
+                            <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0">Social Media</h6>
+                            <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
+                            <p class="footer-link">
+                                <i class="far fa-envelope text-danger mr-3"></i>
+                                <a href="#">anapdrama@mail.com</a>
+                            </p>
+                            <p class="footer-link">
+                                <i class="fal fa-globe text-danger mr-3"></i>
+                                <a href="#">anapdrama.com</a>
+                            </p>
+                            <p class="footer-link">
+                                <i class="fab fa-instagram text-danger mr-3"></i>
+                                <a href="#" target="_blank">@anapdrama</a>
+                            </p>
+                            <p class="footer-link">
+                                <i class="fab fa-twitter text-danger mr-3"></i>
+                                <a href="#">@anapdrama</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-3 mx-auto mb-3">
+                            <h6 class="text-uppercase text-danger fw-bold mb-lg-2 mb-0">Useful Links</h6>
+                            <hr class="footer-divider mb-lg-3 mb-2 mt-0 mx-auto" />
+                            <p class="footer-link">
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
+                                <a href="index.html">Home</a>
+                            </p>
+                            <p class="footer-link">
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
+                                <a href="pages/category.html">Category</a>
+                            </p>
+                            <p class="footer-link">
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
+                                <a href="pages/blog.html">Blog</a>
+                            </p>
+                            <p class="footer-link">
+                                <i class="fa fa-chevron-right text-danger mr-3"></i>
+                                <a href="pages/about.html">About</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row pb-5">
+                        <p class="text-center text-muted mb-0">Copyright &copy;2022 Anapdrama. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- jquery -->
+        <script src="assets/libraries/jquery/js/jquery-3.6.0.min.js"></script>
+
+        <!-- bootstrap -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+        <!-- scroll animation -->
+        <script src="assets/libraries/aos/js/aos.min.js"></script>
+        <script src="assets/libraries/aos/js/config.js"></script>
+
+        <!-- custom -->
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/home.js"></script>
+    </body>
+</html>
